@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background: black;
+  background: white;
 }
 
 #home {
@@ -15,38 +15,9 @@ body {
   margin-right: 420px
 }
 
-#login {
-font-size: 15px;
-background: black;
-padding: 4px 10px;
-border: 1px solid white;
-color: white;
+
 
 outline: 0;
-}
-
-#login:hover {
-  background: white;
-  color: black;
-  border: 2px solid black;
-  transition: 0s all;
-}
-
-#join {
-  font-size: 30px;
-  background: black;
-  padding: 10px 30px;
-  border: 2px solid white;
-  color: white;
-
-  outline: 0;
-}
-
-#join:hover {
-  background: white;
-  color: black;
-  border: 2px solid black;
-  transition: 0s all;
 }
 
 #h1 {
@@ -63,29 +34,6 @@ outline: 0;
   #home {
     margin: 20px 100px 0 100px;
   }
-}
-
-#Register {
-  font-size: 20px;
-  background: white;
-  padding: 10px 30px;
-  border: 2px solid black;
-  color: black;
-  transition: 1s all;
-  outline: 0;
-}
-
-#Register:hover {
-  background: red;
-  color: white;
-  border: 2px solid black;
-  transition: 0s all;
-}
-
-#form {
-  color: white;
-  margin: 20px auto;
-  width:250px;
 }
 
 .container {
