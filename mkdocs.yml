@@ -1,5 +1,5 @@
 site_name: "Deranged Senators Documentation"
-site_url: https://derangedsenators.me/Documentation/
+site_url: Documentation/
 nav:
     - Home: index.md
     - Overview:
