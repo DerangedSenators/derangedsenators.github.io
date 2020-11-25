@@ -35,4 +35,6 @@ mkdocs build --site-dir Documentation
 echo "Cleaning up"
 rm -r docs
 rm -r codedoc
+mkdir public
+mv !(public) public
 echo "All Done!"
