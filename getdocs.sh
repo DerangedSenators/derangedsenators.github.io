@@ -32,8 +32,8 @@ mkdocs build --site-dir Documentation
 echo "Cleaning up"
 rm -r docs
 rm -r codedoc
-git add *
-git commit -m "Update Documentation to reflect latest changes"
+git commit -m 'Update Documentation to reflect latest changes' -- Documentation/
+
 git push origin
 echo "All Done!"
 
