@@ -16,12 +16,12 @@ jobs:
         with:
           repository: derangedsenators/copsandrobbers
           token: ${{ secrets.BUILD_BOT_KEY }}
-          path: codedoc
+          path: codedoc/
       - name: Checkout PlayerLink
         uses: actions/checkout@v2
         with:
           repository: derangedsenators/playerlink
-          path: codedoc
+          path: codedoc/
       - name: Build Documentation
         shell: bash
         env:
