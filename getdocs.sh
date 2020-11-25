@@ -1,5 +1,5 @@
 #!/bin/bash
-
+$SECRETKEY = $1
 echo "Installing Needed Applications"
 apt-get install doxygen python3 python3-pip python3-setuptools tree
 pip3 install mkdocs-material
@@ -13,9 +13,9 @@ echo "Getting Documentations"
 echo "Getting PlayerLink"
 mkdir codedoc
 cd codedoc
-git clone https://admin@derangedsenators.me:"$BUILD_BOT_SECRET"@github.com/derangedsenators/playerlink.git
+git clone https://admin@derangedsenators.me:$SECRETKEY@github.com/derangedsenators/playerlink.git
 echo "Getting Cops and Robbers"
-git clone https://admin@derangedsenators.me:"$BUILD_BOT_SECRET"@github.com/derangedsenators/copsandrobbers.git
+git clone https://admin@derangedsenators.me:$SECRETKEY@github.com/derangedsenators/copsandrobbers.git
 echo "Done... Building Doxygen Documentation"
 cd ..
 doxygen Doxyfile
@@ -23,7 +23,6 @@ echo "Done... Converting to Markdown"
 mkdir docs/
 ./doxygen/doxybook2 --input xml/ --output ../docs/ --config ../doxygen/doxybookcfg.json
 echo "Done... Building Site with MKDOWN-material"
-cd ..
 rm -r docs/Files
 rm -r docs/Pages
 mv -v doxygen/overlays/* docs/
