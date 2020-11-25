@@ -26,11 +26,12 @@ jobs:
         shell: bash
         env:
           BUILD_BOT_SECRET: ${{ secrets.BUILD_BOT_KEY }}
+          USERNAME: ${{ secrets.USERNAME }}
         run: |
           ls
           sudo chmod +x getdocs.sh 
           sudo chmod +x doxygen/doxybook2
-          echo ${{ secrets.USERNAME }}
+          echo $USERNAME
           sudo ./getdocs.sh "$BUILD_BOT_SECRET"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
