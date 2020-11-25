@@ -1,7 +1,7 @@
 {
   "baseUrl": "Documentation/",
   "indexInFolders": true,
-  "linkSuffix": "/",
+  "linkSuffix": "Documentation/",
   "indexClassesName": "index",
   "indexFilesName": "index",
   "indexGroupsName": "index",
