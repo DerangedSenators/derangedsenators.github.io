@@ -34,4 +34,5 @@ rm -r docs
 rm -r codedoc
 mkdir public
 mv * public
+echo $PWD
 echo "All Done!"
