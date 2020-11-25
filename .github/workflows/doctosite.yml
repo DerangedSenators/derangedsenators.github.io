@@ -4,3 +4,17 @@ on:
   pull_request:
   schedule:
     - cron: '*/240 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Documentation
+        shell: bash
+        env:
+          BUILD_BOT_SECRET: ${{ secrets.BUILD_BOT_KEY }}
+        run: |
+          sudo chmod +x getdocs.sh
+          sudo chmod +x doxygen/doxybook2
+          sudo ./getdocs.sh BUILD_BOT_SECRET
