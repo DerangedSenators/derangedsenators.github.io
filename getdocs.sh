@@ -26,5 +26,5 @@ echo "Cleaning up"
 rm -r docs
 rm -r codedoc
 mkdir public
-mv !(public) public
+mv * public
 echo "All Done!"
