@@ -18,6 +18,7 @@ jobs:
           ls
           sudo chmod +x getdocs.sh 
           sudo chmod +x doxygen/doxybook2
+          cd website
           sudo ./getdocs.sh
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
