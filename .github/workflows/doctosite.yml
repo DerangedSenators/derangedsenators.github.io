@@ -9,7 +9,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout Website
+        uses: actions/checkout@v2
+      - name: Checkout CopsAndRobbers
+        uses: actions/checkout@v2
+        with:
+          repository: derangedsenators/copsandrobbers
+          token: ${{ secrets.BUILD_BOT_KEY }}
+          path: codedoc
+      - name: Checkout PlayerLink
+        uses: actions/checkout@v2
+        with:
+          repository: derangedsenators/playerlink
+          path: codedoc
       - name: Build Documentation
         shell: bash
         env:
