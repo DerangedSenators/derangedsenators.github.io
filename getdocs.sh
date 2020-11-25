@@ -13,9 +13,9 @@ echo "Getting Documentations"
 echo "Getting PlayerLink"
 mkdir codedoc
 cd codedoc
-git clone https://admin@derangedsenators.me:$SECRETKEY@github.com/derangedsenators/playerlink.git
+git clone https://github.com/derangedsenators/playerlink.git
 echo "Getting Cops and Robbers"
-git clone https://admin@derangedsenators.me:$SECRETKEY@github.com/derangedsenators/copsandrobbers.git
+git clone https://github.com/derangedsenators/copsandrobbers.git
 echo "Done... Building Doxygen Documentation"
 cd ..
 doxygen Doxyfile
