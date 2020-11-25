@@ -10,15 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Configure git
+        env:
+          TOKEN: ${{ secrets.BUILD_BOT_KEY }}
+        run: git config --global url."https://${TOKEN}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
       - name: Build Documentation
         shell: bash
-        env:
-          BUILD_BOT_SECRET: ${{ secrets.BUILD_BOT_KEY }}
         run: |
           ls
           sudo chmod +x getdocs.sh 
           sudo chmod +x doxygen/doxybook2
-          sudo ./getdocs.sh "$BUILD_BOT_SECRET"
+          sudo ./getdocs.sh
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
