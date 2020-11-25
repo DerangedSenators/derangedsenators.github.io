@@ -31,7 +31,7 @@ jobs:
           ls
           sudo chmod +x getdocs.sh 
           sudo chmod +x doxygen/doxybook2
-          echo $USERNAME
+          echo "$USERNAME"
           sudo ./getdocs.sh "$BUILD_BOT_SECRET"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
