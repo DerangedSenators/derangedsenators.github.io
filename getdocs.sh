@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing Needed Applications"
-apt-get install doxygen python3 python3-pip 
+apt-get install doxygen python3 python3-pip
 pip3 install mkdocs-material
 echo "Done"
 echo "Cloning Repository"
@@ -18,6 +18,7 @@ cd codedoc
 git submodule add https://$1@github.com/derangedsenators/playerlink.git > /dev/null 2>&1
 echo "Getting Cops and Robbers"
 git submodule add https://$1@github.com/derangedsenators/copsandrobbers.git > /dev/null 2>&1
+tree
 echo "Done... Building Doxygen Documentation"
 doxygen ../Doxyfile
 echo "Done... Converting to Markdown"
@@ -32,4 +33,7 @@ mkdocs build --site-dir Documentation
 echo "Cleaning up"
 rm -r docs
 rm -r codedoc
+git commit -m 'Update Documentation to reflect latest changes' -- Documentation/
+
+git push origin
 echo "All Done!"
