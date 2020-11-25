@@ -4,6 +4,8 @@ echo "Installing Needed Applications"
 apt-get install doxygen python3 python3-pip python3-setuptools
 pip3 install mkdocs-material
 echo "Done"
+echo "Removing old Documentation"
+rm -r Documentation/
 echo "Getting Documentations"
 echo "Getting PlayerLink"
 mkdir codedoc
