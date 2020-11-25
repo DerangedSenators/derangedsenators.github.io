@@ -15,6 +15,6 @@ jobs:
         env:
           BUILD_BOT_SECRET: ${{ secrets.BUILD_BOT_KEY }}
         run: |
-          sudo chmod +x getdocs.sh
+          sudo chmod +x getdocs.sh ${{ secrets.BUILD_BOT_KEY }}
           sudo chmod +x doxygen/doxybook2
           sudo ./getdocs.sh BUILD_BOT_SECRET
