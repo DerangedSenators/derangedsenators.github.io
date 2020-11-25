@@ -8,9 +8,9 @@ echo "Getting Documentations"
 echo "Getting PlayerLink"
 mkdir codedoc
 cd codedoc
-git submodule add https://admin@derangedsenators.me:$1@github.com/derangedsenators/playerlink.git
+git submodule add https://$1@github.com/derangedsenators/playerlink.git  > /dev/null 2>&1
 echo "Getting Cops and Robbers"
-git submodule add https://admin@derangedsenators.me:$1@github.com/derangedsenators/copsandrobbers.git
+git submodule add https://$1@github.com/derangedsenators/copsandrobbers.git > /dev/null 2>&1
 echo "Done... Building Doxygen Documentation"
 doxygen ../Doxyfile
 echo "Done... Converting to Markdown"
