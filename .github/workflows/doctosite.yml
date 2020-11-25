@@ -24,5 +24,5 @@ jobs:
         uses: ./
         with:
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          password: ${{ secrets.BUILD_BOT_KEY }}
           remote_url: https://github.com/derangedsenators/website.git
