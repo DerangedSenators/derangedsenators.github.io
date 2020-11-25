@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classGameManager" kind="class" language="C#" prot="public">
+    <compoundname>GameManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classGameManager_1a12d2ff28754c10ea03d7ac68d605bcab" prot="public" static="yes" mutable="no">
+        <type><ref refid="classGameManager" kindref="compound">GameManager</ref></type>
+        <definition>GameManager GameManager.gameManager</definition>
+        <argsstring></argsstring>
+        <name>gameManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/GameManager.cs" line="7" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/GameManager.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGameManager_1a2959177ee51ac31badbf8b1bc8f7f637" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/GameManager.cs" line="9" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/GameManager.cs" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameManager_1a6c9e4ca5ee98a6136be63444098e70fe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.MakeSingleton</definition>
+        <argsstring>()</argsstring>
+        <name>MakeSingleton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/GameManager.cs" line="14" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/GameManager.cs" bodystart="14" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="49">
+        <label>GameManager</label>
+        <link refid="classGameManager"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="51">
+        <label>GameManager</label>
+        <link refid="classGameManager"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>gameManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/GameManager.cs" line="6" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/GameManager.cs" bodystart="5" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classGameManager_1a2959177ee51ac31badbf8b1bc8f7f637" prot="private" virt="non-virtual"><scope>GameManager</scope><name>Awake</name></member>
+      <member refid="classGameManager_1a12d2ff28754c10ea03d7ac68d605bcab" prot="public" virt="non-virtual"><scope>GameManager</scope><name>gameManager</name></member>
+      <member refid="classGameManager_1a6c9e4ca5ee98a6136be63444098e70fe" prot="private" virt="non-virtual"><scope>GameManager</scope><name>MakeSingleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

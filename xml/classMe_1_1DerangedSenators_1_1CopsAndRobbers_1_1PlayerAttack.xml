@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack" kind="class" language="C#" prot="public">
+    <compoundname>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1ab98054630333f057008323018f5cbcd1" prot="private" static="no">
+        <name>State</name>
+        <enumvalue id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1ab98054630333f057008323018f5cbcd1a1e23852820b9154316c7c06e2b7ba051" prot="private">
+          <name>NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1ab98054630333f057008323018f5cbcd1a99cca61d90b4e79f0193e587ba5fbf69" prot="private">
+          <name>ATTACKING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="22" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="21" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a5ff89cc412b7b89a18f73c3009113849" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Me.DerangedSenators.CopsAndRobbers.PlayerAttack.mousePosition</definition>
+        <argsstring></argsstring>
+        <name>mousePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="12" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1ab5db736e5ef9f3cc54e20a7402bab952" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Me.DerangedSenators.CopsAndRobbers.PlayerAttack.mouseDir</definition>
+        <argsstring></argsstring>
+        <name>mouseDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="13" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a3ee073ce3d1a64167d82158e67765448" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Me.DerangedSenators.CopsAndRobbers.PlayerAttack.attackPosition</definition>
+        <argsstring></argsstring>
+        <name>attackPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="14" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1abbd04f4b95054a257ee35d45c697be37" prot="private" static="no" mutable="no">
+        <type>State</type>
+        <definition>State Me.DerangedSenators.CopsAndRobbers.PlayerAttack.state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="17" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a906e99df214923df45827e2f465473dd" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Me.DerangedSenators.CopsAndRobbers.PlayerAttack.attackOffset</definition>
+        <argsstring></argsstring>
+        <name>attackOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="18" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a9758549dab00bf5b945fe7c5d0e8cae4" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask Me.DerangedSenators.CopsAndRobbers.PlayerAttack.enemyLayer</definition>
+        <argsstring></argsstring>
+        <name>enemyLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="15" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1af1ecfd221e2eff1922a39ccd92be8404" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Me.DerangedSenators.CopsAndRobbers.PlayerAttack.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <initializer>= 10f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="16" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a6f822d40f9b78c42ae6562f6758acadb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.PlayerAttack.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="27" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1af9d1c5c82e8cbdd56b5fcf735ad56e5d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.PlayerAttack.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="33" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="33" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a6e0f77ef20b71eceaa5351713313166c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.PlayerAttack.HandleAttack</definition>
+        <argsstring>()</argsstring>
+        <name>HandleAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="47" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="47" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a64cb737ef3e3553fc0feed46b0e433f4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 Me.DerangedSenators.CopsAndRobbers.PlayerAttack.GetMouseWorldPosition</definition>
+        <argsstring>()</argsstring>
+        <name>GetMouseWorldPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="80" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a3b02b66dc6c330bc2f69350be545a59e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 Me.DerangedSenators.CopsAndRobbers.PlayerAttack.GetMouseWorldPositionWithZ</definition>
+        <argsstring>(Vector3 screenPosition, Camera worldCamera)</argsstring>
+        <name>GetMouseWorldPositionWithZ</name>
+        <param>
+          <type>Vector3</type>
+          <declname>screenPosition</declname>
+        </param>
+        <param>
+          <type>Camera</type>
+          <declname>worldCamera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="88" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="88" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a6d0a9e0cc8122d588767dc4593b27cef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.PlayerAttack.OnDrawGizmosSelected</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmosSelected</name>
+        <briefdescription>
+<para>Draw a circle around the player showing the attackRadius visually. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="70" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="70" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1aedcbaff44397a0a46dca4a0b33c4f103" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 Me.DerangedSenators.CopsAndRobbers.PlayerAttack.GetAttackPoint</definition>
+        <argsstring>()</argsstring>
+        <name>GetAttackPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="94" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="94" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="95">
+        <label>Me.DerangedSenators.CopsAndRobbers.PlayerAttack</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="97">
+        <label>Me.DerangedSenators.CopsAndRobbers.PlayerAttack</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" line="10" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/PlayerAttack.cs" bodystart="9" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a906e99df214923df45827e2f465473dd" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>attackOffset</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a3ee073ce3d1a64167d82158e67765448" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>attackPosition</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1af1ecfd221e2eff1922a39ccd92be8404" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>damage</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a9758549dab00bf5b945fe7c5d0e8cae4" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>enemyLayer</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1aedcbaff44397a0a46dca4a0b33c4f103" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>GetAttackPoint</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a64cb737ef3e3553fc0feed46b0e433f4" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>GetMouseWorldPosition</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a3b02b66dc6c330bc2f69350be545a59e" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>GetMouseWorldPositionWithZ</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a6e0f77ef20b71eceaa5351713313166c" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>HandleAttack</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1ab5db736e5ef9f3cc54e20a7402bab952" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>mouseDir</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a5ff89cc412b7b89a18f73c3009113849" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>mousePosition</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a6d0a9e0cc8122d588767dc4593b27cef" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>OnDrawGizmosSelected</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1a6f822d40f9b78c42ae6562f6758acadb" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>Start</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1abbd04f4b95054a257ee35d45c697be37" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>state</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1ab98054630333f057008323018f5cbcd1" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>State</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack_1af9d1c5c82e8cbdd56b5fcf735ad56e5d" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerAttack</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

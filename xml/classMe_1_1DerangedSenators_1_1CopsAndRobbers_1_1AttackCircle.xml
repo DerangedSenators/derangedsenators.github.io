@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1AttackCircle" kind="class" language="C#" prot="public">
+    <compoundname>Me::DerangedSenators::CopsAndRobbers::AttackCircle</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1AttackCircle_1abcb4eb72e4357ace42e306ac5d369363" prot="public" static="no" mutable="no">
+        <type><ref refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack" kindref="compound">PlayerAttack</ref></type>
+        <definition>PlayerAttack Me.DerangedSenators.CopsAndRobbers.AttackCircle.playerAttack</definition>
+        <argsstring></argsstring>
+        <name>playerAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/AttackCircle.cs" line="9" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/AttackCircle.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1AttackCircle_1a19d1dba431c45dc7e37fb511e3d6727e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.AttackCircle.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/AttackCircle.cs" line="12" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/AttackCircle.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1AttackCircle_1a6b37239d4e64e77987d973266da24e4f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.AttackCircle.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/AttackCircle.cs" line="18" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/AttackCircle.cs" bodystart="18" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="0">
+        <label>Me.DerangedSenators.CopsAndRobbers.AttackCircle</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1AttackCircle"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Me.DerangedSenators.CopsAndRobbers.PlayerAttack</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerAttack"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>Me.DerangedSenators.CopsAndRobbers.AttackCircle</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1AttackCircle"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>playerAttack</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/AttackCircle.cs" line="8" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerAttack/AttackCircle.cs" bodystart="7" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1AttackCircle_1abcb4eb72e4357ace42e306ac5d369363" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::AttackCircle</scope><name>playerAttack</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1AttackCircle_1a19d1dba431c45dc7e37fb511e3d6727e" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::AttackCircle</scope><name>Start</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1AttackCircle_1a6b37239d4e64e77987d973266da24e4f" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::AttackCircle</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_6408bcff3497936db0113e803076a622" kind="dir">
+    <compoundname>codedoc/playerlink/server</compoundname>
+    <innerdir refid="dir_737be1b8fd4099860a7b1174310e7194">codedoc/playerlink/server/net</innerdir>
+    <innerdir refid="dir_90332d90f916a5d9bf4895b0701af92d">codedoc/playerlink/server/room</innerdir>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="codedoc/playerlink/server/"/>
+  </compounddef>
+</doxygen>

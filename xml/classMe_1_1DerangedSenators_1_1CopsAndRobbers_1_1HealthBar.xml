@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar" kind="class" language="C#" prot="public">
+    <compoundname>Me::DerangedSenators::CopsAndRobbers::HealthBar</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar_1a641ed75f6c162396e428bb195a27147e" prot="public" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider Me.DerangedSenators.CopsAndRobbers.HealthBar.slider</definition>
+        <argsstring></argsstring>
+        <name>slider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" line="16" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar_1a6e6609cc03f61f8b7675b228f9ab6db0" prot="public" static="no" mutable="no">
+        <type>Gradient</type>
+        <definition>Gradient Me.DerangedSenators.CopsAndRobbers.HealthBar.gradient</definition>
+        <argsstring></argsstring>
+        <name>gradient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" line="19" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar_1a0c1f6109eb57b0b4cd05fc2f9b79bf97" prot="public" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image Me.DerangedSenators.CopsAndRobbers.HealthBar.fill</definition>
+        <argsstring></argsstring>
+        <name>fill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" line="21" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar_1abd40ec4d5b7cfecefe218b991fa860ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.HealthBar.SetMaxHealth</definition>
+        <argsstring>(float health)</argsstring>
+        <name>SetMaxHealth</name>
+        <param>
+          <type>float</type>
+          <declname>health</declname>
+        </param>
+        <briefdescription>
+<para>Setting health bar to max health. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>health</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of health to be set to health bar at the beginning.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" line="28" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" bodystart="28" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar_1ad8565c313239e9f50ec391ab1bfb8574" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.HealthBar.SetHealth</definition>
+        <argsstring>(float health)</argsstring>
+        <name>SetHealth</name>
+        <param>
+          <type>float</type>
+          <declname>health</declname>
+        </param>
+        <briefdescription>
+<para>Updating health bar to current health. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>health</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of health to be set to health bar.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" line="41" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" bodystart="41" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="57">
+        <label>Me.DerangedSenators.CopsAndRobbers.HealthBar</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="59">
+        <label>Me.DerangedSenators.CopsAndRobbers.HealthBar</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" line="14" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerHealth/HealthBar.cs" bodystart="13" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar_1a0c1f6109eb57b0b4cd05fc2f9b79bf97" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::HealthBar</scope><name>fill</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar_1a6e6609cc03f61f8b7675b228f9ab6db0" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::HealthBar</scope><name>gradient</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar_1ad8565c313239e9f50ec391ab1bfb8574" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::HealthBar</scope><name>SetHealth</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar_1abd40ec4d5b7cfecefe218b991fa860ef" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::HealthBar</scope><name>SetMaxHealth</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1HealthBar_1a641ed75f6c162396e428bb195a27147e" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::HealthBar</scope><name>slider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

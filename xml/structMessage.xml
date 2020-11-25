@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structMessage" kind="struct" language="C++" prot="public">
+    <compoundname>Message</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMessage_1a0877d09164637c08aa2a79a987b135ef" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Message::mSockID</definition>
+        <argsstring></argsstring>
+        <name>mSockID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/Message.h" line="24" column="1" bodyfile="codedoc/playerlink/server/net/Message.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMessage_1a345686bb146febf2ee4b9f390ea39328" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* Message::mBytes</definition>
+        <argsstring></argsstring>
+        <name>mBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/Message.h" line="25" column="1" bodyfile="codedoc/playerlink/server/net/Message.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structMessage_1a4fc4f717b634e66070366cb7722d7761" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Message::Message</definition>
+        <argsstring>()</argsstring>
+        <name>Message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/Message.h" line="19" column="1" bodyfile="codedoc/playerlink/server/net/Message.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="structMessage_1a16d75dab0888b7d4ef2ed1a63a331ce5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Message::Message</definition>
+        <argsstring>(int sock_id, unsigned char *bytes)</argsstring>
+        <name>Message</name>
+        <param>
+          <type>int</type>
+          <declname>sock_id</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/Message.h" line="20" column="1" bodyfile="codedoc/playerlink/server/net/Message.h" bodystart="20" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="codedoc/playerlink/server/net/Message.h" line="18" column="1" bodyfile="codedoc/playerlink/server/net/Message.h" bodystart="18" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structMessage_1a345686bb146febf2ee4b9f390ea39328" prot="public" virt="non-virtual"><scope>Message</scope><name>mBytes</name></member>
+      <member refid="structMessage_1a4fc4f717b634e66070366cb7722d7761" prot="public" virt="non-virtual"><scope>Message</scope><name>Message</name></member>
+      <member refid="structMessage_1a16d75dab0888b7d4ef2ed1a63a331ce5" prot="public" virt="non-virtual"><scope>Message</scope><name>Message</name></member>
+      <member refid="structMessage_1a0877d09164637c08aa2a79a987b135ef" prot="public" virt="non-virtual"><scope>Message</scope><name>mSockID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespaceTMPro" kind="namespace" language="C#">
+    <compoundname>TMPro</compoundname>
+    <innerclass refid="classTMPro_1_1TMP__DigitValidator" prot="public">TMPro::TMP_DigitValidator</innerclass>
+    <innerclass refid="classTMPro_1_1TMP__PhoneNumberValidator" prot="public">TMPro::TMP_PhoneNumberValidator</innerclass>
+    <innerclass refid="classTMPro_1_1TMP__TextEventHandler" prot="public">TMPro::TMP_TextEventHandler</innerclass>
+    <innernamespace refid="namespaceTMPro_1_1Examples">TMPro::Examples</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="[generated]" line="1" column="1"/>
+  </compounddef>
+</doxygen>

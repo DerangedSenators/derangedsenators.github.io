@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="playerlink_2doxygen_2index_8md" kind="file" language="Markdown">
+    <compoundname>index.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>PlayerLink</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PlayerLink<sp/>is<sp/>a<sp/>cross-platform<sp/>native<sp/>multiplayer<sp/>API<sp/>with<sp/>a<sp/>focus<sp/>on<sp/>client-side<sp/>processing.</highlight></codeline>
+    </programlisting>
+    <location file="codedoc/playerlink/doxygen/index.md"/>
+  </compounddef>
+</doxygen>

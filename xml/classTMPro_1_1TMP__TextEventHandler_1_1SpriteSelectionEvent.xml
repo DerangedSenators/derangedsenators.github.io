@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classTMPro_1_1TMP__TextEventHandler_1_1SpriteSelectionEvent" kind="class" language="C#" prot="public">
+    <compoundname>TMPro::TMP_TextEventHandler::SpriteSelectionEvent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UnityEvent&lt; char, int &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="133">
+        <label>UnityEvent&lt; char, int &gt;</label>
+      </node>
+      <node id="132">
+        <label>TMPro.TMP_TextEventHandler.SpriteSelectionEvent</label>
+        <link refid="classTMPro_1_1TMP__TextEventHandler_1_1SpriteSelectionEvent"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="135">
+        <label>UnityEvent&lt; char, int &gt;</label>
+      </node>
+      <node id="134">
+        <label>TMPro.TMP_TextEventHandler.SpriteSelectionEvent</label>
+        <link refid="classTMPro_1_1TMP__TextEventHandler_1_1SpriteSelectionEvent"/>
+        <childnode refid="135" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs" line="16" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs" bodystart="16" bodyend="16"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

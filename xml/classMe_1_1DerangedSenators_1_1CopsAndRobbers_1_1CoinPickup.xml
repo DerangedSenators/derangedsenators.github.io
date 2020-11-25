@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup" kind="class" language="C#" prot="public">
+    <compoundname>Me::DerangedSenators::CopsAndRobbers::CoinPickup</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1aeffe9915a348f64cf90fdb185c42b88a" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text Me.DerangedSenators.CopsAndRobbers.CoinPickup.coinText</definition>
+        <argsstring></argsstring>
+        <name>coinText</name>
+        <briefdescription>
+<para>Variable responsable for the text </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" line="19" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1a955a242f75335ea8ec82e98a74559c55" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Me.DerangedSenators.CopsAndRobbers.CoinPickup.isPickUpAllowed</definition>
+        <argsstring></argsstring>
+        <name>isPickUpAllowed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" line="21" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1ab9196c0c1ae12a4360e18ce539fb40e0" prot="private" static="no" mutable="no">
+        <type><ref refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager" kindref="compound">MoneyManager</ref></type>
+        <definition>MoneyManager Me.DerangedSenators.CopsAndRobbers.CoinPickup.moneyManager</definition>
+        <argsstring></argsstring>
+        <name>moneyManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" line="23" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1a3a8adbfb12e703570ad7843c05284823" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.CoinPickup.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>Start is called before the first frame update </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" line="30" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1ae5febf27075a913d28687095697b9470" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.CoinPickup.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+<para>Update is called once per frame </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" line="40" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" bodystart="40" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1a497c364a5c2f6c7baadb63c8f29112ef" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.CoinPickup.OnTriggerEnter2D</definition>
+        <argsstring>(Collider2D collision)</argsstring>
+        <name>OnTriggerEnter2D</name>
+        <param>
+          <type>Collider2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+<para>When collider is triggered we are checking if it was a Player1 Object - If it is we make the text appear as well as making the coin pickable </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>collision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The collision component of the object that is colliding with this object?</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" line="53" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" bodystart="53" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1aa0f195abfe4176dbde91e63dd70bc514" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.CoinPickup.OnTriggerExit2D</definition>
+        <argsstring>(Collider2D collision)</argsstring>
+        <name>OnTriggerExit2D</name>
+        <param>
+          <type>Collider2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+<para>In this function we are doing the reverse of the pervious one </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>collision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The collision component of the object that is colliding with this object?</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" line="66" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1a7d288c056ac98b9863c97c931815a565" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.CoinPickup.PickUp</definition>
+        <argsstring>()</argsstring>
+        <name>PickUp</name>
+        <briefdescription>
+<para>This fucntion removes the object when it is picked up </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" line="78" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" bodystart="78" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="39">
+        <label>Me.DerangedSenators.CopsAndRobbers.CoinPickup</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="41">
+        <label>Me.DerangedSenators.CopsAndRobbers.CoinPickup</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" line="14" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp/CoinPickup.cs" bodystart="13" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1aeffe9915a348f64cf90fdb185c42b88a" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::CoinPickup</scope><name>coinText</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1a955a242f75335ea8ec82e98a74559c55" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::CoinPickup</scope><name>isPickUpAllowed</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1ab9196c0c1ae12a4360e18ce539fb40e0" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::CoinPickup</scope><name>moneyManager</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1a497c364a5c2f6c7baadb63c8f29112ef" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::CoinPickup</scope><name>OnTriggerEnter2D</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1aa0f195abfe4176dbde91e63dd70bc514" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::CoinPickup</scope><name>OnTriggerExit2D</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1a7d288c056ac98b9863c97c931815a565" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::CoinPickup</scope><name>PickUp</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1a3a8adbfb12e703570ad7843c05284823" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::CoinPickup</scope><name>Start</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CoinPickup_1ae5febf27075a913d28687095697b9470" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::CoinPickup</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

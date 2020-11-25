@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager" kind="class" language="C#" prot="public">
+    <compoundname>Me::DerangedSenators::CopsAndRobbers::MoneyManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1aa0a5ad6ee742c2ff6108d97bdc075ccd" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text Me.DerangedSenators.CopsAndRobbers.MoneyManager.moneyText</definition>
+        <argsstring></argsstring>
+        <name>moneyText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" line="10" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1aff67112bd1903de83c2a027e0d0ffd0d" prot="private" static="yes" mutable="no">
+        <type>long</type>
+        <definition>long Me.DerangedSenators.CopsAndRobbers.MoneyManager.moneyCount</definition>
+        <argsstring></argsstring>
+        <name>moneyCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" line="11" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1a498e3fb84867a000dfd53bfc5ff359e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.MoneyManager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>treasury is 0 when starting the game. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" line="16" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1a9958c7c50f03840a171294da3d68014e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.MoneyManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" line="39" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" bodystart="39" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1a5919f25d94fc666154c56a5be8f83aba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.MoneyManager.CollectMoney</definition>
+        <argsstring>()</argsstring>
+        <name>CollectMoney</name>
+        <briefdescription>
+<para>Adds $100 to treasury. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" line="25" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1ae3add7d4d516daeed1a95f866e116b45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long Me.DerangedSenators.CopsAndRobbers.MoneyManager.getMoneyCount</definition>
+        <argsstring>()</argsstring>
+        <name>getMoneyCount</name>
+        <briefdescription>
+<para>Get amount of money in treasury. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>amount of amount in treasury</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" line="34" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="78">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="77">
+        <label>Me.DerangedSenators.CopsAndRobbers.MoneyManager</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="80">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="79">
+        <label>Me.DerangedSenators.CopsAndRobbers.MoneyManager</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" line="9" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/MoneyManager.cs" bodystart="8" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1a5919f25d94fc666154c56a5be8f83aba" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::MoneyManager</scope><name>CollectMoney</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1ae3add7d4d516daeed1a95f866e116b45" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::MoneyManager</scope><name>getMoneyCount</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1aff67112bd1903de83c2a027e0d0ffd0d" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::MoneyManager</scope><name>moneyCount</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1aa0a5ad6ee742c2ff6108d97bdc075ccd" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::MoneyManager</scope><name>moneyText</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1a498e3fb84867a000dfd53bfc5ff359e8" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::MoneyManager</scope><name>Start</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MoneyManager_1a9958c7c50f03840a171294da3d68014e" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::MoneyManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

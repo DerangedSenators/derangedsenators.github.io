@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classGameServer" kind="class" language="C++" prot="public">
+    <compoundname>GameServer</compoundname>
+    <includes local="no">GameServer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGameServer_1a9612723ac075b159f3335b0c9d393adb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GameServer::mRunSignal</definition>
+        <argsstring></argsstring>
+        <name>mRunSignal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="66" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameServer_1a26cf5a2666d943e9c331269b7f65e898" prot="private" static="no" mutable="no">
+        <type><ref refid="classTCPServer" kindref="compound">TCPServer</ref></type>
+        <definition>TCPServer GameServer::mTCPServerSocket</definition>
+        <argsstring></argsstring>
+        <name>mTCPServerSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="67" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameServer_1ad2b9eeff203889f68dff046e4d8a0333" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string GameServer::mRoomName</definition>
+        <argsstring></argsstring>
+        <name>mRoomName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="69" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameServer_1ae502c017cc802617f648064a011eb652" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="structMessage" kindref="compound">Message</ref> &gt;</type>
+        <definition>std::deque&lt;Message&gt; GameServer::mMessageQueue</definition>
+        <argsstring></argsstring>
+        <name>mMessageQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="70" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameServer_1ac570baae60a92a8734ee71f68486a341" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classTCPSocket" kindref="compound">TCPSocket</ref> &gt;</type>
+        <definition>std::vector&lt;TCPSocket&gt; GameServer::mClients</definition>
+        <argsstring></argsstring>
+        <name>mClients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="71" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameServer_1af85d366f8a1b23cbd62754d66766c470" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="structPlayer" kindref="compound">Player</ref> &gt;</type>
+        <definition>std::map&lt;std::string, Player&gt; GameServer::mPlayers</definition>
+        <argsstring></argsstring>
+        <name>mPlayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="72" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameServer_1a6c967379c442cd22b288f1644735224a" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex GameServer::mQueueMutex</definition>
+        <argsstring></argsstring>
+        <name>mQueueMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="74" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameServer_1a98a7b47bc44d1936e629868edfc879e9" prot="private" static="no" mutable="no">
+        <type>boost::thread</type>
+        <definition>boost::thread GameServer::mAcceptThread</definition>
+        <argsstring></argsstring>
+        <name>mAcceptThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="75" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameServer_1a3c7b74361a2e6f469cefb25d1e194eb5" prot="private" static="no" mutable="no">
+        <type>boost::thread</type>
+        <definition>boost::thread GameServer::mReadThread</definition>
+        <argsstring></argsstring>
+        <name>mReadThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="75" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameServer_1ab2508da051cf993c6447e0f8e6b4427f" prot="private" static="no" mutable="no">
+        <type>boost::thread</type>
+        <definition>boost::thread GameServer::mWriteThread</definition>
+        <argsstring></argsstring>
+        <name>mWriteThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="75" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameServer_1ab5e40e7498697a56340c16f3bc8f471c" prot="private" static="no" mutable="no">
+        <type>boost::thread_group</type>
+        <definition>boost::thread_group GameServer::mServerThreads</definition>
+        <argsstring></argsstring>
+        <name>mServerThreads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="76" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGameServer_1a50105d853ed8cf180553e0f5a2d8f0ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameServer::GameServer</definition>
+        <argsstring>()</argsstring>
+        <name>GameServer</name>
+        <briefdescription>
+<para>Constructs a <ref refid="classGameServer" kindref="compound">GameServer</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="41" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameServer_1aa5abf46ddd77528735ecdfd546be1b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameServer::~GameServer</definition>
+        <argsstring>()</argsstring>
+        <name>~GameServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="42" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.cpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameServer_1affe7e5aff5265d16956d595f99650d0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameServer::start</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>start</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Starts the <ref refid="classGameServer" kindref="compound">GameServer</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="47" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.cpp" bodystart="24" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGameServer_1ad297bf1e028ca8458352baa0ab35185d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameServer::acceptLoop</definition>
+        <argsstring>()</argsstring>
+        <name>acceptLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+friend void* doServerAccept(void* arg); friend void* doServerRead(void* arg); friend void* doServerWrite(void* arg); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="58" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.cpp" bodystart="34" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameServer_1a71294bfab8cf591d24e369cf058199be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameServer::readLoop</definition>
+        <argsstring>()</argsstring>
+        <name>readLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="59" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.cpp" bodystart="58" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameServer_1abb579d6588a4e3bbdc3834a7d26c666c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameServer::writeLoop</definition>
+        <argsstring>()</argsstring>
+        <name>writeLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="60" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.cpp" bodystart="76" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameServer_1a9502c0352833438bf049e2fe2b212eb7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameServer::disconnectClient</definition>
+        <argsstring>(TCPSocket &amp;client)</argsstring>
+        <name>disconnectClient</name>
+        <param>
+          <type><ref refid="classTCPSocket" kindref="compound">TCPSocket</ref> &amp;</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="62" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.cpp" bodystart="95" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameServer_1a2d3134ddc2ccc47b20babf7939bcaec6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string GameServer::currentTime</definition>
+        <argsstring>()</argsstring>
+        <name>currentTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/GameServer.h" line="64" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.cpp" bodystart="116" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classGameServer" kindref="compound">GameServer</ref> object which is used to host a game or lobby. It uses three threads to efficiently do this; An accept thread to allow new players to join, a read thread to read packets sent by players to the server and a write thread to relay those messages to the other players. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="codedoc/playerlink/server/net/GameServer.h" line="35" column="1" bodyfile="codedoc/playerlink/server/net/GameServer.h" bodystart="35" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classGameServer_1ad297bf1e028ca8458352baa0ab35185d" prot="private" virt="non-virtual"><scope>GameServer</scope><name>acceptLoop</name></member>
+      <member refid="classGameServer_1a2d3134ddc2ccc47b20babf7939bcaec6" prot="private" virt="non-virtual"><scope>GameServer</scope><name>currentTime</name></member>
+      <member refid="classGameServer_1a9502c0352833438bf049e2fe2b212eb7" prot="private" virt="non-virtual"><scope>GameServer</scope><name>disconnectClient</name></member>
+      <member refid="classGameServer_1a50105d853ed8cf180553e0f5a2d8f0ad" prot="public" virt="non-virtual"><scope>GameServer</scope><name>GameServer</name></member>
+      <member refid="classGameServer_1a98a7b47bc44d1936e629868edfc879e9" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mAcceptThread</name></member>
+      <member refid="classGameServer_1ac570baae60a92a8734ee71f68486a341" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mClients</name></member>
+      <member refid="classGameServer_1ae502c017cc802617f648064a011eb652" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mMessageQueue</name></member>
+      <member refid="classGameServer_1af85d366f8a1b23cbd62754d66766c470" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mPlayers</name></member>
+      <member refid="classGameServer_1a6c967379c442cd22b288f1644735224a" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mQueueMutex</name></member>
+      <member refid="classGameServer_1a3c7b74361a2e6f469cefb25d1e194eb5" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mReadThread</name></member>
+      <member refid="classGameServer_1ad2b9eeff203889f68dff046e4d8a0333" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mRoomName</name></member>
+      <member refid="classGameServer_1a9612723ac075b159f3335b0c9d393adb" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mRunSignal</name></member>
+      <member refid="classGameServer_1ab5e40e7498697a56340c16f3bc8f471c" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mServerThreads</name></member>
+      <member refid="classGameServer_1a26cf5a2666d943e9c331269b7f65e898" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mTCPServerSocket</name></member>
+      <member refid="classGameServer_1ab2508da051cf993c6447e0f8e6b4427f" prot="private" virt="non-virtual"><scope>GameServer</scope><name>mWriteThread</name></member>
+      <member refid="classGameServer_1a71294bfab8cf591d24e369cf058199be" prot="private" virt="non-virtual"><scope>GameServer</scope><name>readLoop</name></member>
+      <member refid="classGameServer_1affe7e5aff5265d16956d595f99650d0b" prot="public" virt="non-virtual"><scope>GameServer</scope><name>start</name></member>
+      <member refid="classGameServer_1abb579d6588a4e3bbdc3834a7d26c666c" prot="private" virt="non-virtual"><scope>GameServer</scope><name>writeLoop</name></member>
+      <member refid="classGameServer_1aa5abf46ddd77528735ecdfd546be1b8a" prot="public" virt="non-virtual"><scope>GameServer</scope><name>~GameServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

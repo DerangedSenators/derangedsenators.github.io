@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_c09de2e77fda49529d6a942699f467dc" kind="dir">
+    <compoundname>codedoc/copsandrobbers/Cops And Robbers/Assets/TextMesh Pro/Examples &amp; Extras/Scripts</compoundname>
+    <innerfile refid="Benchmark01_8cs">Benchmark01.cs</innerfile>
+    <innerfile refid="Benchmark01__UGUI_8cs">Benchmark01_UGUI.cs</innerfile>
+    <innerfile refid="Benchmark02_8cs">Benchmark02.cs</innerfile>
+    <innerfile refid="Benchmark03_8cs">Benchmark03.cs</innerfile>
+    <innerfile refid="Benchmark04_8cs">Benchmark04.cs</innerfile>
+    <innerfile refid="CameraController_8cs">CameraController.cs</innerfile>
+    <innerfile refid="ChatController_8cs">ChatController.cs</innerfile>
+    <innerfile refid="EnvMapAnimator_8cs">EnvMapAnimator.cs</innerfile>
+    <innerfile refid="ObjectSpin_8cs">ObjectSpin.cs</innerfile>
+    <innerfile refid="ShaderPropAnimator_8cs">ShaderPropAnimator.cs</innerfile>
+    <innerfile refid="SimpleScript_8cs">SimpleScript.cs</innerfile>
+    <innerfile refid="SkewTextExample_8cs">SkewTextExample.cs</innerfile>
+    <innerfile refid="TeleType_8cs">TeleType.cs</innerfile>
+    <innerfile refid="TextConsoleSimulator_8cs">TextConsoleSimulator.cs</innerfile>
+    <innerfile refid="TextMeshProFloatingText_8cs">TextMeshProFloatingText.cs</innerfile>
+    <innerfile refid="TextMeshSpawner_8cs">TextMeshSpawner.cs</innerfile>
+    <innerfile refid="TMP__DigitValidator_8cs">TMP_DigitValidator.cs</innerfile>
+    <innerfile refid="TMP__ExampleScript__01_8cs">TMP_ExampleScript_01.cs</innerfile>
+    <innerfile refid="TMP__FrameRateCounter_8cs">TMP_FrameRateCounter.cs</innerfile>
+    <innerfile refid="TMP__PhoneNumberValidator_8cs">TMP_PhoneNumberValidator.cs</innerfile>
+    <innerfile refid="TMP__TextEventCheck_8cs">TMP_TextEventCheck.cs</innerfile>
+    <innerfile refid="TMP__TextEventHandler_8cs">TMP_TextEventHandler.cs</innerfile>
+    <innerfile refid="TMP__TextInfoDebugTool_8cs">TMP_TextInfoDebugTool.cs</innerfile>
+    <innerfile refid="TMP__TextSelector__A_8cs">TMP_TextSelector_A.cs</innerfile>
+    <innerfile refid="TMP__TextSelector__B_8cs">TMP_TextSelector_B.cs</innerfile>
+    <innerfile refid="TMP__UiFrameRateCounter_8cs">TMP_UiFrameRateCounter.cs</innerfile>
+    <innerfile refid="TMPro__InstructionOverlay_8cs">TMPro_InstructionOverlay.cs</innerfile>
+    <innerfile refid="VertexColorCycler_8cs">VertexColorCycler.cs</innerfile>
+    <innerfile refid="VertexJitter_8cs">VertexJitter.cs</innerfile>
+    <innerfile refid="VertexShakeA_8cs">VertexShakeA.cs</innerfile>
+    <innerfile refid="VertexShakeB_8cs">VertexShakeB.cs</innerfile>
+    <innerfile refid="VertexZoom_8cs">VertexZoom.cs</innerfile>
+    <innerfile refid="WarpTextExample_8cs">WarpTextExample.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/TextMesh Pro/Examples & Extras/Scripts/"/>
+  </compounddef>
+</doxygen>

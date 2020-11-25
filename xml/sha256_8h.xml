@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="sha256_8h" kind="file" language="C++">
+    <compoundname>sha256.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="sha256_8cpp" local="yes">codedoc/playerlink/core/crypto/hash/sha/sha256.cpp</includedby>
+    <incdepgraph>
+      <node id="112">
+        <label>string</label>
+      </node>
+      <node id="111">
+        <label>codedoc/playerlink/core/crypto/hash/sha/sha256.h</label>
+        <link refid="sha256_8h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classSHA256" prot="public">SHA256</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sha256_8h_1a0a0e7e0d135e9feff1da2e46fa556d50" prot="public" static="no">
+        <name>SHA2_SHFR</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>(x &gt;&gt; n)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="68" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha256_8h_1a9509f7c1f927cb12f98d9995ae2f92d3" prot="public" static="no">
+        <name>SHA2_ROTR</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((x &gt;&gt; n) | (x &lt;&lt; ((sizeof(x) &lt;&lt; 3) - n)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="69" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha256_8h_1a0fcefdff5f2609b2c5eb1d0f99214199" prot="public" static="no">
+        <name>SHA2_ROTL</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((x &lt;&lt; n) | (x &gt;&gt; ((sizeof(x) &lt;&lt; 3) - n)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="70" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha256_8h_1a1d4a72c3cb3d85b0c82736081042c1a4" prot="public" static="no">
+        <name>SHA2_CH</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>((x &amp; y) ^ (~x &amp; z))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="71" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha256_8h_1ae9222f6c22449097806fb1dac2a58107" prot="public" static="no">
+        <name>SHA2_MAJ</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>((x &amp; y) ^ (x &amp; z) ^ (y &amp; z))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="72" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha256_8h_1a0ae1b70e2104958a43d1d8f32cb79eb6" prot="public" static="no">
+        <name>SHA256_F1</name>
+        <param><defname>x</defname></param>
+        <initializer>(SHA2_ROTR(x,  2) ^ SHA2_ROTR(x, 13) ^ SHA2_ROTR(x, 22))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="73" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha256_8h_1afc002a02aab7533fb0bfe557a25266e1" prot="public" static="no">
+        <name>SHA256_F2</name>
+        <param><defname>x</defname></param>
+        <initializer>(SHA2_ROTR(x,  6) ^ SHA2_ROTR(x, 11) ^ SHA2_ROTR(x, 25))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="74" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha256_8h_1a9435ee6ad07985796b91077d13eaf7a0" prot="public" static="no">
+        <name>SHA256_F3</name>
+        <param><defname>x</defname></param>
+        <initializer>(SHA2_ROTR(x,  7) ^ SHA2_ROTR(x, 18) ^ SHA2_SHFR(x,  3))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="75" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha256_8h_1afc7152c6ff0146084db95994f2852b56" prot="public" static="no">
+        <name>SHA256_F4</name>
+        <param><defname>x</defname></param>
+        <initializer>(SHA2_ROTR(x, 17) ^ SHA2_ROTR(x, 19) ^ SHA2_SHFR(x, 10))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="76" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha256_8h_1a2dc032adc83afe8e265a7941ef11f258" prot="public" static="no">
+        <name>SHA2_UNPACK32</name>
+        <param><defname>x</defname></param>
+        <param><defname>str</defname></param>
+        <initializer>{                                             \
+    *((str) + 3) = (uint8) ((x)      );       \
+    *((str) + 2) = (uint8) ((x) &gt;&gt;  8);       \
+    *((str) + 1) = (uint8) ((x) &gt;&gt; 16);       \
+    *((str) + 0) = (uint8) ((x) &gt;&gt; 24);       \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="77" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sha256_8h_1a7275957ed17d7fe14f0ab6e32c18f9b7" prot="public" static="no">
+        <name>SHA2_PACK32</name>
+        <param><defname>str</defname></param>
+        <param><defname>x</defname></param>
+        <initializer>{                                             \
+    *(x) =   ((uint32) *((str) + 3)      )    \
+           | ((uint32) *((str) + 2) &lt;&lt;  8)    \
+           | ((uint32) *((str) + 1) &lt;&lt; 16)    \
+           | ((uint32) *((str) + 0) &lt;&lt; 24);   \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="84" column="9" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sha256_8h_1a53697cb2d3701568ca4241e5f8d36acd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string sha256</definition>
+        <argsstring>(std::string input)</argsstring>
+        <name>sha256</name>
+        <param>
+          <type>std::string</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h" line="66" column="1" bodyfile="codedoc/playerlink/core/crypto/hash/sha/sha256.cpp" bodystart="153" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Updated<sp/>to<sp/>C++,<sp/>zedwood.com<sp/>2012</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Based<sp/>on<sp/>Olivier<sp/>Gay&apos;s<sp/>version</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>See<sp/>Modified<sp/>BSD<sp/>License<sp/>below:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FIPS<sp/>180-2<sp/>SHA-224/256/384/512<sp/>implementation</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Issue<sp/>date:<sp/><sp/>04/30/2005</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>http://www.ouah.org/ogay/sha2/</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2005,<sp/>2007<sp/>Olivier<sp/>Gay<sp/>&lt;olivier.gay@a3.epfl.ch&gt;</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>3.<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>project<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>PROJECT<sp/>AND<sp/>CONTRIBUTORS<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>ARE<sp/>DISCLAIMED.<sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>PROJECT<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PLAYERLINK_CORE_SHA256_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLAYERLINK_CORE_SHA256_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classSHA256" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSHA256" kindref="compound">SHA256</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>uint8;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uint32;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>uint64;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32<sp/>sha256_k[];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SHA224_256_BLOCK_SIZE<sp/>=<sp/>(512/8);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*digest);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DIGEST_SIZE<sp/>=<sp/>(<sp/>256<sp/>/<sp/>8);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>block_nb);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_tot_len;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_len;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m_block[2*SHA224_256_BLOCK_SIZE];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>m_h[8];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">std::string<sp/>sha256(std::string<sp/>input);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_SHFR(x,<sp/>n)<sp/><sp/><sp/><sp/>(x<sp/>&gt;&gt;<sp/>n)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_ROTR(x,<sp/>n)<sp/><sp/><sp/>((x<sp/>&gt;&gt;<sp/>n)<sp/>|<sp/>(x<sp/>&lt;&lt;<sp/>((sizeof(x)<sp/>&lt;&lt;<sp/>3)<sp/>-<sp/>n)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_ROTL(x,<sp/>n)<sp/><sp/><sp/>((x<sp/>&lt;&lt;<sp/>n)<sp/>|<sp/>(x<sp/>&gt;&gt;<sp/>((sizeof(x)<sp/>&lt;&lt;<sp/>3)<sp/>-<sp/>n)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_CH(x,<sp/>y,<sp/>z)<sp/><sp/>((x<sp/>&amp;<sp/>y)<sp/>^<sp/>(~x<sp/>&amp;<sp/>z))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_MAJ(x,<sp/>y,<sp/>z)<sp/>((x<sp/>&amp;<sp/>y)<sp/>^<sp/>(x<sp/>&amp;<sp/>z)<sp/>^<sp/>(y<sp/>&amp;<sp/>z))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA256_F1(x)<sp/>(SHA2_ROTR(x,<sp/><sp/>2)<sp/>^<sp/>SHA2_ROTR(x,<sp/>13)<sp/>^<sp/>SHA2_ROTR(x,<sp/>22))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA256_F2(x)<sp/>(SHA2_ROTR(x,<sp/><sp/>6)<sp/>^<sp/>SHA2_ROTR(x,<sp/>11)<sp/>^<sp/>SHA2_ROTR(x,<sp/>25))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA256_F3(x)<sp/>(SHA2_ROTR(x,<sp/><sp/>7)<sp/>^<sp/>SHA2_ROTR(x,<sp/>18)<sp/>^<sp/>SHA2_SHFR(x,<sp/><sp/>3))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA256_F4(x)<sp/>(SHA2_ROTR(x,<sp/>17)<sp/>^<sp/>SHA2_ROTR(x,<sp/>19)<sp/>^<sp/>SHA2_SHFR(x,<sp/>10))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_UNPACK32(x,<sp/>str)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>3)<sp/>=<sp/>(uint8)<sp/>((x)<sp/><sp/><sp/><sp/><sp/><sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>2)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/><sp/>8);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>1)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/>16);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*((str)<sp/>+<sp/>0)<sp/>=<sp/>(uint8)<sp/>((x)<sp/>&gt;&gt;<sp/>24);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHA2_PACK32(str,<sp/>x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*(x)<sp/>=<sp/><sp/><sp/>((uint32)<sp/>*((str)<sp/>+<sp/>3)<sp/><sp/><sp/><sp/><sp/><sp/>)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((uint32)<sp/>*((str)<sp/>+<sp/>2)<sp/>&lt;&lt;<sp/><sp/>8)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((uint32)<sp/>*((str)<sp/>+<sp/>1)<sp/>&lt;&lt;<sp/>16)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((uint32)<sp/>*((str)<sp/>+<sp/>0)<sp/>&lt;&lt;<sp/>24);<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//PLAYERLINK_CORE_SHA256_H</highlight></codeline>
+    </programlisting>
+    <location file="codedoc/playerlink/core/crypto/hash/sha/sha256.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classTCPServer" kind="class" language="C++" prot="public">
+    <compoundname>TCPServer</compoundname>
+    <basecompoundref refid="classSocket" prot="public" virt="non-virtual">Socket</basecompoundref>
+    <includes local="no">TCPServer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTCPServer_1a9ef155cfde234884ba4db6d4609a0c11" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; struct pollfd &gt;</type>
+        <definition>std::vector&lt;struct pollfd&gt; TCPServer::mMonitorFDs</definition>
+        <argsstring></argsstring>
+        <name>mMonitorFDs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/TCPServer.h" line="58" column="1" bodyfile="codedoc/playerlink/server/net/TCPServer.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTCPServer_1a3a5e3cfe42c676ed71f2bc58dcc92bda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TCPServer::TCPServer</definition>
+        <argsstring>()</argsstring>
+        <name>TCPServer</name>
+        <briefdescription>
+<para>Constructs a <ref refid="classTCPServer" kindref="compound">TCPServer</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/TCPServer.h" line="29" column="1" bodyfile="codedoc/playerlink/server/net/TCPServer.cpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classTCPServer_1adb2ea4f27e98da84fb9e46838578e516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TCPServer::listen</definition>
+        <argsstring>(std::string port, int backlog=5)</argsstring>
+        <name>listen</name>
+        <param>
+          <type>std::string</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>backlog</declname>
+          <defval>5</defval>
+        </param>
+        <briefdescription>
+<para>Listens to incoming bytes on a specified port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The port you wish to monitor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backlog</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/TCPServer.h" line="35" column="1" bodyfile="codedoc/playerlink/server/net/TCPServer.cpp" bodystart="20" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classTCPServer_1a1a60f00dce65a4c2b855b37ea9308f6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classTCPSocket" kindref="compound">TCPSocket</ref></type>
+        <definition>TCPSocket TCPServer::accept</definition>
+        <argsstring>()</argsstring>
+        <name>accept</name>
+        <briefdescription>
+<para>Method to accept incomming connection request. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classTCPSocket" kindref="compound">TCPSocket</ref> Object used to hold information and methods to send/recieve information from them </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/TCPServer.h" line="40" column="1" bodyfile="codedoc/playerlink/server/net/TCPServer.cpp" bodystart="46" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classTCPServer_1a31402d9197a28eab1921b8a96b5c65ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TCPServer::monitorSocket</definition>
+        <argsstring>(TCPSocket &amp;fd)</argsstring>
+        <name>monitorSocket</name>
+        <param>
+          <type><ref refid="classTCPSocket" kindref="compound">TCPSocket</ref> &amp;</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+<para>Monitors the provided socket. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The File Descriptor for the socket you want to monitor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/TCPServer.h" line="45" column="1" bodyfile="codedoc/playerlink/server/net/TCPServer.cpp" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classTCPServer_1a8ee98b8c0f7d23437983627bc980840f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TCPServer::unmonitor</definition>
+        <argsstring>(TCPSocket &amp;fd)</argsstring>
+        <name>unmonitor</name>
+        <param>
+          <type><ref refid="classTCPSocket" kindref="compound">TCPSocket</ref> &amp;</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+<para>Stops monitoring the provided socket. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The File Descriptor for the socket you no longer want to monitor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/TCPServer.h" line="50" column="1" bodyfile="codedoc/playerlink/server/net/TCPServer.cpp" bodystart="63" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classTCPServer_1ae571b398f08601bac4544bc5d1b341a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classTCPSocket" kindref="compound">TCPSocket</ref> &gt;</type>
+        <definition>std::vector&lt; TCPSocket &gt; TCPServer::getSocketEvents</definition>
+        <argsstring>(int timeout=10000)</argsstring>
+        <name>getSocketEvents</name>
+        <param>
+          <type>int</type>
+          <declname>timeout</declname>
+          <defval>10000</defval>
+        </param>
+        <briefdescription>
+<para>Gets the socket Events. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SocketEvents in a vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/server/net/TCPServer.h" line="56" column="1" bodyfile="codedoc/playerlink/server/net/TCPServer.cpp" bodystart="76" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classTCPServer" kindref="compound">TCPServer</ref> class based on <ref refid="classSocket" kindref="compound">Socket</ref> Class. Uses TCP communication and also functions as a server to listen and monitor socket connections. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="136">
+        <label>TCPServer</label>
+        <link refid="classTCPServer"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>Socket</label>
+        <link refid="classSocket"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="138">
+        <label>TCPServer</label>
+        <link refid="classTCPServer"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>Socket</label>
+        <link refid="classSocket"/>
+      </node>
+    </collaborationgraph>
+    <location file="codedoc/playerlink/server/net/TCPServer.h" line="23" column="1" bodyfile="codedoc/playerlink/server/net/TCPServer.h" bodystart="23" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classTCPServer_1a1a60f00dce65a4c2b855b37ea9308f6e" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>accept</name></member>
+      <member refid="classSocket_1a75ee749264ccbcfc4dfbf5442e55dcb8" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>close</name></member>
+      <member refid="classSocket_1ab8ba548a41bbbccb9eef1ae22c4d799c" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>getAddress</name></member>
+      <member refid="classSocket_1af46a74a554fbc2ce08446eaa8d3dda37" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>getLastError</name></member>
+      <member refid="classSocket_1a3d48dfb424a9853ad2bcb5a7664f76c0" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>getPort</name></member>
+      <member refid="classSocket_1afd21401fa7f8ff6ad4e3083142bb9ade" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>getSocketDescriptor</name></member>
+      <member refid="classTCPServer_1ae571b398f08601bac4544bc5d1b341a6" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>getSocketEvents</name></member>
+      <member refid="classSocket_1acba7450444a1ff7484abcad45d3a2395" prot="protected" virt="non-virtual"><scope>TCPServer</scope><name>isBlocked</name></member>
+      <member refid="classSocket_1a7e54aa5a8807a44096258b41fd27ecf3" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>isClosed</name></member>
+      <member refid="classTCPServer_1adb2ea4f27e98da84fb9e46838578e516" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>listen</name></member>
+      <member refid="classTCPServer_1a9ef155cfde234884ba4db6d4609a0c11" prot="private" virt="non-virtual"><scope>TCPServer</scope><name>mMonitorFDs</name></member>
+      <member refid="classTCPServer_1a31402d9197a28eab1921b8a96b5c65ef" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>monitorSocket</name></member>
+      <member refid="classSocket_1a1c7a05cd7a83e7842d67ad81d596b027" prot="protected" virt="non-virtual"><scope>TCPServer</scope><name>mSocketFD</name></member>
+      <member refid="classSocket_1a14aeb614f43be5dccd69c7bec6a0e1e8" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>setBlocking</name></member>
+      <member refid="classSocket_1aa2d2ef4b12252e237f8e8d47c8000a8e" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>Socket</name></member>
+      <member refid="classSocket_1a5390f8264f7872c9a8e695e01184e929" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>Socket</name></member>
+      <member refid="classSocket_1a65d2d945a320889927555dc639daa0db" prot="protected" virt="non-virtual"><scope>TCPServer</scope><name>socketIsClosed</name></member>
+      <member refid="classTCPServer_1a3a5e3cfe42c676ed71f2bc58dcc92bda" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>TCPServer</name></member>
+      <member refid="classTCPServer_1a8ee98b8c0f7d23437983627bc980840f" prot="public" virt="non-virtual"><scope>TCPServer</scope><name>unmonitor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_08ed8d0c8f8f59a7881f4b2ec9ba3544" kind="dir">
+    <compoundname>codedoc/playerlink/core/utils/logger</compoundname>
+    <innerfile refid="Logger_8cpp">Logger.cpp</innerfile>
+    <innerfile refid="Logger_8h">Logger.h</innerfile>
+    <innerfile refid="LogSeverity_8h">LogSeverity.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="codedoc/playerlink/core/utils/logger/"/>
+  </compounddef>
+</doxygen>

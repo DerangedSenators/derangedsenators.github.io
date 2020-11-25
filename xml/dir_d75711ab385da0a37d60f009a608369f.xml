@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_d75711ab385da0a37d60f009a608369f" kind="dir">
+    <compoundname>codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager</compoundname>
+    <innerfile refid="GameManager_8cs">GameManager.cs</innerfile>
+    <innerfile refid="MoneyManager_8cs">MoneyManager.cs</innerfile>
+    <innerfile refid="TimeManager_8cs">TimeManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager/"/>
+  </compounddef>
+</doxygen>

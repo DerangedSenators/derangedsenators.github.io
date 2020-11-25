@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_3959aacfe84309176858ae3bb3199c7b" kind="dir">
+    <compoundname>codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement</compoundname>
+    <innerfile refid="PlayerMovement_8cs">PlayerMovement.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/"/>
+  </compounddef>
+</doxygen>

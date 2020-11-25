@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement" kind="class" language="C#" prot="public">
+    <compoundname>Me::DerangedSenators::CopsAndRobbers::PlayerMovement</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1a79ac0fe8706d69ba753e0984e1089e7c" prot="public" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator Me.DerangedSenators.CopsAndRobbers.PlayerMovement.animator</definition>
+        <argsstring></argsstring>
+        <name>animator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" line="10" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1ab696bca03546210e9990d57670664730" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Me.DerangedSenators.CopsAndRobbers.PlayerMovement.moveSpeed</definition>
+        <argsstring></argsstring>
+        <name>moveSpeed</name>
+        <initializer>= 5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" line="11" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1a0cbcc75691526e1f8c366da3feb04af1" prot="public" static="no" mutable="no">
+        <type>Rigidbody2D</type>
+        <definition>Rigidbody2D Me.DerangedSenators.CopsAndRobbers.PlayerMovement.rigidBody</definition>
+        <argsstring></argsstring>
+        <name>rigidBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" line="12" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1ac80570a0d4b0be8cc8bb34f9e824bb0d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Me.DerangedSenators.CopsAndRobbers.PlayerMovement.runSpeed</definition>
+        <argsstring></argsstring>
+        <name>runSpeed</name>
+        <initializer>= 40f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" line="14" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1a8a61839d499a700cf6f012b532b86d21" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Me.DerangedSenators.CopsAndRobbers.PlayerMovement.movement</definition>
+        <argsstring></argsstring>
+        <name>movement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" line="13" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1ab902394e7aac211707716cfad9b25927" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.PlayerMovement.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" line="18" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1a1bf2bef2894a1e1605e928b437ed636a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Me.DerangedSenators.CopsAndRobbers.PlayerMovement.FixedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>FixedUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" line="29" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" bodystart="29" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1a62676b2b68e537ef6951bb90e77b1864" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 Me.DerangedSenators.CopsAndRobbers.PlayerMovement.GetPosition</definition>
+        <argsstring>()</argsstring>
+        <name>GetPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" line="35" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" bodystart="35" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="104">
+        <label>Me.DerangedSenators.CopsAndRobbers.PlayerMovement</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="106">
+        <label>Me.DerangedSenators.CopsAndRobbers.PlayerMovement</label>
+        <link refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" line="9" column="1" bodyfile="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts/PlayerMovement/PlayerMovement.cs" bodystart="8" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1a79ac0fe8706d69ba753e0984e1089e7c" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerMovement</scope><name>animator</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1a1bf2bef2894a1e1605e928b437ed636a" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerMovement</scope><name>FixedUpdate</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1a62676b2b68e537ef6951bb90e77b1864" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerMovement</scope><name>GetPosition</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1a8a61839d499a700cf6f012b532b86d21" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerMovement</scope><name>movement</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1ab696bca03546210e9990d57670664730" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerMovement</scope><name>moveSpeed</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1a0cbcc75691526e1f8c366da3feb04af1" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerMovement</scope><name>rigidBody</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1ac80570a0d4b0be8cc8bb34f9e824bb0d" prot="public" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerMovement</scope><name>runSpeed</name></member>
+      <member refid="classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1PlayerMovement_1ab902394e7aac211707716cfad9b25927" prot="private" virt="non-virtual"><scope>Me::DerangedSenators::CopsAndRobbers::PlayerMovement</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

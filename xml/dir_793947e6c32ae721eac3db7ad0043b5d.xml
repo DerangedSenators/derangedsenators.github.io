@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_793947e6c32ae721eac3db7ad0043b5d" kind="dir">
+    <compoundname>codedoc/playerlink/core/net/tcp</compoundname>
+    <innerfile refid="tcpsocket_8cpp">tcpsocket.cpp</innerfile>
+    <innerfile refid="tcpsocket_8h">tcpsocket.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="codedoc/playerlink/core/net/tcp/"/>
+  </compounddef>
+</doxygen>

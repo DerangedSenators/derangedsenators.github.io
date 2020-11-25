@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_db4cb9b9daf3ee30fad76ea26529f924" kind="dir">
+    <compoundname>codedoc/playerlink/client</compoundname>
+    <innerdir refid="dir_28e89953c7bfdc71543471b95e38f301">codedoc/playerlink/client/net</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="codedoc/playerlink/client/"/>
+  </compounddef>
+</doxygen>

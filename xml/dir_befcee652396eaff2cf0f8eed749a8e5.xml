@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_befcee652396eaff2cf0f8eed749a8e5" kind="dir">
+    <compoundname>codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts</compoundname>
+    <innerdir refid="dir_df74eb7e72a0f5fb93474392babcacdb">codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/Enemy</innerdir>
+    <innerdir refid="dir_d75711ab385da0a37d60f009a608369f">codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/LogicManager</innerdir>
+    <innerdir refid="dir_680802eb039a0fc5c035e8dbe964eda3">codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MainMenu</innerdir>
+    <innerdir refid="dir_9c717f6afba5807d875865109445cb2f">codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/MoneyPickUp</innerdir>
+    <innerdir refid="dir_2b8a30a43516c656dbe6e1d403c9ca4a">codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PauseMenu</innerdir>
+    <innerdir refid="dir_14e30a26c0bcf67a483ccfdb4a2fd468">codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/PlayerScripts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="codedoc/copsandrobbers/Cops And Robbers/Assets/Scripts/"/>
+  </compounddef>
+</doxygen>

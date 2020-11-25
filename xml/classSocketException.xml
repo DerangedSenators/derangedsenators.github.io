@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classSocketException" kind="class" language="C++" prot="public">
+    <compoundname>SocketException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+    <includes local="no">SocketException.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSocketException_1a9fd5634eaa6c66a18beb86ebb3ff3489" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SocketException::mUserMessage</definition>
+        <argsstring></argsstring>
+        <name>mUserMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/net/SocketException.h" line="27" column="1" bodyfile="codedoc/playerlink/core/net/SocketException.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSocketException_1af47539ffffa68622ca8107eba744891a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SocketException::SocketException</definition>
+        <argsstring>(const std::string &amp;message)</argsstring>
+        <name>SocketException</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+<para>Creates a <ref refid="classSocketException" kindref="compound">SocketException</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A description of the error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/net/SocketException.h" line="34" column="1" bodyfile="codedoc/playerlink/core/net/SocketException.cpp" bodystart="18" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classSocketException_1a659557c899329aea01977c980c4db9b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SocketException::~SocketException</definition>
+        <argsstring>()</argsstring>
+        <name>~SocketException</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/net/SocketException.h" line="35" column="1" bodyfile="codedoc/playerlink/core/net/SocketException.cpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classSocketException_1a534b0625abe62cad2bae94758aa6eb42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * SocketException::what</definition>
+        <argsstring>() const</argsstring>
+        <name>what</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="codedoc/playerlink/core/net/SocketException.h" line="36" column="1" bodyfile="codedoc/playerlink/core/net/SocketException.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classSocket" kindref="compound">Socket</ref> Exception class used for socket errors. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="128">
+        <label>SocketException</label>
+        <link refid="classSocketException"/>
+        <childnode refid="129" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="130">
+        <label>SocketException</label>
+        <link refid="classSocketException"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="codedoc/playerlink/core/net/SocketException.h" line="25" column="1" bodyfile="codedoc/playerlink/core/net/SocketException.h" bodystart="25" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classSocketException_1a9fd5634eaa6c66a18beb86ebb3ff3489" prot="private" virt="non-virtual"><scope>SocketException</scope><name>mUserMessage</name></member>
+      <member refid="classSocketException_1af47539ffffa68622ca8107eba744891a" prot="public" virt="non-virtual"><scope>SocketException</scope><name>SocketException</name></member>
+      <member refid="classSocketException_1a534b0625abe62cad2bae94758aa6eb42" prot="public" virt="non-virtual"><scope>SocketException</scope><name>what</name></member>
+      <member refid="classSocketException_1a659557c899329aea01977c980c4db9b9" prot="public" virt="non-virtual"><scope>SocketException</scope><name>~SocketException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
