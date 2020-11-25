@@ -3,6 +3,7 @@
 echo "Installing Needed Applications"
 apt-get install doxygen python3 python3-pip python3-setuptools 
 pip3 install mkdocs-material
+echo $1
 echo "Done"
 echo "Cloning Repository"
 git config --global user.email "admin@derangedsenators.me"
@@ -11,6 +12,7 @@ git clone -b gh-pages https://$1@github.com/derangedsenators/website.git > /dev/
 cd website
 echo "Removing old Documentation"
 rm -r Documentation/
+rm -r website/
 echo "Getting Documentations"
 echo "Getting PlayerLink"
 mkdir codedoc
