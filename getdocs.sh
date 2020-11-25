@@ -7,8 +7,6 @@ echo "Done"
 echo "Cloning Repository"
 git config --global user.email "admin@derangedsenators.me"
 git config --global user.name "buildbot"
-git clone -b gh-pages https://"$BUILD_BOT_SECRET"@github.com/derangedsenators/website.git > /dev/null 2>&1
-cd website
 echo "Removing old Documentation"
 rm -r Documentation/
 echo "Getting Documentations"
