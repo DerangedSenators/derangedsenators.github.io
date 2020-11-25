@@ -32,9 +32,10 @@ jobs:
           sudo chmod +x doxygen/doxybook2
           echo ${{ secrets.USERNAME }}
           sudo ./getdocs.sh "$BUILD_BOT_SECRET"
-      - name: deploy docs
-        uses: ./
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.BUILD_BOT_KEY }}
-          remote_url: https://github.com/derangedsenators/website.git
+          GITHUB_TOKEN: ${{ secrets.BUILD_BOT_KEY }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: public # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
