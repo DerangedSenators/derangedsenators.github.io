@@ -22,7 +22,7 @@ echo "Done... Building Doxygen Documentation"
 doxygen ../Doxyfile
 echo "Done... Converting to Markdown"
 mkdir ../docs/
-./../doxygen/doxybook2 --input xml/ --output ../docs/ --config ../doxygen/doxybookcfg.json
+sudo ./../doxygen/doxybook2 --input xml/ --output ../docs/ --config ../doxygen/doxybookcfg.json
 echo "Done... Building Site with MKDOWN-material"
 cd ..
 rm -r docs/Files
