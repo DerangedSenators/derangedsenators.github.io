@@ -23,5 +23,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.BUILD_BOT_KEY }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: . 
+          FOLDER: ../ 
           CLEAN: true # Automatically remove deleted files from the deploy branch
