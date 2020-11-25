@@ -11,10 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Documentation
+        env:
+          BUILD_BOT_SECRET: ${{ secrets.BUILD_BOT_KEY }}
         run: |
           sudo chmod +x getdocs.sh
           sudo chmod +x doxygen/doxybook2
-          sudo ./getdocs.sh
+          sudo ./getdocs.sh BUILD_BOT_SECRET
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
