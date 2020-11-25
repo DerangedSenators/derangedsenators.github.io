@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "Installing Needed Applications"
-#apt-get install doxygen python3 python3-pip
-#pip3 install mkdocs-material
+apt-get install doxygen python3 python3-pip
+pip3 install mkdocs-material
 echo "Done"
 echo "Getting Documentations"
 echo "Getting PlayerLink"
