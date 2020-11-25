@@ -18,6 +18,7 @@ cd codedoc
 git submodule add https://$BUILD_BOT_SECRET@github.com/derangedsenators/playerlink.git > /dev/null 2>&1
 echo "Getting Cops and Robbers"
 git submodule add https://$BUILD_BOT_SECRET@github.com/derangedsenators/copsandrobbers.git > /dev/null 2>&1
+tree
 echo "Done... Building Doxygen Documentation"
 doxygen ../Doxyfile
 echo "Done... Converting to Markdown"
