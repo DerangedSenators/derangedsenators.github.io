@@ -4,3 +4,19 @@ on:
   pull_request:
   schedule:
     - cron: '*/240 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Documentation
+        run: |
+          chmod +x getdocs.sh
+          chmod +x doxygen/doxybook2
+          sudo ./getdocs.sh
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
