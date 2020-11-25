@@ -21,7 +21,7 @@ cd ..
 doxygen Doxyfile
 echo "Done... Converting to Markdown"
 mkdir docs/
-./doxygen/doxybook2 --input xml/ --output ../docs/ --config ../doxygen/doxybookcfg.json
+./doxygen/doxybook2 --input xml/ --output ../docs/ --config doxygen/doxybookcfg.json
 echo "Done... Building Site with MKDOWN-material"
 rm -r docs/Files
 rm -r docs/Pages
@@ -30,6 +30,9 @@ mkdocs build --site-dir Documentation
 echo "Cleaning up"
 rm -r docs
 rm -r codedoc
+rm -r html
+rm -r xml
+rm -r latex
 mkdir public
 mv * public
 echo "All Done!"
