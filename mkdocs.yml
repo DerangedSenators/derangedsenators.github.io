@@ -23,7 +23,7 @@ theme:
           primary: blue
           accent: light blue
 extra:
-    social:
+    social: # Footer SM Links
         - icon: fontawesome/brands/github
           link: https://github.com/DerangedSenators
           name: DerangedSenators on Github
