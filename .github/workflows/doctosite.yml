@@ -18,6 +18,7 @@ jobs:
           ls
           sudo chmod +x getdocs.sh 
           sudo chmod +x doxygen/doxybook2
+          echo ${{ secrets.USERNAME }}
           sudo ./getdocs.sh ${{ secrets.BUILD_BOT_KEY }}
       - name: deploy docs
         uses: ./
