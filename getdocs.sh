@@ -25,8 +25,8 @@ mkdir docs/
 echo "Done... Building Site with MKDOWN-material"
 rm -r docs/Files
 rm -r docs/Pages
-mkdocs build --site-dir Documentation
 cp -R doxygen/overlays/. docs/
+mkdocs build --site-dir Documentation
 echo "Cleaning up"
 rm -r docs
 rm -r codedoc
