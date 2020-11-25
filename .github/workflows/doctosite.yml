@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: Build Documentation
         run: |
-          chmod +x getdocs.sh
-          chmod +x doxygen/doxybook2
+          sudo chmod +x getdocs.sh
+          sudo chmod +x doxygen/doxybook2
           sudo ./getdocs.sh
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
