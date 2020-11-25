@@ -1,0 +1,30 @@
+site_name: "Deranged Senators Documentation"
+nav:
+    - Home: index.md
+    - Overview:
+        - Classes/index.md
+        - Examples/index.md
+        - Modules/index.md
+        - Namespaces/index.md
+    - Cops And Robbers:
+        - Namespaces/namespaceMe_1_1DerangedSenators_1_1CopsAndRobbers.md
+    - PlayerLink:
+        - Classes/classSocket.md # Temporary... Will be used until a namespace is added to PlayerLink.
+theme:
+    name: material
+    favicon: images/favicon.ico
+    features:
+        - navigation.tabs
+        - toc.integrate
+        - navigation.instant
+    
+    palette:
+        - scheme: default
+          primary: blue
+          accent: light blue
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/DerangedSenators
+          name: DerangedSenators on Github
+copyright: Copyright &copy; 2020 Deranged Senators
