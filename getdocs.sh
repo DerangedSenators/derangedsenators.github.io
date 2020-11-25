@@ -7,7 +7,7 @@ echo "Done"
 echo "Cloning Repository"
 git config --global user.email "admin@derangedsenators.me"
 git config --global user.name "buildbot"
-git clone -b gh-pages https://$BUILD_BOT_SECRET@github.com/derangedsenators/website.git > /dev/null 2>&1
+git clone -b gh-pages https://"$BUILD_BOT_SECRET"@github.com/derangedsenators/website.git > /dev/null 2>&1
 cd website
 echo "Removing old Documentation"
 rm -r Documentation/
@@ -15,9 +15,9 @@ echo "Getting Documentations"
 echo "Getting PlayerLink"
 mkdir codedoc
 cd codedoc
-git submodule add https://$BUILD_BOT_SECRET@github.com/derangedsenators/playerlink.git > /dev/null 2>&1
+git submodule add https://"$BUILD_BOT_SECRET"@github.com/derangedsenators/playerlink.git > /dev/null 2>&1
 echo "Getting Cops and Robbers"
-git submodule add https://$BUILD_BOT_SECRET@github.com/derangedsenators/copsandrobbers.git > /dev/null 2>&1
+git submodule add https://"$BUILD_BOT_SECRET"@github.com/derangedsenators/copsandrobbers.git > /dev/null 2>&1
 echo "Done... Building Doxygen Documentation"
 doxygen ../Doxyfile
 echo "Done... Converting to Markdown"
