@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Documentation
+        shell: bash
         env:
           BUILD_BOT_SECRET: ${{ secrets.BUILD_BOT_KEY }}
         run: |
