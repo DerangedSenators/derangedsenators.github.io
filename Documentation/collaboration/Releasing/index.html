@@ -1213,6 +1213,24 @@
 <p>A tag will be formatted as follows:
 <code>{TAG}{CUMULATIVE_VALUE}</code>
 The Cumulative value is a number which increments each time with a particular tag release. The cumulative value resets to 1 whenever the major value increases. RC values also reset to 1 when the corresponding <code>R</code> tag is published.</p>
+<h1 id="changelogs">Changelogs</h1>
+<p>Changelogs are files which contain a list of changes on the current relase.In our case, Changelogs must be kept in a <code>CHANGELOG.md</code> in the root of the repository. The GitHub Release action will automatically take this file and use it for the body of the release. It will also automatically wipe the file once the release has been published</p>
+<h2 id="principles">Principles</h2>
+<ul>
+<li>They must be <em>human</em> readable</li>
+<li>They must be present with every release</li>
+<li>They must be categorised to make it easier to understand</li>
+</ul>
+<h2 id="types-of-changes">Types of changes</h2>
+<ul>
+<li><code>Added</code> : New Features</li>
+<li><code>Changed</code> : For changes in existing functionality</li>
+<li><code>Deprecated</code>: To mark soon-to-be removed features</li>
+<li><code>Removed</code>: Removed features</li>
+<li><code>Fixed</code>: Bug fixes</li>
+<li><code>Security</code>: Security Vulnerability Fixes</li>
+<li><code>Issues</code>: Known problems regarding the release</li>
+</ul>
                 
               
               
