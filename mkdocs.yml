@@ -3,14 +3,17 @@ site_name: "Deranged Senators Documentation"
 nav:
     - Home: index.md
     - Overview:
-        - Classes/index.md
-        - Examples/index.md
-        - Modules/index.md
-        - Namespaces/index.md
+      - Collaborating:
+        - collaboration/Get Started.md
+        - collaboration/Effective Commits and Code Reviews.md
+        - collaboration/Reusable Components.md
+        - collaboration/Project Design.md
+        - Source Code Design:
+            - collaboration/Source Design Document C#.md
     - Cops And Robbers:
-        - Namespaces/namespaceMe_1_1DerangedSenators_1_1CopsAndRobbers.md
+        - copsandrobbers/Namespaces/namespaceMe_1_1DerangedSenators_1_1CopsAndRobbers.md
     - PlayerLink:
-        - Classes/classSocket.md # Temporary... Will be used until a namespace is added to PlayerLink.
+        - playerlink/Classes/index.md # Temporary... Will be used until a namespace is added to PlayerLink.
 theme:
     name: material
     favicon: images/favicon.ico
@@ -28,4 +31,7 @@ extra:
         - icon: fontawesome/brands/github
           link: https://github.com/DerangedSenators
           name: DerangedSenators on Github
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
 copyright: Copyright &copy; 2020 Deranged Senators
