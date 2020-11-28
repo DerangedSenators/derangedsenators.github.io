@@ -12,27 +12,36 @@ rm -r Documentation/
 echo "Getting Documentations"
 echo "Getting PlayerLink"
 mkdir codedoc
+mkdir docs
+mkdir docs/playerlink/
+mkdir docs/copsandrobbers/
 cd codedoc
 git clone https://github.com/derangedsenators/playerlink.git
 echo "Getting Cops and Robbers"
 git clone https://github.com/derangedsenators/copsandrobbers.git
 echo "Done... Building Doxygen Documentation"
+cd playerlink
+doxygen ../../Doxyfile
+./../../doxygen/doxybook2 --input xml/ --output ../../docs/playerlink --config ../../doxygen/doxybookcfg.json
 cd ..
-doxygen Doxyfile
-echo "Done... Converting to Markdown"
-mkdir docs/
-./doxygen/doxybook2 --input xml/ --output docs/ --config doxygen/doxybookcfg.json
+cd copsandrobbers
+doxygen ../../Doxyfile
+./../../doxygen/doxybook2 --input xml/ --output ../../docs/copsandrobbers --config ../../doxygen/doxybookcfg.json
+cd ../..
+cd docs
+git clone https://github.com/derangedsenators/collaboration.git
+rm -r collaboration/.git
+cd ..
 echo "Done... Building Site with MKDOWN-material"
-rm -r docs/Files
-rm -r docs/Pages
+rm -r docs/playerlink/Files
+rm -r docs/playerlink/Pages
+rm -r docs/copsandrobbers/Files
+rm -r docs/copsandrobbers/Pages
 cp -R doxygen/overlays/. docs/
 mkdocs build --site-dir Documentation
 echo "Cleaning up"
 rm -r docs
 rm -r codedoc
-rm -r html
-rm -r xml
-rm -r latex
 mkdir public
 mv * public
 echo "All Done!"
