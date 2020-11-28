@@ -22,11 +22,11 @@ git clone https://github.com/derangedsenators/copsandrobbers.git
 echo "Done... Building Doxygen Documentation"
 cd playerlink
 doxygen ../../Doxyfile
-./../../doxygen/doxybook2 --input xml/ --output ../../docs/playerlink --config ../../doxygen/doxybookcfg.json
+./../../doxygen/doxybook2 --input xml/ --output ../../docs/playerlink --config ../../doxygen/doxybookcfg_playerlink.json
 cd ..
 cd copsandrobbers
 doxygen ../../Doxyfile
-./../../doxygen/doxybook2 --input xml/ --output ../../docs/copsandrobbers --config ../../doxygen/doxybookcfg.json
+./../../doxygen/doxybook2 --input xml/ --output ../../docs/copsandrobbers --config ../../doxygen/doxybookcfg_copsandrobbers.json
 cd ../..
 cd docs
 git clone https://github.com/derangedsenators/collaboration.git
