@@ -2,7 +2,7 @@
 $SECRETKEY = $1
 echo "Installing Needed Applications"
 apt-get install doxygen python3 python3-pip python3-setuptools tree
-pip3 install mkdocs-material
+pip3 install mkdocs-material mkdocs-awesome-pages-plugin
 echo "Done"
 echo "Cloning Repository"
 git config --global user.email "admin@derangedsenators.me"
