@@ -29,16 +29,18 @@ doxygen ../../Doxyfile
 ./../../doxygen/doxybook2 --input xml/ --output ../../docs/copsandrobbers --config ../../doxygen/doxybookcfg_copsandrobbers.json
 cd ../..
 cd docs
+mkdir Overview
+cd Overview
 git clone https://github.com/derangedsenators/collaboration.git
 rm -r collaboration/.git
-cd ..
+cd ../..
 echo "Done... Building Site with MKDOWN-material"
 rm -r docs/playerlink/Files
 rm -r docs/playerlink/Pages
 rm -r docs/copsandrobbers/Files
 rm -r docs/copsandrobbers/Pages
 cp -R doxygen/overlays/. docs/
-mv docs/copsandrobbers docs/Cops And Robbers
+mv docs/copsandrobbers docs/"Cops And Robbers"
 mv docs/playerlink docs/PlayerLink
 mkdocs build --site-dir Documentation
 echo "Cleaning up"
