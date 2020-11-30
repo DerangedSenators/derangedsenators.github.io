@@ -1344,7 +1344,7 @@
                 <h1 id="tcpserver">TCPServer</h1>
 <p><a href="">TCPServer</a> class based on <a href="">Socket</a> Class. Uses TCP communication and also functions as a server to listen and monitor socket connections. </p>
 <p><code>#include &lt;TCPServer.h&gt;</code></p>
-<p>Inherits from <a href="/Documentation/PlayerLink/Classes/classSocket/">Socket</a></p>
+<p>Inherits from <a href="/Documentation/Classes/classSocket/">Socket</a></p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
@@ -1356,32 +1356,32 @@
 <tbody>
 <tr>
 <td></td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classTCPServer/#function-tcpserver">TCPServer</a></strong>() <br>Constructs a <a href="/Documentation/PlayerLink/Classes/classTCPServer/">TCPServer</a> object.</td>
+<td><strong><a href="/Documentation/Classes/classTCPServer/#function-tcpserver">TCPServer</a></strong>() <br>Constructs a <a href="/Documentation/Classes/classTCPServer/">TCPServer</a> object.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classTCPServer/#function-listen">listen</a></strong>(std::string port, int backlog =5) <br>Listens to incoming bytes on a specified port.</td>
+<td><strong><a href="/Documentation/Classes/classTCPServer/#function-listen">listen</a></strong>(std::string port, int backlog =5) <br>Listens to incoming bytes on a specified port.</td>
 </tr>
 <tr>
-<td><a href="/Documentation/PlayerLink/Classes/classTCPSocket/">TCPSocket</a></td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classTCPServer/#function-accept">accept</a></strong>() <br>Method to accept incomming connection request.</td>
-</tr>
-<tr>
-<td>void</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classTCPServer/#function-monitorsocket">monitorSocket</a></strong>(<a href="/Documentation/PlayerLink/Classes/classTCPSocket/">TCPSocket</a> &amp; fd) <br>Monitors the provided socket.</td>
+<td><a href="/Documentation/Classes/classTCPSocket/">TCPSocket</a></td>
+<td><strong><a href="/Documentation/Classes/classTCPServer/#function-accept">accept</a></strong>() <br>Method to accept incomming connection request.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classTCPServer/#function-unmonitor">unmonitor</a></strong>(<a href="/Documentation/PlayerLink/Classes/classTCPSocket/">TCPSocket</a> &amp; fd) <br>Stops monitoring the provided socket.</td>
+<td><strong><a href="/Documentation/Classes/classTCPServer/#function-monitorsocket">monitorSocket</a></strong>(<a href="/Documentation/Classes/classTCPSocket/">TCPSocket</a> &amp; fd) <br>Monitors the provided socket.</td>
 </tr>
 <tr>
-<td>std::vector&lt; <a href="/Documentation/PlayerLink/Classes/classTCPSocket/">TCPSocket</a> &gt;</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classTCPServer/#function-getsocketevents">getSocketEvents</a></strong>(int timeout =10000) <br>Gets the socket Events.</td>
+<td>void</td>
+<td><strong><a href="/Documentation/Classes/classTCPServer/#function-unmonitor">unmonitor</a></strong>(<a href="/Documentation/Classes/classTCPSocket/">TCPSocket</a> &amp; fd) <br>Stops monitoring the provided socket.</td>
+</tr>
+<tr>
+<td>std::vector&lt; <a href="/Documentation/Classes/classTCPSocket/">TCPSocket</a> &gt;</td>
+<td><strong><a href="/Documentation/Classes/classTCPServer/#function-getsocketevents">getSocketEvents</a></strong>(int timeout =10000) <br>Gets the socket Events.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="additional-inherited-members">Additional inherited members</h2>
-<p><strong>Public Functions inherited from <a href="/Documentation/PlayerLink/Classes/classSocket/">Socket</a></strong></p>
+<p><strong>Public Functions inherited from <a href="/Documentation/Classes/classSocket/">Socket</a></strong></p>
 <table>
 <thead>
 <tr>
@@ -1392,43 +1392,43 @@
 <tbody>
 <tr>
 <td></td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#function-socket">Socket</a></strong>(int family, int type, int flag) <br>Constructs a <a href="/Documentation/PlayerLink/Classes/classSocket/">Socket</a> object.</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#function-socket">Socket</a></strong>(int family, int type, int flag) <br>Constructs a <a href="/Documentation/Classes/classSocket/">Socket</a> object.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#function-socket">Socket</a></strong>(int fd)</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#function-socket">Socket</a></strong>(int fd)</td>
 </tr>
 <tr>
 <td>std::string</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#function-getaddress">getAddress</a></strong>() const</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#function-getaddress">getAddress</a></strong>() const</td>
 </tr>
 <tr>
 <td>uint32_t</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#function-getport">getPort</a></strong>() const</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#function-getport">getPort</a></strong>() const</td>
 </tr>
 <tr>
 <td>int</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#function-getsocketdescriptor">getSocketDescriptor</a></strong>() const</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#function-getsocketdescriptor">getSocketDescriptor</a></strong>() const</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#function-close">close</a></strong>() <br>Closes the connection.</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#function-close">close</a></strong>() <br>Closes the connection.</td>
 </tr>
 <tr>
 <td>bool</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#function-isclosed">isClosed</a></strong>()</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#function-isclosed">isClosed</a></strong>()</td>
 </tr>
 <tr>
 <td>bool</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#function-setblocking">setBlocking</a></strong>(bool swtch) <br>Allows you to set the blocking mode for this file descriptor.</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#function-setblocking">setBlocking</a></strong>(bool swtch) <br>Allows you to set the blocking mode for this file descriptor.</td>
 </tr>
 <tr>
 <td>int</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#function-getlasterror">getLastError</a></strong>()</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#function-getlasterror">getLastError</a></strong>()</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Protected Attributes inherited from <a href="/Documentation/PlayerLink/Classes/classSocket/">Socket</a></strong></p>
+<p><strong>Protected Attributes inherited from <a href="/Documentation/Classes/classSocket/">Socket</a></strong></p>
 <table>
 <thead>
 <tr>
@@ -1439,15 +1439,15 @@
 <tbody>
 <tr>
 <td>int</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#variable-msocketfd">mSocketFD</a></strong> <br>File Descriptor for this socket instance.</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#variable-msocketfd">mSocketFD</a></strong> <br>File Descriptor for this socket instance.</td>
 </tr>
 <tr>
 <td>bool</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#variable-socketisclosed">socketIsClosed</a></strong> <br>Flag if socket is open or closed.</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#variable-socketisclosed">socketIsClosed</a></strong> <br>Flag if socket is open or closed.</td>
 </tr>
 <tr>
 <td>bool</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classSocket/#variable-isblocked">isBlocked</a></strong> <br>Boolean to determine if blocking is enabled on this socket instance.</td>
+<td><strong><a href="/Documentation/Classes/classSocket/#variable-isblocked">isBlocked</a></strong> <br>Boolean to determine if blocking is enabled on this socket instance.</td>
 </tr>
 </tbody>
 </table>
@@ -1455,7 +1455,7 @@
 <h3 id="function-tcpserver">function TCPServer</h3>
 <div class="highlight"><pre><span></span><code><span class="n">TCPServer</span><span class="p">()</span>
 </code></pre></div>
-<p>Constructs a <a href="/Documentation/PlayerLink/Classes/classTCPServer/">TCPServer</a> object. </p>
+<p>Constructs a <a href="/Documentation/Classes/classTCPServer/">TCPServer</a> object. </p>
 <p><strong>Return</strong>: </p>
 <h3 id="function-listen">function listen</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">listen</span><span class="p">(</span>
@@ -1473,7 +1473,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">TCPSocket</span> <span class="n">accept</span><span class="p">()</span>
 </code></pre></div>
 <p>Method to accept incomming connection request. </p>
-<p><strong>Return</strong>: <a href="/Documentation/PlayerLink/Classes/classTCPSocket/">TCPSocket</a> Object used to hold information and methods to send/recieve information from them </p>
+<p><strong>Return</strong>: <a href="/Documentation/Classes/classTCPSocket/">TCPSocket</a> Object used to hold information and methods to send/recieve information from them </p>
 <h3 id="function-monitorsocket">function monitorSocket</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">monitorSocket</span><span class="p">(</span>
     <span class="n">TCPSocket</span> <span class="o">&amp;</span> <span class="n">fd</span>
@@ -1506,7 +1506,7 @@
 </ul>
 <p><strong>Return</strong>: SocketEvents in a vector </p>
 <hr />
-<p>Updated on 30 November 2020 at 11:15:10 UTC</p>
+<p>Updated on 30 November 2020 at 11:15:18 UTC</p>
                 
                   
                 
