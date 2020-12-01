@@ -43,8 +43,8 @@ cp -R doxygen/overlays/. docs/
 mv docs/copsandrobbers docs/"Cops And Robbers"
 mv docs/playerlink docs/PlayerLink
 mkdocs build --site-dir Documentation
-mv Documentation/"Cops And Robbers"/ Documentation/"Cops And Robbers"/copsandrobbers/* 
-mv Documentation/PlayerLink Documentation/PlayerLink/playerlink/* 
+mv Documentation/"Cops And Robbers"/copsandrobbers/* Documentation/"Cops And Robbers"/
+mv Documentation/PlayerLink/playerlink/* Documentation/PlayerLink
 echo "Cleaning up"
 rm -r docs
 rm -r codedoc
