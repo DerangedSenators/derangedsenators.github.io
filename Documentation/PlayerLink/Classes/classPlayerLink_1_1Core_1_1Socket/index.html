@@ -14,7 +14,7 @@
     
     
       
-        <title>PlayerLink::Server::GameRoom - Deranged Senators Documentation</title>
+        <title>PlayerLink::Core::Socket - Deranged Senators Documentation</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#playerlinkservergameroom" class="md-skip">
+        <a href="#playerlinkcoresocket" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              PlayerLink::Server::GameRoom
+              PlayerLink::Core::Socket
             
           </span>
         </div>
@@ -894,11 +894,173 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../classPlayerLink_1_1Core_1_1Socket/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        PlayerLink::Core::Socket
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       PlayerLink::Core::Socket
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#public-functions" class="md-nav__link">
+    Public Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protected-attributes" class="md-nav__link">
+    Protected Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-description" class="md-nav__link">
+    Detailed Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-functions-documentation" class="md-nav__link">
+    Public Functions Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Functions Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-socket" class="md-nav__link">
+    function Socket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-socket_1" class="md-nav__link">
+    function Socket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getaddress" class="md-nav__link">
+    function getAddress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getport" class="md-nav__link">
+    function getPort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getsocketdescriptor" class="md-nav__link">
+    function getSocketDescriptor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-close" class="md-nav__link">
+    function close
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-isclosed" class="md-nav__link">
+    function isClosed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-setblocking" class="md-nav__link">
+    function setBlocking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getlasterror" class="md-nav__link">
+    function getLastError
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protected-attributes-documentation" class="md-nav__link">
+    Protected Attributes Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Protected Attributes Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable-msocketfd" class="md-nav__link">
+    variable mSocketFD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-socketisclosed" class="md-nav__link">
+    variable socketIsClosed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-isblocked" class="md-nav__link">
+    variable isBlocked
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -942,76 +1104,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        PlayerLink::Server::GameRoom
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../classPlayerLink_1_1Server_1_1GameRoom/" class="md-nav__link">
       PlayerLink::Server::GameRoom
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#public-functions" class="md-nav__link">
-    Public Functions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#detailed-description" class="md-nav__link">
-    Detailed Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#public-functions-documentation" class="md-nav__link">
-    Public Functions Documentation
-  </a>
-  
-    <nav class="md-nav" aria-label="Public Functions Documentation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#function-broadcast" class="md-nav__link">
-    function broadcast
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1292,6 +1389,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#protected-attributes" class="md-nav__link">
+    Protected Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#detailed-description" class="md-nav__link">
     Detailed Description
   </a>
@@ -1307,8 +1411,98 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#function-broadcast" class="md-nav__link">
-    function broadcast
+  <a href="#function-socket" class="md-nav__link">
+    function Socket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-socket_1" class="md-nav__link">
+    function Socket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getaddress" class="md-nav__link">
+    function getAddress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getport" class="md-nav__link">
+    function getPort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getsocketdescriptor" class="md-nav__link">
+    function getSocketDescriptor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-close" class="md-nav__link">
+    function close
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-isclosed" class="md-nav__link">
+    function isClosed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-setblocking" class="md-nav__link">
+    function setBlocking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getlasterror" class="md-nav__link">
+    function getLastError
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protected-attributes-documentation" class="md-nav__link">
+    Protected Attributes Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Protected Attributes Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable-msocketfd" class="md-nav__link">
+    variable mSocketFD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-socketisclosed" class="md-nav__link">
+    variable socketIsClosed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-isblocked" class="md-nav__link">
+    variable isBlocked
   </a>
   
 </li>
@@ -1331,9 +1525,10 @@
               
                 
                 
-                <h1 id="playerlinkservergameroom">PlayerLink::Server::GameRoom</h1>
-<p><a href="#detailed-description">More...</a></p>
-<p><code>#include &lt;GameRoom.h&gt;</code></p>
+                <h1 id="playerlinkcoresocket">PlayerLink::Core::Socket</h1>
+<p>Lowest socket implementation. This class will be used by top level socket implementations.  <a href="#detailed-description">More...</a></p>
+<p><code>#include &lt;Socket.h&gt;</code></p>
+<p>Inherited by <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1TCPSocket/">TCPSocket</a>, <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Server_1_1TCPServer/">TCPServer</a></p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
@@ -1344,26 +1539,141 @@
 </thead>
 <tbody>
 <tr>
-<td>void</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Server_1_1GameRoom/#function-broadcast">broadcast</a></strong>(char * message)</td>
+<td></td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-socket">Socket</a></strong>(int family, int type, int flag) <br>Constructs a <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/">Socket</a> object.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-socket">Socket</a></strong>(int fd)</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-getaddress">getAddress</a></strong>() const</td>
+</tr>
+<tr>
+<td>uint32_t</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-getport">getPort</a></strong>() const</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-getsocketdescriptor">getSocketDescriptor</a></strong>() const</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-close">close</a></strong>() <br>Closes the connection.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-isclosed">isClosed</a></strong>()</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-setblocking">setBlocking</a></strong>(bool swtch) <br>Allows you to set the blocking mode for this file descriptor.</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-getlasterror">getLastError</a></strong>()</td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes">Protected Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#variable-msocketfd">mSocketFD</a></strong> <br>File Descriptor for this socket instance.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#variable-socketisclosed">socketIsClosed</a></strong> <br>Flag if socket is open or closed.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#variable-isblocked">isBlocked</a></strong> <br>Boolean to determine if blocking is enabled on this socket instance.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="detailed-description">Detailed Description</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PlayerLink</span><span class="o">::</span><span class="n">Server</span><span class="o">::</span><span class="n">GameRoom</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PlayerLink</span><span class="o">::</span><span class="n">Core</span><span class="o">::</span><span class="n">Socket</span><span class="p">;</span>
 </code></pre></div>
-<p>A <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Server_1_1GameRoom/">GameRoom</a> is a class which holds all players in a game </p>
+<p>Lowest socket implementation. This class will be used by top level socket implementations. </p>
+<p><strong>Author</strong>: Hanzalah Ravat </p>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
-<h3 id="function-broadcast">function broadcast</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">broadcast</span><span class="p">(</span>
-    <span class="kt">char</span> <span class="o">*</span> <span class="n">message</span>
+<h3 id="function-socket">function Socket</h3>
+<div class="highlight"><pre><span></span><code><span class="n">Socket</span><span class="p">(</span>
+    <span class="kt">int</span> <span class="n">family</span><span class="p">,</span>
+    <span class="kt">int</span> <span class="n">type</span><span class="p">,</span>
+    <span class="kt">int</span> <span class="n">flag</span>
 <span class="p">)</span>
 </code></pre></div>
+<p>Constructs a <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/">Socket</a> object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
-<li><strong>message</strong> </li>
+<li><strong>family</strong> Address Family. </li>
+<li><strong>type</strong> The type specification for the new socket </li>
+<li><strong>flag</strong> The protocol used for data transmission </li>
 </ul>
-<p>Broadcasts a message to all participants of a room </p>
+<p><strong>Return</strong>: If no error occurs, socket returns a descriptor referencing the new socket. Otherwise, a value of -1 </p>
+<h3 id="function-socket_1">function Socket</h3>
+<div class="highlight"><pre><span></span><code><span class="k">explicit</span> <span class="n">Socket</span><span class="p">(</span>
+    <span class="kt">int</span> <span class="n">fd</span>
+<span class="p">)</span>
+</code></pre></div>
+<h3 id="function-getaddress">function getAddress</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">getAddress</span><span class="p">()</span> <span class="k">const</span>
+</code></pre></div>
+<p><strong>Return</strong>: Gets the address of the remote device </p>
+<h3 id="function-getport">function getPort</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">uint32_t</span> <span class="n">getPort</span><span class="p">()</span> <span class="k">const</span>
+</code></pre></div>
+<p><strong>Return</strong>: The port number used for this connection </p>
+<h3 id="function-getsocketdescriptor">function getSocketDescriptor</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">getSocketDescriptor</span><span class="p">()</span> <span class="k">const</span>
+</code></pre></div>
+<p><strong>Return</strong>: The socket descriptor used for this socket </p>
+<h3 id="function-close">function close</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+<p>Closes the connection. </p>
+<p><strong>Return</strong>: True if socket closes or false if there was an error while closing the socket </p>
+<h3 id="function-isclosed">function isClosed</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isClosed</span><span class="p">()</span>
+</code></pre></div>
+<p><strong>Return</strong>: true if the socket connection has been closed or false if it is still open </p>
+<h3 id="function-setblocking">function setBlocking</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">setBlocking</span><span class="p">(</span>
+    <span class="kt">bool</span> <span class="n">swtch</span>
+<span class="p">)</span>
+</code></pre></div>
+<p>Allows you to set the blocking mode for this file descriptor. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>swtch</strong> Sets the blocking value </li>
+</ul>
+<p><strong>Return</strong>: The result of the blocking, True if blocking was successful or false if there was an issue with changing the blocking status </p>
+<h3 id="function-getlasterror">function getLastError</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">getLastError</span><span class="p">()</span>
+</code></pre></div>
+<p><strong>Return</strong>: The last error number </p>
+<h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
+<h3 id="variable-msocketfd">variable mSocketFD</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">mSocketFD</span><span class="p">;</span>
+</code></pre></div>
+<p>File Descriptor for this socket instance. </p>
+<h3 id="variable-socketisclosed">variable socketIsClosed</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">socketIsClosed</span><span class="p">;</span>
+</code></pre></div>
+<p>Flag if socket is open or closed. </p>
+<h3 id="variable-isblocked">variable isBlocked</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isBlocked</span><span class="p">;</span>
+</code></pre></div>
+<p>Boolean to determine if blocking is enabled on this socket instance. </p>
 <hr />
 <p>Updated on  2 December 2020 at 01:34:45 UTC</p>
                 
@@ -1386,7 +1696,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../classPlayerLink_1_1Server_1_1Client/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../classPlayerLink_1_1Core_1_1SHA256/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1395,19 +1705,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                PlayerLink::Server::Client
+                PlayerLink::Core::SHA256
               </div>
             </div>
           </a>
         
         
-          <a href="../classPlayerLink_1_1Server_1_1GameServer/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../classPlayerLink_1_1Core_1_1SocketException/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                PlayerLink::Server::GameServer
+                PlayerLink::Core::SocketException
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

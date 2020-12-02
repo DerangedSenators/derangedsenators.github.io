@@ -896,6 +896,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../classPlayerLink_1_1Core_1_1Socket/" class="md-nav__link">
+      PlayerLink::Core::Socket
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../classPlayerLink_1_1Core_1_1SocketException/" class="md-nav__link">
       PlayerLink::Core::SocketException
     </a>
@@ -1001,6 +1013,13 @@
         <li class="md-nav__item">
   <a href="#public-functions" class="md-nav__link">
     Public Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-inherited-members" class="md-nav__link">
+    Additional inherited members
   </a>
   
 </li>
@@ -1308,6 +1327,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#additional-inherited-members" class="md-nav__link">
+    Additional inherited members
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#public-functions-documentation" class="md-nav__link">
     Public Functions Documentation
   </a>
@@ -1376,7 +1402,7 @@
                 
                 
                 <h1 id="playerlinkservertcpserver">PlayerLink::Server::TCPServer</h1>
-<p>Inherits from Socket</p>
+<p>Inherits from <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/">Socket</a></p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
@@ -1409,6 +1435,77 @@
 <tr>
 <td>std::vector&lt; <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1TCPSocket/">TCPSocket</a> &gt;</td>
 <td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Server_1_1TCPServer/#function-getsocketevents">getSocketEvents</a></strong>(int timeout =10000) <br>Gets the socket Events.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-inherited-members">Additional inherited members</h2>
+<p><strong>Public Functions inherited from <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/">Socket</a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-socket">Socket</a></strong>(int family, int type, int flag) <br>Constructs a <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/">Socket</a> object.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-socket">Socket</a></strong>(int fd)</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-getaddress">getAddress</a></strong>() const</td>
+</tr>
+<tr>
+<td>uint32_t</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-getport">getPort</a></strong>() const</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-getsocketdescriptor">getSocketDescriptor</a></strong>() const</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-close">close</a></strong>() <br>Closes the connection.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-isclosed">isClosed</a></strong>()</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-setblocking">setBlocking</a></strong>(bool swtch) <br>Allows you to set the blocking mode for this file descriptor.</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-getlasterror">getLastError</a></strong>()</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Protected Attributes inherited from <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/">Socket</a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#variable-msocketfd">mSocketFD</a></strong> <br>File Descriptor for this socket instance.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#variable-socketisclosed">socketIsClosed</a></strong> <br>Flag if socket is open or closed.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#variable-isblocked">isBlocked</a></strong> <br>Boolean to determine if blocking is enabled on this socket instance.</td>
 </tr>
 </tbody>
 </table>
@@ -1467,7 +1564,7 @@
 </ul>
 <p><strong>Return</strong>: SocketEvents in a vector </p>
 <hr />
-<p>Updated on  2 December 2020 at 00:49:26 UTC</p>
+<p>Updated on  2 December 2020 at 01:34:45 UTC</p>
                 
                   
                 
