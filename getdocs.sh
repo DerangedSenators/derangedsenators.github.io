@@ -38,6 +38,8 @@ rm -r docs/PlayerLink/Files
 rm -r docs/PlayerLink/Pages
 rm -r docs/"Cops And Robbers"/Files
 rm -r docs/"Cops And Robbers"/Pages
+mv -v codedoc/playerlink/docs/* docs/PlayerLink/
+mv -v codedoc/copsandrobbers/docs/* docs/"Cops And Robbers"/
 cp -R doxygen/overlays/. docs/
 mkdocs build --site-dir Documentation
 echo "Cleaning up"
