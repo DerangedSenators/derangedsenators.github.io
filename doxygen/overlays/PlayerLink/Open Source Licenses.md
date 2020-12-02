@@ -1,0 +1,3 @@
+# Open Source Licenses
+
+[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) (Apache 2.0) is the preferred license for PlayerLink, and the associated extensions and plugins related to PlayerLink, released by DerangedSenators is also licensed with Apache 2.0. While the project strives to adhere to the preferred license, there are exceptions, which are handled on a case-by-case basis.
