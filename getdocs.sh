@@ -34,10 +34,10 @@ git clone https://github.com/derangedsenators/collaboration.git
 rm -r collaboration/.git
 cd ../..
 echo "Done... Building Site with MKDOWN-material"
-rm -r docs/playerlink/Files
-rm -r docs/playerlink/Pages
-rm -r docs/copsandrobbers/Files
-rm -r docs/copsandrobbers/Pages
+rm -r docs/PlayerLink/Files
+rm -r docs/PlayerLink/Pages
+rm -r docs/"Cops And Robbers"/Files
+rm -r docs/"Cops And Robbers"/Pages
 cp -R doxygen/overlays/. docs/
 mkdocs build --site-dir Documentation
 echo "Cleaning up"
