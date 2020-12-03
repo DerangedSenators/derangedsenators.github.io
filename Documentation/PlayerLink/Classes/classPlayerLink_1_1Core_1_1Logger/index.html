@@ -900,6 +900,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#detailed-description" class="md-nav__link">
+    Detailed Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#public-functions-documentation" class="md-nav__link">
     Public Functions Documentation
   </a>
@@ -944,6 +951,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classPlayerLink_1_1Core_1_1RuntimeException/" class="md-nav__link">
+      PlayerLink::Core::RuntimeException
+    </a>
   </li>
 
         
@@ -1291,6 +1310,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#detailed-description" class="md-nav__link">
+    Detailed Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#public-functions-documentation" class="md-nav__link">
     Public Functions Documentation
   </a>
@@ -1345,6 +1371,8 @@
                 
                 
                 <h1 id="playerlinkcorelogger">PlayerLink::Core::Logger</h1>
+<p>A Singelton <a href="">Logger</a> class which will be used by <a href="/Documentation/PlayerLink/Namespaces/namespacePlayerLink/">PlayerLink</a> to create logs based on a severity level and append to a logfile.  <a href="#detailed-description">More...</a></p>
+<p><code>#include &lt;Logger.h&gt;</code></p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
@@ -1364,7 +1392,7 @@
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/#function-log">log</a></strong>(LogSeverity severity, std::string message)</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/#function-log">log</a></strong>(<a href="/Documentation/PlayerLink/Namespaces/namespacePlayerLink_1_1Core/#enum-logseverity">LogSeverity</a> severity, std::string message)</td>
 </tr>
 <tr>
 <td><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/">Logger</a> *</td>
@@ -1372,30 +1400,47 @@
 </tr>
 </tbody>
 </table>
+<h2 id="detailed-description">Detailed Description</h2>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PlayerLink</span><span class="o">::</span><span class="n">Core</span><span class="o">::</span><span class="n">Logger</span><span class="p">;</span>
+</code></pre></div>
+<p>A Singelton <a href="">Logger</a> class which will be used by <a href="/Documentation/PlayerLink/Namespaces/namespacePlayerLink/">PlayerLink</a> to create logs based on a severity level and append to a logfile. </p>
+<p><strong>Author</strong>: </p>
+<ul>
+<li>Hanzalah Ravat </li>
+<li>Ashwin Jaimal </li>
+</ul>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-logger">function Logger</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Logger</span><span class="p">(</span>
     <span class="n">Logger</span> <span class="o">&amp;</span> <span class="n">otherLogger</span>
 <span class="p">)</span>
 </code></pre></div>
-<p>Singleton Class should not be cloneable </p>
+<p>Singleton Class should not be cloneable. Constructor used to prevent multiple instances of <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/">Logger</a></p>
 <h3 id="function-operator">function operator=</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Logger</span> <span class="o">&amp;</span> 
 <span class="p">)</span>
 </code></pre></div>
-<p>Singleton classes must not be assignable </p>
+<p>Singleton classes must not be assignable. This method will prevent the class from being assingned </p>
 <h3 id="function-log">function log</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">log</span><span class="p">(</span>
     <span class="n">LogSeverity</span> <span class="n">severity</span><span class="p">,</span>
     <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">message</span>
 <span class="p">)</span>
 </code></pre></div>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>severity</strong> The Severity level of the log </li>
+<li><strong>message</strong> The message which will be written into the logfile </li>
+</ul>
+<p>Method used to log an event </p>
 <h3 id="function-getlogger">function getLogger</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">Logger</span> <span class="o">*</span> <span class="n">getLogger</span><span class="p">()</span>
 </code></pre></div>
+<p><strong>Return</strong>: A pointer to the <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/">Logger</a> Instance in memory </p>
+<p>Gets the running logger instance pointer </p>
 <hr />
-<p>Updated on  3 December 2020 at 15:16:19 UTC</p>
+<p>Updated on  3 December 2020 at 16:26:27 UTC</p>
                 
                   
                 
@@ -1431,13 +1476,13 @@
           </a>
         
         
-          <a href="../classPlayerLink_1_1Core_1_1SHA256/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../classPlayerLink_1_1Core_1_1RuntimeException/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                PlayerLink::Core::SHA256
+                PlayerLink::Core::RuntimeException
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
