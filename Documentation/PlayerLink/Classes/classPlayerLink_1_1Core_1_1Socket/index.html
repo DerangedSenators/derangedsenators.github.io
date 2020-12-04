@@ -1545,7 +1545,7 @@
 </tr>
 <tr>
 <td>std::string</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-getaddress">getAddress</a></strong>() const</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/#function-getaddress">getAddress</a></strong>() const <br>Returns the IP Address of the remote device.</td>
 </tr>
 <tr>
 <td>uint32_t</td>
@@ -1617,6 +1617,7 @@
 <li><strong>flag</strong> The protocol used for data transmission </li>
 </ul>
 <p><strong>Return</strong>: If no error occurs, socket returns a descriptor referencing the new socket. Otherwise, a value of -1 </p>
+<p><strong>Attention</strong>: Winsock2.dll is automatically initialised when using this method on a Windows Device </p>
 <h3 id="function-socket_1">function Socket</h3>
 <div class="highlight"><pre><span></span><code><span class="k">explicit</span> <span class="n">Socket</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">fd</span>
@@ -1625,6 +1626,7 @@
 <h3 id="function-getaddress">function getAddress</h3>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">getAddress</span><span class="p">()</span> <span class="k">const</span>
 </code></pre></div>
+<p>Returns the IP Address of the remote device. </p>
 <p><strong>Return</strong>: Gets the address of the remote device </p>
 <h3 id="function-getport">function getPort</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">uint32_t</span> <span class="n">getPort</span><span class="p">()</span> <span class="k">const</span>
@@ -1672,7 +1674,7 @@
 </code></pre></div>
 <p>Boolean to determine if blocking is enabled on this socket instance. </p>
 <hr />
-<p>Updated on  4 December 2020 at 11:17:54 UTC</p>
+<p>Updated on  4 December 2020 at 12:26:01 UTC</p>
                 
                   
                 
