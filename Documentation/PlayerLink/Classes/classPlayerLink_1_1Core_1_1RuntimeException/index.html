@@ -983,13 +983,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#function-runtimeexception_1" class="md-nav__link">
-    function ~RuntimeException
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#function-what" class="md-nav__link">
     function what
   </a>
@@ -1028,18 +1021,6 @@
   <li class="md-nav__item">
     <a href="../classPlayerLink_1_1Core_1_1Socket/" class="md-nav__link">
       PlayerLink::Core::Socket
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../classPlayerLink_1_1Core_1_1SocketException/" class="md-nav__link">
-      PlayerLink::Core::SocketException
     </a>
   </li>
 
@@ -1374,13 +1355,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#function-runtimeexception_1" class="md-nav__link">
-    function ~RuntimeException
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#function-what" class="md-nav__link">
     function what
   </a>
@@ -1406,10 +1380,9 @@
                 
                 
                 <h1 id="playerlinkcoreruntimeexception">PlayerLink::Core::RuntimeException</h1>
-<p>exception class for Runtime environment, throws exceptions whenver an issue occurs with connectivity  <a href="#detailed-description">More...</a></p>
+<p>exception class for Runtime environment, throws exceptions whenver an issue occurs with connectivity or any other runtime related error occurs  <a href="#detailed-description">More...</a></p>
 <p><code>#include &lt;RuntimeException.h&gt;</code></p>
-<p>Inherits from exception</p>
-<p>Inherited by <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1SocketException/">SocketException</a></p>
+<p>Inherits from runtime_error</p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
@@ -1421,11 +1394,7 @@
 <tbody>
 <tr>
 <td></td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1RuntimeException/#function-runtimeexception">RuntimeException</a></strong>(const std::string &amp; message)</td>
-</tr>
-<tr>
-<td></td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1RuntimeException/#function-~runtimeexception">~RuntimeException</a></strong>()</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1RuntimeException/#function-runtimeexception">RuntimeException</a></strong>(const char * message, const boost::source_location &amp; location =BOOST_CURRENT_LOCATION)</td>
 </tr>
 <tr>
 <td>const char *</td>
@@ -1436,22 +1405,30 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PlayerLink</span><span class="o">::</span><span class="n">Core</span><span class="o">::</span><span class="n">RuntimeException</span><span class="p">;</span>
 </code></pre></div>
-<p>exception class for Runtime environment, throws exceptions whenver an issue occurs with connectivity </p>
-<p><strong>Author</strong>: Ash Jaimal </p>
+<p>exception class for Runtime environment, throws exceptions whenver an issue occurs with connectivity or any other runtime related error occurs </p>
+<p><strong>Author</strong>: </p>
+<ul>
+<li>Ash Jaimal </li>
+<li>Hanzalah Ravat </li>
+</ul>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-runtimeexception">function RuntimeException</h3>
 <div class="highlight"><pre><span></span><code><span class="n">RuntimeException</span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">message</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">message</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">boost</span><span class="o">::</span><span class="n">source_location</span> <span class="o">&amp;</span> <span class="n">location</span> <span class="o">=</span><span class="n">BOOST_CURRENT_LOCATION</span>
 <span class="p">)</span>
 </code></pre></div>
-<h3 id="function-runtimeexception_1">function ~RuntimeException</h3>
-<div class="highlight"><pre><span></span><code><span class="o">~</span><span class="n">RuntimeException</span><span class="p">()</span>
-</code></pre></div>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>message</strong> The error message </li>
+<li><strong>location</strong> The Location of the error. This is an optional parameter and is typically taken by default </li>
+</ul>
+<p>Creates a Runtime Exception </p>
 <h3 id="function-what">function what</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">what</span><span class="p">()</span> <span class="k">const</span>
 </code></pre></div>
 <hr />
-<p>Updated on  7 December 2020 at 14:23:12 UTC</p>
+<p>Updated on  7 December 2020 at 15:26:57 UTC</p>
                 
                   
                 

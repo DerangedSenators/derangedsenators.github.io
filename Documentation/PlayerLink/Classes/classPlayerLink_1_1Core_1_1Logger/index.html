@@ -1045,18 +1045,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../classPlayerLink_1_1Core_1_1SocketException/" class="md-nav__link">
-      PlayerLink::Core::SocketException
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../classPlayerLink_1_1Core_1_1TCPSocket/" class="md-nav__link">
       PlayerLink::Core::TCPSocket
     </a>
@@ -1441,7 +1429,7 @@
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/#function-log">log</a></strong>(<a href="/Documentation/PlayerLink/Namespaces/namespacePlayerLink_1_1Core/#enum-logseverity">LogSeverity</a> severity, std::string message)</td>
+<td><strong><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/#function-log">log</a></strong>(<a href="/Documentation/PlayerLink/Namespaces/namespacePlayerLink_1_1Core/#enum-logseverity">LogSeverity</a> severity, std::string message, const boost::source_location &amp; location =BOOST_CURRENT_LOCATION)</td>
 </tr>
 <tr>
 <td><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/">Logger</a> *</td>
@@ -1474,7 +1462,8 @@
 <h3 id="function-log">function log</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">log</span><span class="p">(</span>
     <span class="n">LogSeverity</span> <span class="n">severity</span><span class="p">,</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">message</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">message</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">boost</span><span class="o">::</span><span class="n">source_location</span> <span class="o">&amp;</span> <span class="n">location</span> <span class="o">=</span><span class="n">BOOST_CURRENT_LOCATION</span>
 <span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong>: </p>
@@ -1489,7 +1478,7 @@
 <p><strong>Return</strong>: A pointer to the <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/">Logger</a> Instance in memory </p>
 <p>Gets the running logger instance pointer </p>
 <hr />
-<p>Updated on  7 December 2020 at 14:23:12 UTC</p>
+<p>Updated on  7 December 2020 at 15:26:57 UTC</p>
                 
                   
                 
