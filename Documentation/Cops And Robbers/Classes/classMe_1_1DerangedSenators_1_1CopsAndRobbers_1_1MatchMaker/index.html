@@ -6102,15 +6102,15 @@
 <tbody>
 <tr>
 <td>bool</td>
-<td><strong><a href="/Documentation/Cops%20And%20Robbers/Classes/classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MatchMaker/#function-hostgame">HostGame</a></strong>(string matchId, GameObject host, bool publicMatch, out int playerIndex)</td>
+<td><strong><a href="/Documentation/Cops%20And%20Robbers/Classes/classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MatchMaker/#function-hostgame">HostGame</a></strong>(string matchId, GameObject host, bool publicMatch, out int playerIndex, out int teamId)</td>
 </tr>
 <tr>
 <td>bool</td>
-<td><strong><a href="/Documentation/Cops%20And%20Robbers/Classes/classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MatchMaker/#function-joingame">JoinGame</a></strong>(string matchId, GameObject player, out int playerIndex)</td>
+<td><strong><a href="/Documentation/Cops%20And%20Robbers/Classes/classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MatchMaker/#function-joingame">JoinGame</a></strong>(string matchId, GameObject player, out int playerIndex, out int teamId)</td>
 </tr>
 <tr>
 <td>bool</td>
-<td><strong><a href="/Documentation/Cops%20And%20Robbers/Classes/classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MatchMaker/#function-searchgame">SearchGame</a></strong>(GameObject player, out int playerIndex, out string matchId)</td>
+<td><strong><a href="/Documentation/Cops%20And%20Robbers/Classes/classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1MatchMaker/#function-searchgame">SearchGame</a></strong>(GameObject player, out int playerIndex, out string matchId, out int teamId)</td>
 </tr>
 <tr>
 <td>void</td>
@@ -6402,21 +6402,24 @@
     <span class="n">string</span> <span class="n">matchId</span><span class="p">,</span>
     <span class="n">GameObject</span> <span class="n">host</span><span class="p">,</span>
     <span class="kt">bool</span> <span class="n">publicMatch</span><span class="p">,</span>
-    <span class="n">out</span> <span class="kt">int</span> <span class="n">playerIndex</span>
+    <span class="n">out</span> <span class="kt">int</span> <span class="n">playerIndex</span><span class="p">,</span>
+    <span class="n">out</span> <span class="kt">int</span> <span class="n">teamId</span>
 <span class="p">)</span>
 </code></pre></div>
 <h3 id="function-joingame">function JoinGame</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">JoinGame</span><span class="p">(</span>
     <span class="n">string</span> <span class="n">matchId</span><span class="p">,</span>
     <span class="n">GameObject</span> <span class="n">player</span><span class="p">,</span>
-    <span class="n">out</span> <span class="kt">int</span> <span class="n">playerIndex</span>
+    <span class="n">out</span> <span class="kt">int</span> <span class="n">playerIndex</span><span class="p">,</span>
+    <span class="n">out</span> <span class="kt">int</span> <span class="n">teamId</span>
 <span class="p">)</span>
 </code></pre></div>
 <h3 id="function-searchgame">function SearchGame</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">SearchGame</span><span class="p">(</span>
     <span class="n">GameObject</span> <span class="n">player</span><span class="p">,</span>
     <span class="n">out</span> <span class="kt">int</span> <span class="n">playerIndex</span><span class="p">,</span>
-    <span class="n">out</span> <span class="n">string</span> <span class="n">matchId</span>
+    <span class="n">out</span> <span class="n">string</span> <span class="n">matchId</span><span class="p">,</span>
+    <span class="n">out</span> <span class="kt">int</span> <span class="n">teamId</span>
 <span class="p">)</span>
 </code></pre></div>
 <h3 id="function-begingame">function BeginGame</h3>
@@ -6444,7 +6447,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">SyncList</span><span class="o">&lt;</span> <span class="n">string</span> <span class="o">&gt;</span> <span class="n">matchIds</span> <span class="o">=</span> <span class="k">new</span> <span class="p">[</span><span class="n">SyncList</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">classMirror_1_1SyncList</span><span class="o">/</span><span class="p">)</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
 <hr />
-<p>Updated on 16 December 2020 at 16:29:21 UTC</p>
+<p>Updated on 16 December 2020 at 17:39:11 UTC</p>
                 
                   
                 
