@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6821,14 +6821,12 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkProximityChecker</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Component that controls visibility of networked objects for players. </p>
 <p>Any object with this component on it will not be visible to players more than a (configurable) distance away.</p>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-onstartserver">function OnStartServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked for <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/">NetworkBehaviour</a> objects when they become active on the server. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstartserver">Mirror::NetworkBehaviour::OnStartServer</a></p>
 <p>This could be triggered by NetworkServer.Listen() for objects in the scene, or by NetworkServer.Spawn() for objects that are dynamically created.</p>
@@ -6836,7 +6834,6 @@
 <h3 id="function-onstopserver">function OnStopServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStopServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Invoked on the server when the object is unspawned </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstopserver">Mirror::NetworkBehaviour::OnStopServer</a></p>
 <p>Useful for saving object data in persistant storage</p>
@@ -6845,7 +6842,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Callback used by the visibility system to determine if an observer (player) can see this object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6860,7 +6856,6 @@
     <span class="kt">bool</span> <span class="n">initialize</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Callback used by the visibility system to (re)construct the set of observers that can see this object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6873,21 +6868,18 @@
 <h3 id="variable-visrange">variable visRange</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">visRange</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The maximim range that objects will be visible at. </p>
 <h3 id="variable-visupdateinterval">variable visUpdateInterval</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="n">visUpdateInterval</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </code></pre></div>
-
 <p>How often (in seconds) that this object should update the list of observers that can see it. </p>
 <h3 id="variable-forcehidden">variable forceHidden</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">forceHidden</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Flag to force this object to be hidden for players. </p>
 <p>If this object is a player object, it will not be hidden for that player.</p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

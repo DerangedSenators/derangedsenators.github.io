@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6891,14 +6891,12 @@
     <span class="n">Vector3</span> <span class="n">scale</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-onserialize">function OnSerialize</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">bool</span> <span class="n">OnSerialize</span><span class="p">(</span>
     <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="kt">bool</span> <span class="n">initialState</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Virtual function to override to send custom serialization data. The corresponding function to send serialization data is <a href="">OnDeserialize()</a>. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6916,7 +6914,6 @@
     <span class="kt">bool</span> <span class="n">initialState</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Virtual function to override to receive custom serialization data. The corresponding function to send serialization data is <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkTransformBase/#function-onserialize">OnSerialize()</a>. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6929,7 +6926,6 @@
     <span class="n">Vector3</span> <span class="n">position</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Server side teleportation. This method will override this GameObject's current Transform.Position to the Vector3 you have provided and send it to all other Clients to override it at their side too. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6941,7 +6937,6 @@
     <span class="n">Quaternion</span> <span class="n">rotation</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Server side teleportation. This method will override this GameObject's current Transform.Position and Transform.Rotation to the Vector3 you have provided and send it to all other Clients to override it at their side too. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6952,26 +6947,21 @@
 <h3 id="property-targetcomponent">property targetComponent</h3>
 <div class="highlight"><pre><span></span><code><span class="n">abstract</span> <span class="n">Transform</span> <span class="n">targetComponent</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-clientauthority">variable clientAuthority</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">clientAuthority</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-localpositionsensitivity">variable localPositionSensitivity</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="n">localPositionSensitivity</span> <span class="o">=</span> <span class="mf">.01f</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-localrotationsensitivity">variable localRotationSensitivity</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="n">localRotationSensitivity</span> <span class="o">=</span> <span class="mf">.01f</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-localscalesensitivity">variable localScaleSensitivity</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="n">localScaleSensitivity</span> <span class="o">=</span> <span class="mf">.01f</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

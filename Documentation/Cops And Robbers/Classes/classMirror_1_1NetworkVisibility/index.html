@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6735,7 +6735,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span> <span class="o">=</span><span class="mi">0</span>
 </code></pre></div>
-
 <p>Callback used by the visibility system to determine if an observer (player) can see this object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6750,7 +6749,6 @@
     <span class="kt">bool</span> <span class="n">initialize</span>
 <span class="p">)</span> <span class="o">=</span><span class="mi">0</span>
 </code></pre></div>
-
 <p>Callback used by the visibility system to (re)construct the set of observers that can see this object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6764,7 +6762,6 @@
     <span class="kt">bool</span> <span class="n">visible</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Callback used by the visibility system for objects on a host. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6772,7 +6769,7 @@
 </ul>
 <p>Objects on a host (with a local client) cannot be disabled or destroyed when they are not visible to the local client. So this function is called to allow custom code to hide these objects. A typical implementation will disable renderer components on the object. This is only called on local clients on a host.</p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:31 UTC</p>
                 
                   
                 

@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6787,7 +6787,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkIdentity</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The <a href="">NetworkIdentity</a> identifies objects across the network, between server and clients. Its primary data is a NetworkInstanceId which is allocated by the server and then set on clients. This is used in network communications to be able to lookup game objects on different machines. </p>
 <p>The <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a> is used to synchronize information in the object with the network. Only the server should create instances of objects which have <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a> as otherwise they will not be properly connected to the system. </p>
 <p>For complex objects with a hierarchy of subcomponents, the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a> must be on the root of the hierarchy. It is not supported to have multiple <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a> components on subcomponents of a hierarchy. </p>
@@ -6800,7 +6799,6 @@
 <h3 id="event-clientauthoritycallback">event clientAuthorityCallback</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">ClientAuthorityCallback</span> <span class="n">clientAuthorityCallback</span><span class="p">()</span>
 </code></pre></div>
-
 <p>A callback that can be populated to be notified when the client-authority state of objects changes. </p>
 <p>Whenever an object is spawned with client authority, or the client authority status of an object is changed with AssignClientAuthority or RemoveClientAuthority, then this callback will be invoked.</p>
 <p>This callback is only invoked on the server.</p>
@@ -6810,7 +6808,6 @@
     <span class="n">ulong</span> <span class="n">id</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Gets the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a> from the sceneIds dictionary with the corresponding id </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6820,7 +6817,6 @@
 <h3 id="function-resetnextnetworkid">function ResetNextNetworkId</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">void</span> <span class="n">ResetNextNetworkId</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Resets nextNetworkId = 1 </p>
 <h3 id="function-clientauthoritycallback">function ClientAuthorityCallback</h3>
 <div class="highlight"><pre><span></span><code><span class="n">delegate</span> <span class="kt">void</span> <span class="n">ClientAuthorityCallback</span><span class="p">(</span>
@@ -6829,7 +6825,6 @@
     <span class="kt">bool</span> <span class="n">authorityState</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>The delegate type for the clientAuthorityCallback. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6842,7 +6837,6 @@
     <span class="kt">bool</span> <span class="n">initialize</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This causes the set of players that can see this object to be rebuild. The OnRebuildObservers callback function will be invoked on each <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/">NetworkBehaviour</a>. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6853,7 +6847,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Assign control of an object to a client via the client's <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkConnection/">NetworkConnection.</a></p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6865,7 +6858,6 @@
 <h3 id="function-removeclientauthority">function RemoveClientAuthority</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">RemoveClientAuthority</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Removes ownership for an object. </p>
 <p>This applies to objects that had authority set by AssignClientAuthority, or [NetworkServer.Spawn] with a <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkConnection/">NetworkConnection</a> parameter included.</p>
 <p>Authority cannot be removed for player objects.</p>
@@ -6873,7 +6865,6 @@
 <h3 id="property-isclient">property isClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isClient</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Returns true if running as a client and this object was spawned by a server. </p>
 <p><strong>IMPORTANT:</strong> checking NetworkClient.active means that isClient is false in OnDestroy: </p>
 <p><code>public bool isClient =&gt; NetworkClient.active &amp;&amp; netId != 0 &amp;&amp; !serverOnly;</code></p>
@@ -6882,7 +6873,6 @@
 <h3 id="property-isserver">property isServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isServer</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Returns true if NetworkServer.active and server is not stopped. </p>
 <p><strong>IMPORTANT:</strong> checking NetworkServer.active means that isServer is false in OnDestroy: </p>
 <p><code>public bool isServer =&gt; NetworkServer.active &amp;&amp; netId != 0;</code></p>
@@ -6891,77 +6881,64 @@
 <h3 id="property-hasauthority">property hasAuthority</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">hasAuthority</span><span class="p">;</span>
 </code></pre></div>
-
 <p>This returns true if this object is the authoritative player object on the client. </p>
 <p>This value is determined at runtime. For most objects, authority is held by the server.</p>
 <p>For objects that had their authority set by AssignClientAuthority on the server, this will be true on the client that owns the object. NOT on other clients.</p>
 <h3 id="property-netid">property netId</h3>
 <div class="highlight"><pre><span></span><code><span class="n">uint</span> <span class="n">netId</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Unique identifier for this particular object instance, used for tracking objects between networked clients and the server. </p>
 <p>This is a unique identifier for this particular GameObject instance. Use it to track GameObjects between networked clients and the server.</p>
 <h3 id="property-connectiontoserver">property connectionToServer</h3>
 <div class="highlight"><pre><span></span><code><span class="n">NetworkConnection</span> <span class="n">connectionToServer</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkConnection/">NetworkConnection</a> associated with this <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a>. This is only valid for player objects on a local client. </p>
 <h3 id="property-connectiontoclient">property connectionToClient</h3>
 <div class="highlight"><pre><span></span><code><span class="n">NetworkConnectionToClient</span> <span class="n">connectionToClient</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkConnection/">NetworkConnection</a> associated with this <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity.</a> This is valid for player and other owned objects in the server. </p>
 <p>Use it to return details such as the connection's identity, IP address and ready status.</p>
 <h3 id="property-networkbehaviours">property NetworkBehaviours</h3>
 <div class="highlight"><pre><span></span><code><span class="n">NetworkBehaviour</span> <span class="p">[]</span> <span class="n">NetworkBehaviours</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="property-visibility">property visibility</h3>
 <div class="highlight"><pre><span></span><code><span class="n">NetworkVisibility</span> <span class="n">visibility</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="property-assetid">property assetId</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Guid</span> <span class="n">assetId</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Unique identifier used to find the source assets when server spawns the on clients. </p>
 <p>The AssetId trick:   Ideally we would have a serialized 'Guid m_AssetId' but Unity can't serialize it because Guid's internal bytes are private   UNET used 'NetworkHash128' originally, with byte0, ..., byte16 which works, but it just unnecessary extra code   Using just the Guid string would work, but it's 32 chars long and would then be sent over the network as 64 instead of 16 bytes  </p>
 <p>The solution is to serialize the string internally here and then use the real 'Guid' type for everything else via .assetId </p>
 <h3 id="property-spawnedfrominstantiate">property SpawnedFromInstantiate</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">SpawnedFromInstantiate</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-islocalplayer">variable isLocalPlayer</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isLocalPlayer</span> <span class="o">=&gt;</span> <span class="n">ClientScene</span><span class="p">.</span><span class="n">localPlayer</span> <span class="o">==</span> <span class="k">this</span><span class="p">;</span>
 </code></pre></div>
-
 <p>This returns true if this object is the one that represents the player on the local machine. </p>
 <p>This is set when the server has spawned an object for this particular client.</p>
 <h3 id="variable-observers">variable observers</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Dictionary</span><span class="o">&lt;</span> <span class="kt">int</span><span class="p">,</span> <span class="n">NetworkConnection</span> <span class="o">&gt;</span> <span class="n">observers</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The set of network connections (players) that can see this object. </p>
 <p>null until OnStartServer was called. this is necessary for SendTo* to work properly in server-only mode.</p>
 <h3 id="variable-sceneid">variable sceneId</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ulong</span> <span class="n">sceneId</span><span class="p">;</span>
 </code></pre></div>
-
 <p>A unique identifier for <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a> objects within a scene. </p>
 <p>This is used for spawning scene objects on clients.</p>
 <h3 id="variable-serveronly">variable serverOnly</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">serverOnly</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Flag to make this object only exist when the game is running as a server (or host). </p>
 <h3 id="variable-spawned">variable spawned</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">readonly</span> <span class="n">Dictionary</span><span class="o">&lt;</span> <span class="n">uint</span><span class="p">,</span> <span class="n">NetworkIdentity</span> <span class="o">&gt;</span> <span class="n">spawned</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="o">&lt;</span><span class="n">uint</span><span class="p">,</span> <span class="p">[</span><span class="n">NetworkIdentity</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">classMirror_1_1NetworkIdentity</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <p>All spawned NetworkIdentities by netId. Available on server and client. </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:24 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

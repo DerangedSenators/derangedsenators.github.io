@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6995,7 +6995,6 @@
     <span class="n">Vector3</span> <span class="n">localPosition</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This method will override this GameObject's current Transform.localPosition to the specified Vector3 and update all clients. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7008,7 +7007,6 @@
     <span class="n">Quaternion</span> <span class="n">localRotation</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This method will override this GameObject's current Transform.localPosition and Transform.localRotation to the specified Vector3 and Quaternion and update all clients. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7021,74 +7019,57 @@
 <h3 id="property-targettransform">property targetTransform</h3>
 <div class="highlight"><pre><span></span><code><span class="n">abstract</span> <span class="n">Transform</span> <span class="n">targetTransform</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-clientauthority">variable clientAuthority</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">clientAuthority</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-excludeownerupdate">variable excludeOwnerUpdate</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">excludeOwnerUpdate</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-syncposition">variable syncPosition</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">syncPosition</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-syncrotation">variable syncRotation</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">syncRotation</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-syncscale">variable syncScale</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">syncScale</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-interpolateposition">variable interpolatePosition</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">interpolatePosition</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-interpolaterotation">variable interpolateRotation</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">interpolateRotation</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-interpolatescale">variable interpolateScale</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">interpolateScale</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-localpositionsensitivity">variable localPositionSensitivity</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="n">localPositionSensitivity</span> <span class="o">=</span> <span class="mf">.01f</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-localrotationsensitivity">variable localRotationSensitivity</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="n">localRotationSensitivity</span> <span class="o">=</span> <span class="mf">.01f</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-localscalesensitivity">variable localScaleSensitivity</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="n">localScaleSensitivity</span> <span class="o">=</span> <span class="mf">.01f</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-lastposition">variable lastPosition</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Vector3</span> <span class="n">lastPosition</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-lastrotation">variable lastRotation</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Quaternion</span> <span class="n">lastRotation</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-lastscale">variable lastScale</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Vector3</span> <span class="n">lastScale</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-start">variable start</h3>
 <div class="highlight"><pre><span></span><code><span class="n">DataPoint</span> <span class="n">start</span> <span class="o">=</span> <span class="k">new</span> <span class="p">[</span><span class="n">DataPoint</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">structMirror_1_1Experimental_1_1NetworkTransformBase_1_1DataPoint</span><span class="o">/</span><span class="p">)();</span>
 </code></pre></div>
-
 <h3 id="variable-goal">variable goal</h3>
 <div class="highlight"><pre><span></span><code><span class="n">DataPoint</span> <span class="n">goal</span> <span class="o">=</span> <span class="k">new</span> <span class="p">[</span><span class="n">DataPoint</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">structMirror_1_1Experimental_1_1NetworkTransformBase_1_1DataPoint</span><span class="o">/</span><span class="p">)();</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:28 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:33 UTC</p>
                 
                   
                 

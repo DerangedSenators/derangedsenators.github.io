@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6668,14 +6668,12 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkWriter</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Binary stream Writer. Supports simple types, buffers, arrays, structs, and nested types </p>
 <p>Use [NetworkWriter.GetWriter] to reduce memory allocation</p>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-reset">function Reset</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Reset</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Reset both the position and length of the stream </p>
 <p>Leaves the capacity the same so that we can reuse this writer without extra allocations </p>
 <h3 id="function-setlength">function SetLength</h3>
@@ -6683,7 +6681,6 @@
     <span class="kt">int</span> <span class="n">newLength</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Sets length, moves position if it is greater than new length </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6693,17 +6690,14 @@
 <h3 id="function-toarray">function ToArray</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">byte</span> <span class="p">[]</span> <span class="n">ToArray</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-toarraysegment">function ToArraySegment</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="n">ToArraySegment</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-writebyte">function WriteByte</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteByte</span><span class="p">(</span>
     <span class="n">byte</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writebytes">function WriteBytes</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteBytes</span><span class="p">(</span>
     <span class="n">byte</span> <span class="p">[]</span> <span class="n">buffer</span><span class="p">,</span>
@@ -6711,37 +6705,31 @@
     <span class="kt">int</span> <span class="n">count</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeuint32">function WriteUInt32</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteUInt32</span><span class="p">(</span>
     <span class="n">uint</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeint32">function WriteInt32</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">WriteInt32</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeuint64">function WriteUInt64</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteUInt64</span><span class="p">(</span>
     <span class="n">ulong</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeint64">function WriteInt64</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">WriteInt64</span><span class="p">(</span>
     <span class="kt">long</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-write-t">function Write&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Write</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="n">T</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Writes any type that mirror supports </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6755,18 +6743,15 @@
 <h3 id="property-position">property Position</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">Position</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-maxstringlength">variable MaxStringLength</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">MaxStringLength</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">32</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-length">variable Length</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">Length</span> <span class="o">=&gt;</span> <span class="n">length</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:31 UTC</p>
                 
                   
                 

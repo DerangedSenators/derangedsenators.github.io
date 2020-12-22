@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6526,7 +6526,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkReaderPool</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Pool of NetworkReaders </p>
 <p>Use this pool instead of <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkReader/">NetworkReader</a> to reduce memory allocation</p>
 <p>Use [Capacity] to change size of pool</p>
@@ -6536,7 +6535,6 @@
     <span class="n">byte</span> <span class="p">[]</span> <span class="n">bytes</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Get the next reader in the pool </p>
 <p>If pool is empty, creates a new Reader</p>
 <h3 id="function-getreader_1">function GetReader</h3>
@@ -6544,7 +6542,6 @@
     <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="n">segment</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Get the next reader in the pool </p>
 <p>If pool is empty, creates a new Reader</p>
 <h3 id="function-recycle">function Recycle</h3>
@@ -6552,19 +6549,17 @@
     <span class="n">PooledNetworkReader</span> <span class="n">reader</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Puts reader back into pool </p>
 <p>When pool is full, the extra reader is left for the GC</p>
 <h2 id="public-property-documentation">Public Property Documentation</h2>
 <h3 id="property-capacity">property Capacity</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">int</span> <span class="n">Capacity</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Size of the pool </p>
 <p>If pool is too small getting readers will causes memory allocation</p>
 <p>Default value: 100</p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

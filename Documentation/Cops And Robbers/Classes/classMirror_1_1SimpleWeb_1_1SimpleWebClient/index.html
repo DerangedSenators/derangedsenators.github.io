@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6741,26 +6741,21 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">SimpleWeb</span><span class="o">::</span><span class="n">SimpleWebClient</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Client used to control websockets </p>
 <p>Base class used by <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1SimpleWeb_1_1WebSocketClientWebGl/">WebSocketClientWebGl</a> and <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1SimpleWeb_1_1WebSocketClientStandAlone/">WebSocketClientStandAlone</a></p>
 <h2 id="public-events-documentation">Public Events Documentation</h2>
 <h3 id="event-onconnect">event onConnect</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Action</span> <span class="n">onConnect</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="event-ondisconnect">event onDisconnect</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Action</span> <span class="n">onDisconnect</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="event-ondata">event onData</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Action</span><span class="o">&lt;</span> <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">onData</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="event-onerror">event onError</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Action</span><span class="o">&lt;</span> <span class="n">Exception</span> <span class="o">&gt;</span> <span class="n">onError</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-create">function Create</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">SimpleWebClient</span> <span class="n">Create</span><span class="p">(</span>
@@ -6769,31 +6764,26 @@
     <span class="n">TcpConfig</span> <span class="n">tcpConfig</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-processmessagequeue">function ProcessMessageQueue</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">ProcessMessageQueue</span><span class="p">(</span>
     <span class="n">MonoBehaviour</span> <span class="n">behaviour</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-connect">function Connect</h3>
 <div class="highlight"><pre><span></span><code><span class="k">virtual</span> <span class="n">abstract</span> <span class="kt">void</span> <span class="n">Connect</span><span class="p">(</span>
     <span class="n">Uri</span> <span class="n">serverAddress</span>
 <span class="p">)</span> <span class="o">=</span><span class="mi">0</span>
 </code></pre></div>
-
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1SimpleWeb_1_1WebSocketClientWebGl/#function-connect">Mirror::SimpleWeb::WebSocketClientWebGl::Connect</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1SimpleWeb_1_1WebSocketClientStandAlone/#function-connect">Mirror::SimpleWeb::WebSocketClientStandAlone::Connect</a></p>
 <h3 id="function-disconnect">function Disconnect</h3>
 <div class="highlight"><pre><span></span><code><span class="k">virtual</span> <span class="n">abstract</span> <span class="kt">void</span> <span class="n">Disconnect</span><span class="p">()</span> <span class="o">=</span><span class="mi">0</span>
 </code></pre></div>
-
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1SimpleWeb_1_1WebSocketClientWebGl/#function-disconnect">Mirror::SimpleWeb::WebSocketClientWebGl::Disconnect</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1SimpleWeb_1_1WebSocketClientStandAlone/#function-disconnect">Mirror::SimpleWeb::WebSocketClientStandAlone::Disconnect</a></p>
 <h3 id="function-send">function Send</h3>
 <div class="highlight"><pre><span></span><code><span class="k">virtual</span> <span class="n">abstract</span> <span class="kt">void</span> <span class="n">Send</span><span class="p">(</span>
     <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="n">segment</span>
 <span class="p">)</span> <span class="o">=</span><span class="mi">0</span>
 </code></pre></div>
-
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1SimpleWeb_1_1WebSocketClientWebGl/#function-send">Mirror::SimpleWeb::WebSocketClientWebGl::Send</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1SimpleWeb_1_1WebSocketClientStandAlone/#function-send">Mirror::SimpleWeb::WebSocketClientStandAlone::Send</a></p>
 <h2 id="protected-functions-documentation">Protected Functions Documentation</h2>
 <h3 id="function-simplewebclient">function SimpleWebClient</h3>
@@ -6802,31 +6792,25 @@
     <span class="kt">int</span> <span class="n">maxMessagesPerTick</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-connectionstate">variable ConnectionState</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ClientState</span> <span class="n">ConnectionState</span> <span class="o">=&gt;</span> <span class="n">state</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
 <h3 id="variable-maxmessagesize">variable maxMessageSize</h3>
 <div class="highlight"><pre><span></span><code><span class="n">readonly</span> <span class="kt">int</span> <span class="n">maxMessageSize</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-receivequeue">variable receiveQueue</h3>
 <div class="highlight"><pre><span></span><code><span class="n">readonly</span> <span class="n">ConcurrentQueue</span><span class="o">&lt;</span> <span class="n">Message</span> <span class="o">&gt;</span> <span class="n">receiveQueue</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ConcurrentQueue</span><span class="o">&lt;</span><span class="p">[</span><span class="n">Message</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">structMirror_1_1SimpleWeb_1_1Message</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <h3 id="variable-bufferpool">variable bufferPool</h3>
 <div class="highlight"><pre><span></span><code><span class="n">readonly</span> <span class="n">BufferPool</span> <span class="n">bufferPool</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-state">variable state</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ClientState</span> <span class="n">state</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:28 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:33 UTC</p>
                 
                   
                 

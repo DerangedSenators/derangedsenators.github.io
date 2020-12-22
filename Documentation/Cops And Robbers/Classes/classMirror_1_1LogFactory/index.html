@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6543,32 +6543,27 @@
     <span class="n">LogType</span> <span class="n">defaultLogLevel</span> <span class="o">=</span><span class="n">LogType</span><span class="p">.</span><span class="n">Warning</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getlogger">function GetLogger</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">ILogger</span> <span class="n">GetLogger</span><span class="p">(</span>
     <span class="n">System</span><span class="p">.</span><span class="n">Type</span> <span class="n">type</span><span class="p">,</span>
     <span class="n">LogType</span> <span class="n">defaultLogLevel</span> <span class="o">=</span><span class="n">LogType</span><span class="p">.</span><span class="n">Warning</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getlogger_1">function GetLogger</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">ILogger</span> <span class="n">GetLogger</span><span class="p">(</span>
     <span class="n">string</span> <span class="n">loggerName</span><span class="p">,</span>
     <span class="n">LogType</span> <span class="n">defaultLogLevel</span> <span class="o">=</span><span class="n">LogType</span><span class="p">.</span><span class="n">Warning</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-enabledebugmode">function EnableDebugMode</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">EnableDebugMode</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Makes all log levels LogType.Log, this is so that NetworkManger.showDebugMessages can still be used </p>
 <h3 id="function-replaceloghandler">function ReplaceLogHandler</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">ReplaceLogHandler</span><span class="p">(</span>
     <span class="n">ILogHandler</span> <span class="n">logHandler</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Replacing log handler for all existing loggers and sets defaultLogHandler for new loggers </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6578,9 +6573,8 @@
 <h3 id="variable-allloggers">variable AllLoggers</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">SortedDictionary</span><span class="o">&lt;</span> <span class="n">string</span><span class="p">,</span> <span class="n">ILogger</span> <span class="o">&gt;</span><span class="p">.</span><span class="n">ValueCollection</span> <span class="n">AllLoggers</span> <span class="o">=&gt;</span> <span class="n">loggers</span><span class="p">.</span><span class="n">Values</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:24 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6854,70 +6854,60 @@
     <span class="n">byte</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writesbyte">function WriteSByte</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">void</span> <span class="n">WriteSByte</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">sbyte</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writechar">function WriteChar</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">void</span> <span class="n">WriteChar</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="kt">char</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeboolean">function WriteBoolean</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">void</span> <span class="n">WriteBoolean</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="kt">bool</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeuint16">function WriteUInt16</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteUInt16</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">ushort</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeint16">function WriteInt16</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">void</span> <span class="n">WriteInt16</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="kt">short</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writesingle">function WriteSingle</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteSingle</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="kt">float</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writedouble">function WriteDouble</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteDouble</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="kt">double</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writedecimal">function WriteDecimal</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteDecimal</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">decimal</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writestring">function WriteString</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteString</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">string</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writebytesandsize">function WriteBytesAndSize</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteBytesAndSize</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
@@ -6926,191 +6916,164 @@
     <span class="kt">int</span> <span class="n">count</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writebytesandsize_1">function WriteBytesAndSize</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteBytesAndSize</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">byte</span> <span class="p">[]</span> <span class="n">buffer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writebytesandsizesegment">function WriteBytesAndSizeSegment</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteBytesAndSizeSegment</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="n">buffer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writepackedint32">function WritePackedInt32</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WritePackedInt32</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="kt">int</span> <span class="n">i</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writepackeduint32">function WritePackedUInt32</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WritePackedUInt32</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">uint</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writepackedint64">function WritePackedInt64</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WritePackedInt64</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="kt">long</span> <span class="n">i</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writepackeduint64">function WritePackedUInt64</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WritePackedUInt64</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">ulong</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writevector2">function WriteVector2</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteVector2</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Vector2</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writevector3">function WriteVector3</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteVector3</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Vector3</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writevector4">function WriteVector4</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteVector4</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Vector4</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writevector2int">function WriteVector2Int</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteVector2Int</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Vector2Int</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writevector3int">function WriteVector3Int</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteVector3Int</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Vector3Int</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writecolor">function WriteColor</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteColor</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Color</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writecolor32">function WriteColor32</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteColor32</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Color32</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writequaternion">function WriteQuaternion</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteQuaternion</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Quaternion</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writerect">function WriteRect</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteRect</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Rect</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeplane">function WritePlane</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WritePlane</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Plane</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeray">function WriteRay</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteRay</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Ray</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writematrix4x4">function WriteMatrix4x4</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteMatrix4x4</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Matrix4x4</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeguid">function WriteGuid</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteGuid</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Guid</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writenetworkidentity">function WriteNetworkIdentity</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteNetworkIdentity</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">NetworkIdentity</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writetransform">function WriteTransform</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteTransform</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Transform</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writegameobject">function WriteGameObject</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteGameObject</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">GameObject</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writeuri">function WriteUri</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteUri</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">Uri</span> <span class="n">uri</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writelist-t">function WriteList&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteList</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">List</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">list</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writearray-t">function WriteArray&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteArray</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">T</span> <span class="p">[]</span> <span class="n">array</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-writearraysegment-t">function WriteArraySegment&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">WriteArraySegment</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">segment</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:31 UTC</p>
                 
                   
                 

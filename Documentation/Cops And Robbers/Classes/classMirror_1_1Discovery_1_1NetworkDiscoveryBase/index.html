@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6765,48 +6765,39 @@
 <span class="n">Response</span> <span class="o">&gt;</span>
 <span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">Discovery</span><span class="o">::</span><span class="n">NetworkDiscoveryBase</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Base implementation for Network <a href="/Documentation/Cops%20And%20Robbers/Namespaces/namespaceMirror_1_1Discovery/">Discovery</a>. Extend this component to provide custom discovery with game specific data <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Discovery_1_1NetworkDiscovery/">NetworkDiscovery</a> for a sample implementation </p>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-randomlong">function RandomLong</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">long</span> <span class="n">RandomLong</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-start">function Start</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">Start</span><span class="p">()</span>
 </code></pre></div>
-
 <p>virtual so that inheriting classes' <a href="">Start()</a> can call base.Start() too </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Discovery_1_1NetworkDiscovery/#function-start">Mirror::Discovery::NetworkDiscovery::Start</a></p>
 <h3 id="function-advertiseserver">function AdvertiseServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">AdvertiseServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Advertise this server in the local network </p>
 <h3 id="function-serverlistenasync">function ServerListenAsync</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">async</span> <span class="n">Task</span> <span class="n">ServerListenAsync</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-startdiscovery">function StartDiscovery</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">StartDiscovery</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Start Active <a href="/Documentation/Cops%20And%20Robbers/Namespaces/namespaceMirror_1_1Discovery/">Discovery</a></p>
 <h3 id="function-stopdiscovery">function StopDiscovery</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">StopDiscovery</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Stop Active <a href="/Documentation/Cops%20And%20Robbers/Namespaces/namespaceMirror_1_1Discovery/">Discovery</a></p>
 <h3 id="function-clientlistenasync">function ClientListenAsync</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">async</span> <span class="n">Task</span> <span class="n">ClientListenAsync</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Awaits for server response </p>
 <p><strong>Return</strong>: ClientListenAsync Task</p>
 <h3 id="function-broadcastdiscoveryrequest">function BroadcastDiscoveryRequest</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">BroadcastDiscoveryRequest</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Sends discovery request from client </p>
 <h2 id="protected-functions-documentation">Protected Functions Documentation</h2>
 <h3 id="function-processclientrequest">function ProcessClientRequest</h3>
@@ -6815,7 +6806,6 @@
     <span class="n">IPEndPoint</span> <span class="n">endpoint</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Reply to the client to inform it of this server </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6829,7 +6819,6 @@
     <span class="n">IPEndPoint</span> <span class="n">endpoint</span>
 <span class="p">)</span> <span class="o">=</span><span class="mi">0</span>
 </code></pre></div>
-
 <p>Process the request from a client </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6841,7 +6830,6 @@
 <h3 id="function-getrequest">function GetRequest</h3>
 <div class="highlight"><pre><span></span><code><span class="k">virtual</span> <span class="n">Request</span> <span class="n">GetRequest</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Create a message that will be broadcasted on the network to discover servers </p>
 <p><strong>Return</strong>: An instance of <a href="/Documentation/Cops%20And%20Robbers/Classes/structMirror_1_1Discovery_1_1ServerRequest/">ServerRequest</a> with data to be broadcasted</p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Discovery_1_1NetworkDiscovery/#function-getrequest">Mirror::Discovery::NetworkDiscovery::GetRequest</a></p>
@@ -6852,7 +6840,6 @@
     <span class="n">IPEndPoint</span> <span class="n">endpoint</span>
 <span class="p">)</span> <span class="o">=</span><span class="mi">0</span>
 </code></pre></div>
-
 <p>Process the answer from a server </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6864,27 +6851,22 @@
 <h3 id="property-supportedonthisplatform">property SupportedOnThisPlatform</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">bool</span> <span class="n">SupportedOnThisPlatform</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-secrethandshake">variable secretHandshake</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">long</span> <span class="n">secretHandshake</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
 <h3 id="variable-serverbroadcastlistenport">variable serverBroadcastListenPort</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">serverBroadcastListenPort</span> <span class="o">=</span> <span class="mi">47777</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-serverudpclient">variable serverUdpClient</h3>
 <div class="highlight"><pre><span></span><code><span class="n">UdpClient</span> <span class="n">serverUdpClient</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-clientudpclient">variable clientUdpClient</h3>
 <div class="highlight"><pre><span></span><code><span class="n">UdpClient</span> <span class="n">clientUdpClient</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:26 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:31 UTC</p>
                 
                   
                 

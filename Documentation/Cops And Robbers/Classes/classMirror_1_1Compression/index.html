@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6495,30 +6495,24 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">Compression</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Functions to Compress Quaternions and Floats </p>
 <p>Uncompressed Quaternion = 32 * 4 = 128 bits =&gt; send 16 bytes</p>
 <p>Quaternion is always normalized so we drop largest value and re-calculate it. We can encode which one is the largest using 2 bits </p>
 <div class="highlight"><pre><span></span><code><span class="n">x</span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z</span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="n">w</span><span class="o">^</span><span class="mi">2</span> <span class="o">=</span> <span class="mi">1</span>
 </code></pre></div>
-
 <p>2nd largest value has max size of 1/sqrt(2) We can encode the smallest three components in [-1/sqrt(2),+1/sqrt(2)] instead of [-1,+1] </p>
 <div class="highlight"><pre><span></span><code><span class="n">c</span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="n">c</span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">0</span> <span class="o">+</span> <span class="mi">0</span> <span class="o">=</span> <span class="mi">1</span>
 </code></pre></div>
-
 <p>Sign of largest value doesnt matter </p>
 <div class="highlight"><pre><span></span><code><span class="n">Q</span> <span class="o">*</span> <span class="n">vec3</span> <span class="o">==</span> <span class="p">(</span><span class="o">-</span><span class="n">Q</span><span class="p">)</span> <span class="o">*</span> <span class="n">vec3</span>
 </code></pre></div>
-
 <p>RotationPrecision </p>
 <div class="highlight"><pre><span></span><code><span class="mi">2</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">^</span><span class="n">bitCount</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
-
 <p>rotation precision +-0.00138 in range [-1,+1] </p>
 <div class="highlight"><pre><span></span><code><span class="mi">10</span> <span class="n">bits</span> <span class="n">per</span> <span class="n">value</span>
 <span class="mi">2</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">=</span> <span class="mi">32</span> <span class="n">bits</span> <span class="o">=&gt;</span> <span class="n">send</span> <span class="mi">4</span> <span class="n">bytes</span>
 </code></pre></div>
-
 <p>Links for more info: </p>
 <p>GDC Talk</p>
 <p>Post on Snapshot Compression</p>
@@ -6528,14 +6522,12 @@
     <span class="n">Quaternion</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Used to Compress Quaternion into 4 bytes </p>
 <h3 id="function-decompressquaternion">function DecompressQuaternion</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">Quaternion</span> <span class="n">DecompressQuaternion</span><span class="p">(</span>
     <span class="n">uint</span> <span class="n">packed</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Used to read a Compressed Quaternion from 4 bytes </p>
 <p>Quaternion is normalized</p>
 <h3 id="function-scaletouint">function ScaleToUInt</h3>
@@ -6547,7 +6539,6 @@
     <span class="n">uint</span> <span class="n">maxUint</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Scales float from minFloat-&gt;maxFloat to minUint-&gt;maxUint </p>
 <p>values out side of minFloat/maxFloat will return either 0 or maxUint</p>
 <h3 id="function-scalefromuint">function ScaleFromUInt</h3>
@@ -6559,10 +6550,9 @@
     <span class="n">uint</span> <span class="n">maxUint</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Scales uint from minUint-&gt;maxUint to minFloat-&gt;maxFloat </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:24 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

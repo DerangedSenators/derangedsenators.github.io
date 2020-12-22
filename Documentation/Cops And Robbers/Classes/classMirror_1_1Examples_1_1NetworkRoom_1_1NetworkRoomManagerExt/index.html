@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -7047,7 +7047,6 @@
     <span class="n">GameObject</span> <span class="n">gamePlayer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called just after GamePlayer object is instantiated and just before it replaces RoomPlayer object. This is the ideal point to pass any data like player name, credentials, tokens, colors, etc. into the GamePlayer object as it is about to enter the Online scene. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7059,30 +7058,26 @@
 <h3 id="function-onroomstopclient">function OnRoomStopClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnRoomStopClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the client when the client stops. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-onroomstopclient">Mirror::NetworkRoomManager::OnRoomStopClient</a></p>
 <h3 id="function-onroomstopserver">function OnRoomStopServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnRoomStopServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the server when the server is started - including when a host is stopped. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-onroomstopserver">Mirror::NetworkRoomManager::OnRoomStopServer</a></p>
 <h3 id="function-onroomserverplayersready">function OnRoomServerPlayersReady</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnRoomServerPlayersReady</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the server when all the players in the room are ready. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-onroomserverplayersready">Mirror::NetworkRoomManager::OnRoomServerPlayersReady</a></p>
 <p>The default implementation of this function uses <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-serverchangescene">ServerChangeScene()</a> to switch to the game player scene. By implementing this callback you can customize what happens when all the players in the room are ready, such as adding a countdown or a confirmation for a group leader.</p>
 <h3 id="function-ongui">function OnGUI</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnGUI</span><span class="p">()</span>
 </code></pre></div>
-
 <p>virtual so inheriting classes can roll their own </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-ongui">Mirror::NetworkRoomManager::OnGUI</a></p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:27 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:32 UTC</p>
                 
                   
                 

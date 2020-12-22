@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -7254,33 +7254,27 @@
 <h3 id="function-onvalidate">function OnValidate</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnValidate</span><span class="p">()</span>
 </code></pre></div>
-
 <p>virtual so that inheriting classes' <a href="">OnValidate()</a> can call base.OnValidate() too </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-onvalidate">Mirror::NetworkRoomManager::OnValidate</a></p>
 <h3 id="function-awake">function Awake</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">Awake</span><span class="p">()</span>
 </code></pre></div>
-
 <p>virtual so that inheriting classes' <a href="">Awake()</a> can call base.Awake() too </p>
 <h3 id="function-start">function Start</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">Start</span><span class="p">()</span>
 </code></pre></div>
-
 <p>virtual so that inheriting classes' <a href="">Start()</a> can call base.Start() too </p>
 <h3 id="function-lateupdate">function LateUpdate</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">LateUpdate</span><span class="p">()</span>
 </code></pre></div>
-
 <p>virtual so that inheriting classes' <a href="">LateUpdate()</a> can call base.LateUpdate() too </p>
 <h3 id="function-startserver">function StartServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">StartServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This starts a new server. </p>
 <h3 id="function-startclient">function StartClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">StartClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This starts a network client. It uses the networkAddress property as the address to connect to. </p>
 <p>This makes the newly created client connect to the server immediately.</p>
 <h3 id="function-startclient_1">function StartClient</h3>
@@ -7288,7 +7282,6 @@
     <span class="n">Uri</span> <span class="n">uri</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This starts a network client. It uses the Uri parameter as the address to connect to. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7298,47 +7291,39 @@
 <h3 id="function-starthost">function StartHost</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">StartHost</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This starts a network "host" - a server and client in the same application. </p>
 <p>The client returned from <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-starthost">StartHost()</a> is a special "local" client that communicates to the in-process server using a message queue instead of the real network. But in almost all other cases, it can be treated as a normal client.</p>
 <h3 id="function-stophost">function StopHost</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">StopHost</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This stops both the client and the server that the manager is using. </p>
 <h3 id="function-stopserver">function StopServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">StopServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Stops the server that the manager is using. </p>
 <h3 id="function-stopclient">function StopClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">StopClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Stops the client that the manager is using. </p>
 <h3 id="function-onapplicationquit">function OnApplicationQuit</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnApplicationQuit</span><span class="p">()</span>
 </code></pre></div>
-
 <p>called when quitting the application by closing the window / pressing stop in the editor </p>
 <p>virtual so that inheriting classes' <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-onapplicationquit">OnApplicationQuit()</a> can call base.OnApplicationQuit() too</p>
 <h3 id="function-configureserverframerate">function ConfigureServerFrameRate</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">ConfigureServerFrameRate</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Set the frame rate for a headless server. </p>
 <p>Override if you wish to disable the behavior or set your own tick rate.</p>
 <h3 id="function-ondestroy">function OnDestroy</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnDestroy</span><span class="p">()</span>
 </code></pre></div>
-
 <p>virtual so that inheriting classes' <a href="">OnDestroy()</a> can call base.OnDestroy() too </p>
 <h3 id="function-serverchangescene">function ServerChangeScene</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">ServerChangeScene</span><span class="p">(</span>
     <span class="n">string</span> <span class="n">newSceneName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This causes the server to switch scenes and sets the networkSceneName. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7349,7 +7334,6 @@
 <h3 id="function-getstartposition">function GetStartPosition</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">Transform</span> <span class="n">GetStartPosition</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This finds a spawn position based on <a href="">NetworkStartPosition</a> objects in the scene. </p>
 <p><strong>Return</strong>: Returns the transform to spawn a player at, or null.</p>
 <p>This is used by the default implementation of OnServerAddPlayer.</p>
@@ -7358,7 +7342,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a new client connects. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7371,7 +7354,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a client disconnects. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7384,7 +7366,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a client is ready. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7397,7 +7378,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a client adds a new player with ClientScene.AddPlayer. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7411,7 +7391,6 @@
     <span class="kt">int</span> <span class="n">errorCode</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a network error occurs for a client connection. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7423,7 +7402,6 @@
     <span class="n">string</span> <span class="n">newSceneName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called from ServerChangeScene immediately before SceneManager.LoadSceneAsync is executed </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7435,7 +7413,6 @@
     <span class="n">string</span> <span class="n">sceneName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a scene is completed loaded, when the scene load was initiated by the server with <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-serverchangescene">ServerChangeScene()</a>. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7447,7 +7424,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the client when connected to a server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7460,7 +7436,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on clients when disconnected from a server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7474,7 +7449,6 @@
     <span class="kt">int</span> <span class="n">errorCode</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on clients when a network error occurs. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7486,7 +7460,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on clients when a servers tells the client it is no longer ready. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7500,7 +7473,6 @@
     <span class="kt">bool</span> <span class="n">customHandling</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called from ClientChangeScene immediately before SceneManager.LoadSceneAsync is executed </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7514,7 +7486,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on clients when a scene has completed loaded, when the scene load was initiated by the server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7525,39 +7496,33 @@
 <h3 id="function-onstarthost">function OnStartHost</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStartHost</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked when a host is started. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-onstarthost">Mirror::NetworkRoomManager::OnStartHost</a></p>
 <p>StartHost has multiple signatures, but they all cause this hook to be called.</p>
 <h3 id="function-onstartserver">function OnStartServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStartServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked when a server is started - including when a host is started. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Additive_1_1AdditiveNetworkManager/#function-onstartserver">Mirror::Examples::Additive::AdditiveNetworkManager::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Chat_1_1ChatNetworkManager/#function-onstartserver">Mirror::Examples::Chat::ChatNetworkManager::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Benchmark_1_1BenchmarkNetworkManager/#function-onstartserver">Mirror::Examples::Benchmark::BenchmarkNetworkManager::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Cloud_1_1Example_1_1NetworkManagerListServer/#function-onstartserver">Mirror::Cloud::Example::NetworkManagerListServer::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1MultipleAdditiveScenes_1_1MultiSceneNetManager/#function-onstartserver">Mirror::Examples::MultipleAdditiveScenes::MultiSceneNetManager::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-onstartserver">Mirror::NetworkRoomManager::OnStartServer</a></p>
 <p>StartServer has multiple signatures, but they all cause this hook to be called.</p>
 <h3 id="function-onstartclient">function OnStartClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStartClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked when the client is started. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-onstartclient">Mirror::NetworkRoomManager::OnStartClient</a></p>
 <h3 id="function-onstopserver">function OnStopServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStopServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called when a server is stopped - including when a host is stopped. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Additive_1_1AdditiveNetworkManager/#function-onstopserver">Mirror::Examples::Additive::AdditiveNetworkManager::OnStopServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Cloud_1_1Example_1_1NetworkManagerListServer/#function-onstopserver">Mirror::Cloud::Example::NetworkManagerListServer::OnStopServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1MultipleAdditiveScenes_1_1MultiSceneNetManager/#function-onstopserver">Mirror::Examples::MultipleAdditiveScenes::MultiSceneNetManager::OnStopServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-onstopserver">Mirror::NetworkRoomManager::OnStopServer</a></p>
 <h3 id="function-onstopclient">function OnStopClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStopClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called when a client is stopped. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Additive_1_1AdditiveNetworkManager/#function-onstopclient">Mirror::Examples::Additive::AdditiveNetworkManager::OnStopClient</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1MultipleAdditiveScenes_1_1MultiSceneNetManager/#function-onstopclient">Mirror::Examples::MultipleAdditiveScenes::MultiSceneNetManager::OnStopClient</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-onstopclient">Mirror::NetworkRoomManager::OnStopClient</a></p>
 <h3 id="function-onstophost">function OnStopHost</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStopHost</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called when a host is stopped. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-onstophost">Mirror::NetworkRoomManager::OnStopHost</a></p>
 <h3 id="function-issceneactive">function IsSceneActive</h3>
@@ -7565,18 +7530,15 @@
     <span class="n">string</span> <span class="n">scene</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-shutdown">function Shutdown</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">Shutdown</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is the only way to clear the singleton, so another instance can be created. </p>
 <h3 id="function-registerstartposition">function RegisterStartPosition</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">RegisterStartPosition</span><span class="p">(</span>
     <span class="n">Transform</span> <span class="n">start</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Registers the transform of a game object as a player spawn location. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7588,7 +7550,6 @@
     <span class="n">Transform</span> <span class="n">start</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Unregisters the transform of a game object as a player spawn location. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7599,16 +7560,13 @@
 <h3 id="property-singleton">property singleton</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">NetworkManager</span> <span class="n">singleton</span><span class="p">;</span>
 </code></pre></div>
-
 <p><a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a> singleton </p>
 <h3 id="property-mode">property mode</h3>
 <div class="highlight"><pre><span></span><code><span class="n">NetworkManagerMode</span> <span class="n">mode</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="property-networkscenename">property networkSceneName</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">string</span> <span class="n">networkSceneName</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The name of the current network scene. </p>
 <p>This is populated if the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a> is doing scene management. Calls to <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-serverchangescene">ServerChangeScene()</a> cause this to change. New clients that connect to a server will automatically load this scene.</p>
 <p>This is used to make sure that all scene changes are initialized by <a href="/Documentation/Cops%20And%20Robbers/Namespaces/namespaceMirror/">Mirror</a>.</p>
@@ -7617,65 +7575,54 @@
 <h3 id="variable-dontdestroyonload">variable dontDestroyOnLoad</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">dontDestroyOnLoad</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <p>A flag to control whether the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a> object is destroyed when the scene changes. </p>
 <p>This should be set if your game has a single <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a> that exists for the lifetime of the process. If there is a <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a> in each scene, then this should not be set.</p>
 <h3 id="variable-runinbackground">variable runInBackground</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">runInBackground</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Controls whether the program runs when it is in the background. </p>
 <p>This is required when multiple instances of a program using networking are running on the same machine, such as when testing using localhost. But this is not recommended when deploying to mobile platforms.</p>
 <h3 id="variable-autostartserverbuild">variable autoStartServerBuild</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">autoStartServerBuild</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Automatically invoke <a href="">StartServer()</a></p>
 <p>If the application is a Server Build, StartServer is automatically invoked.</p>
 <p>Server build is true when "Server build" is checked in build menu, or BuildOptions.EnableHeadlessMode flag is in BuildOptions</p>
 <h3 id="variable-showdebugmessages">variable showDebugMessages</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">showDebugMessages</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Enables verbose debug messages in the console </p>
 <h3 id="variable-servertickrate">variable serverTickRate</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">serverTickRate</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Server Update frequency, per second. Use around 60Hz for fast paced games like Counter-Strike to minimize latency. Use around 30Hz for games like WoW to minimize computations. Use around 1-10Hz for slow paced games like EVE. </p>
 <h3 id="variable-offlinescene">variable offlineScene</h3>
 <div class="highlight"><pre><span></span><code><span class="n">string</span> <span class="n">offlineScene</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The scene to switch to when offline. </p>
 <p>Setting this makes the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a> do scene management. This scene will be switched to when a network session is completed - such as a client disconnect, or a server shutdown.</p>
 <h3 id="variable-onlinescene">variable onlineScene</h3>
 <div class="highlight"><pre><span></span><code><span class="n">string</span> <span class="n">onlineScene</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The scene to switch to when online. </p>
 <p>Setting this makes the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a> do scene management. This scene will be switched to when a network session is started - such as a client connect, or a server listen.</p>
 <h3 id="variable-networkaddress">variable networkAddress</h3>
 <div class="highlight"><pre><span></span><code><span class="n">string</span> <span class="n">networkAddress</span> <span class="o">=</span> <span class="s">&quot;localhost&quot;</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The network address currently in use. </p>
 <p>For clients, this is the address of the server that is connected to. For servers, this is the local address.</p>
 <h3 id="variable-maxconnections">variable maxConnections</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">maxConnections</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The maximum number of concurrent network connections to support. </p>
 <p>This effects the memory usage of the network layer.</p>
 <h3 id="variable-disconnectinactiveconnections">variable disconnectInactiveConnections</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">disconnectInactiveConnections</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Should the server disconnect remote connections that have gone silent for more than Server Idle Timeout? </p>
 <h3 id="variable-disconnectinactivetimeout">variable disconnectInactiveTimeout</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="n">disconnectInactiveTimeout</span> <span class="o">=</span> <span class="mf">60f</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Timeout in seconds since last message from a client after which server will auto-disconnect. </p>
 <p>By default, clients send at least a Ping message every 2 seconds.</p>
 <p>The Host client is immune from idle timeout disconnection.</p>
@@ -7683,67 +7630,55 @@
 <h3 id="variable-authenticator">variable authenticator</h3>
 <div class="highlight"><pre><span></span><code><span class="n">NetworkAuthenticator</span> <span class="n">authenticator</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-playerprefab">variable playerPrefab</h3>
 <div class="highlight"><pre><span></span><code><span class="n">GameObject</span> <span class="n">playerPrefab</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The default prefab to be used to create player objects on the server. </p>
 <p>Player objects are created in the default handler for AddPlayer() on the server. Implementing OnServerAddPlayer overrides this behaviour.</p>
 <h3 id="variable-autocreateplayer">variable autoCreatePlayer</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">autoCreatePlayer</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <p>A flag to control whether or not player objects are automatically created on connect, and on scene change. </p>
 <h3 id="variable-playerspawnmethod">variable playerSpawnMethod</h3>
 <div class="highlight"><pre><span></span><code><span class="n">PlayerSpawnMethod</span> <span class="n">playerSpawnMethod</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The current method of spawning players used by the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a>. </p>
 <h3 id="variable-spawnprefabs">variable spawnPrefabs</h3>
 <div class="highlight"><pre><span></span><code><span class="n">List</span><span class="o">&lt;</span> <span class="n">GameObject</span> <span class="o">&gt;</span> <span class="n">spawnPrefabs</span> <span class="o">=</span> <span class="k">new</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <p>List of prefabs that will be registered with the spawning system. </p>
 <p>For each of these prefabs, ClientScene.RegisterPrefab() will be automatically invoked.</p>
 <h3 id="variable-numplayers">variable numPlayers</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">numPlayers</span> <span class="o">=&gt;</span> <span class="n">NetworkServer</span><span class="p">.</span><span class="n">connections</span><span class="p">.</span><span class="n">Count</span><span class="p">(</span><span class="n">kv</span> <span class="o">=&gt;</span> <span class="n">kv</span><span class="p">.</span><span class="n">Value</span><span class="p">.</span><span class="n">identity</span> <span class="o">!=</span> <span class="n">null</span><span class="p">);</span>
 </code></pre></div>
-
 <p>Number of active player objects across all connections on the server. </p>
 <p>This is only valid on the host / server.</p>
 <h3 id="variable-isnetworkactive">variable isNetworkActive</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isNetworkActive</span><span class="p">;</span>
 </code></pre></div>
-
 <p>True if the server or client is started and running </p>
 <p>This is set True in StartServer / StartClient, and set False in StopServer / StopClient</p>
 <h3 id="variable-clientloadedscene">variable clientLoadedScene</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">clientLoadedScene</span><span class="p">;</span>
 </code></pre></div>
-
 <p>This is true if the client loaded a new scene when connecting to the server. </p>
 <p>This is set before OnClientConnect is called, so it can be checked there to perform different logic if a scene load occurred.</p>
 <h3 id="variable-loadingsceneasync">variable loadingSceneAsync</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">UnityEngine</span><span class="p">.</span><span class="n">AsyncOperation</span> <span class="n">loadingSceneAsync</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-startpositionindex">variable startPositionIndex</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">int</span> <span class="n">startPositionIndex</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-startpositions">variable startPositions</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">List</span><span class="o">&lt;</span> <span class="n">Transform</span> <span class="o">&gt;</span> <span class="n">startPositions</span> <span class="o">=</span> <span class="k">new</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Transform</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <p>List of transforms populted by <a href="">NetworkStartPosition</a> components found in the scene. </p>
 <h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
 <h3 id="variable-transport">variable transport</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Transport</span> <span class="n">transport</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

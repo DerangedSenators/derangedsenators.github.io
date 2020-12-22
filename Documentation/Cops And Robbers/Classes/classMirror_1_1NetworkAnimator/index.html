@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6817,7 +6817,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkAnimator</span><span class="p">;</span>
 </code></pre></div>
-
 <p>A component to synchronize Mecanim animation states for networked objects. </p>
 <p>The animation of game objects can be networked by this component. There are two models of authority for networked movement:</p>
 <p>If the object has authority on the client, then it should be animated locally on the owning client. The animation state information will be sent from the owning client to the server, then broadcast to all of the other clients. This is common for player objects.</p>
@@ -6830,7 +6829,6 @@
     <span class="kt">bool</span> <span class="n">initialState</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Custom Serialization </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6845,7 +6843,6 @@
     <span class="kt">bool</span> <span class="n">initialState</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Custom Deserialization </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6858,7 +6855,6 @@
     <span class="n">string</span> <span class="n">triggerName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Causes an animation trigger to be invoked for a networked object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6870,7 +6866,6 @@
     <span class="kt">int</span> <span class="n">hash</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Causes an animation trigger to be invoked for a networked object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6881,7 +6876,6 @@
     <span class="n">string</span> <span class="n">triggerName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Causes an animation trigger to be reset for a networked object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6893,7 +6887,6 @@
     <span class="kt">int</span> <span class="n">hash</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Causes an animation trigger to be reset for a networked object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6903,14 +6896,12 @@
 <h3 id="variable-clientauthority">variable clientAuthority</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">clientAuthority</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-animator">variable animator</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Animator</span> <span class="n">animator</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The animator component to synchronize. </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:24 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

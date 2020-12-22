@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6883,21 +6883,18 @@
 <h3 id="function-onstartclient">function OnStartClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Called on every NetworkBehaviour when it is activated on a client. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstartclient">Mirror::NetworkBehaviour::OnStartClient</a></p>
 <p>Objects on the host have this function called, as there is a local client on the host. The values of SyncVars on object are guaranteed to be initialized correctly with the latest state from the server when this function is called on the client.</p>
 <h3 id="function-onstopclient">function OnStopClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStopClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked on clients when the server has caused this object to be destroyed. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstopclient">Mirror::NetworkBehaviour::OnStopClient</a></p>
 <p>This can be used as a hook to invoke effects or do client specific cleanup.</p>
 <h3 id="function-onstopserver">function OnStopServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStopServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Invoked on the server when the object is unspawned </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstopserver">Mirror::NetworkBehaviour::OnStopServer</a></p>
 <p>Useful for saving object data in persistant storage</p>
@@ -6906,56 +6903,44 @@
     <span class="kt">bool</span> <span class="n">publicMatch</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-joingame">function JoinGame</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">JoinGame</span><span class="p">(</span>
     <span class="n">string</span> <span class="n">matchId</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-searchgame">function SearchGame</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SearchGame</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-begingame">function BeginGame</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">BeginGame</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-startgame">function StartGame</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">StartGame</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-disconnectgame">function DisconnectGame</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">DisconnectGame</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-getteamid">function GetTeamId</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">int</span> <span class="n">GetTeamId</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-localplayer">variable localPlayer</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">Player</span> <span class="n">localPlayer</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-matchid">variable MatchId</h3>
 <div class="highlight"><pre><span></span><code><span class="n">string</span> <span class="n">MatchId</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-playerindex">variable playerIndex</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">playerIndex</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-teamid">variable teamId</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">teamId</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-currentmatch">variable currentMatch</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Match</span> <span class="n">currentMatch</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:28 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:33 UTC</p>
                 
                   
                 

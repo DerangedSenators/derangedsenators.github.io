@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6792,7 +6792,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkSceneChecker</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Component that controls visibility of networked objects between scenes. </p>
 <p>Any object with this component on it will only be visible to other objects in the same scene</p>
 <p>This would be used when the server has multiple additive subscenes loaded to isolate players to their respective subscenes</p>
@@ -6800,7 +6799,6 @@
 <h3 id="function-onstartserver">function OnStartServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked for <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/">NetworkBehaviour</a> objects when they become active on the server. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstartserver">Mirror::NetworkBehaviour::OnStartServer</a></p>
 <p>This could be triggered by NetworkServer.Listen() for objects in the scene, or by NetworkServer.Spawn() for objects that are dynamically created.</p>
@@ -6810,7 +6808,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Callback used by the visibility system to determine if an observer (player) can see this object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6825,7 +6822,6 @@
     <span class="kt">bool</span> <span class="n">initialize</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Callback used by the visibility system to (re)construct the set of observers that can see this object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6838,11 +6834,10 @@
 <h3 id="variable-forcehidden">variable forceHidden</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">forceHidden</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Flag to force this object to be hidden from all observers. </p>
 <p>If this object is a player object, it will not be hidden for that client.</p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

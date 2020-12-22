@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6683,87 +6683,69 @@
     <span class="n">uint</span> <span class="n">ReceiveWindowSize</span> <span class="o">=</span><span class="n">Kcp</span><span class="p">.</span><span class="n">WND_RCV</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-isactive">function IsActive</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsActive</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-start">function Start</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Start</span><span class="p">(</span>
     <span class="n">ushort</span> <span class="n">port</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-send">function Send</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Send</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">connectionId</span><span class="p">,</span>
     <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="n">segment</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-disconnect">function Disconnect</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Disconnect</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">connectionId</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getclientaddress">function GetClientAddress</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">string</span> <span class="n">GetClientAddress</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">connectionId</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-tick">function Tick</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Tick</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-stop">function Stop</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Stop</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-onconnected">variable OnConnected</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Action</span><span class="o">&lt;</span> <span class="kt">int</span> <span class="o">&gt;</span> <span class="n">OnConnected</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-ondata">variable OnData</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Action</span><span class="o">&lt;</span> <span class="kt">int</span><span class="p">,</span> <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">OnData</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-ondisconnected">variable OnDisconnected</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Action</span><span class="o">&lt;</span> <span class="kt">int</span> <span class="o">&gt;</span> <span class="n">OnDisconnected</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-nodelay">variable NoDelay</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">NoDelay</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-interval">variable Interval</h3>
 <div class="highlight"><pre><span></span><code><span class="n">uint</span> <span class="n">Interval</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-fastresend">variable FastResend</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">FastResend</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-congestionwindow">variable CongestionWindow</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">CongestionWindow</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-sendwindowsize">variable SendWindowSize</h3>
 <div class="highlight"><pre><span></span><code><span class="n">uint</span> <span class="n">SendWindowSize</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-receivewindowsize">variable ReceiveWindowSize</h3>
 <div class="highlight"><pre><span></span><code><span class="n">uint</span> <span class="n">ReceiveWindowSize</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-connections">variable connections</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Dictionary</span><span class="o">&lt;</span> <span class="kt">int</span><span class="p">,</span> <span class="n">KcpServerConnection</span> <span class="o">&gt;</span> <span class="n">connections</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="p">[</span><span class="n">KcpServerConnection</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">classkcp2k_1_1KcpServerConnection</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:29 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:33 UTC</p>
                 
                   
                 

@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6496,7 +6496,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PlayerLink</span><span class="o">::</span><span class="n">Core</span><span class="o">::</span><span class="n">Logger</span><span class="p">;</span>
 </code></pre></div>
-
 <p>A Singelton <a href="">Logger</a> class which will be used by <a href="/Documentation/PlayerLink/Namespaces/namespacePlayerLink/">PlayerLink</a> to create logs based on a severity level and append to a logfile. </p>
 <p><strong>Author</strong>: </p>
 <ul>
@@ -6509,14 +6508,12 @@
     <span class="n">Logger</span> <span class="o">&amp;</span> <span class="n">otherLogger</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Singleton Class should not be cloneable. Constructor used to prevent multiple instances of <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/">Logger</a></p>
 <h3 id="function-operator">function operator=</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Logger</span> <span class="o">&amp;</span> 
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Singleton classes must not be assignable. This method will prevent the class from being assingned </p>
 <h3 id="function-log">function log</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">log</span><span class="p">(</span>
@@ -6525,7 +6522,6 @@
     <span class="k">const</span> <span class="n">boost</span><span class="o">::</span><span class="n">source_location</span> <span class="o">&amp;</span> <span class="n">location</span> <span class="o">=</span><span class="n">BOOST_CURRENT_LOCATION</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p><strong>Parameters</strong>: </p>
 <ul>
 <li><strong>severity</strong> The Severity level of the log </li>
@@ -6535,11 +6531,10 @@
 <h3 id="function-getlogger">function getLogger</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">Logger</span> <span class="o">*</span> <span class="n">getLogger</span><span class="p">()</span>
 </code></pre></div>
-
 <p><strong>Return</strong>: A pointer to the <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Logger/">Logger</a> Instance in memory </p>
 <p>Gets the running logger instance pointer </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:20 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:27 UTC</p>
                 
                   
                 

@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6863,18 +6863,15 @@
     <span class="n">Action</span><span class="o">&lt;</span> <span class="n">byte</span><span class="p">[],</span> <span class="kt">int</span> <span class="o">&gt;</span> <span class="n">output</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-receive">function Receive</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">int</span> <span class="n">Receive</span><span class="p">(</span>
     <span class="n">byte</span> <span class="p">[]</span> <span class="n">buffer</span><span class="p">,</span>
     <span class="kt">int</span> <span class="n">len</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-peeksize">function PeekSize</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">int</span> <span class="n">PeekSize</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-send">function Send</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">int</span> <span class="n">Send</span><span class="p">(</span>
     <span class="n">byte</span> <span class="p">[]</span> <span class="n">buffer</span><span class="p">,</span>
@@ -6882,43 +6879,36 @@
     <span class="kt">int</span> <span class="n">len</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-input">function Input</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">int</span> <span class="n">Input</span><span class="p">(</span>
     <span class="n">byte</span> <span class="p">[]</span> <span class="n">data</span><span class="p">,</span>
     <span class="kt">int</span> <span class="n">size</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>used when you receive a low level packet (eg. UDP packet) </p>
 <h3 id="function-flush">function Flush</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Flush</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-update">function Update</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Update</span><span class="p">(</span>
     <span class="n">uint</span> <span class="n">currentTimeMilliSeconds</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-check">function Check</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">uint</span> <span class="n">Check</span><span class="p">(</span>
     <span class="n">uint</span> <span class="n">current_</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-setmtu">function SetMtu</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SetMtu</span><span class="p">(</span>
     <span class="n">uint</span> <span class="n">mtu</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-setinterval">function SetInterval</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SetInterval</span><span class="p">(</span>
     <span class="n">uint</span> <span class="n">interval</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-setnodelay">function SetNoDelay</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SetNoDelay</span><span class="p">(</span>
     <span class="n">uint</span> <span class="n">nodelay</span><span class="p">,</span>
@@ -6927,109 +6917,84 @@
     <span class="kt">bool</span> <span class="n">nocwnd</span> <span class="o">=</span><span class="nb">false</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-setwindowsize">function SetWindowSize</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SetWindowSize</span><span class="p">(</span>
     <span class="n">uint</span> <span class="n">sendWindow</span><span class="p">,</span>
     <span class="n">uint</span> <span class="n">receiveWindow</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-rto_ndl">variable RTO_NDL</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">RTO_NDL</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-rto_min">variable RTO_MIN</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">RTO_MIN</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-rto_def">variable RTO_DEF</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">RTO_DEF</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-rto_max">variable RTO_MAX</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">RTO_MAX</span> <span class="o">=</span> <span class="mi">60000</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-cmd_push">variable CMD_PUSH</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">CMD_PUSH</span> <span class="o">=</span> <span class="mi">81</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-cmd_ack">variable CMD_ACK</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">CMD_ACK</span> <span class="o">=</span> <span class="mi">82</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-cmd_wask">variable CMD_WASK</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">CMD_WASK</span> <span class="o">=</span> <span class="mi">83</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-cmd_wins">variable CMD_WINS</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">CMD_WINS</span> <span class="o">=</span> <span class="mi">84</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-ask_send">variable ASK_SEND</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">ASK_SEND</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-ask_tell">variable ASK_TELL</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">ASK_TELL</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-wnd_snd">variable WND_SND</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">WND_SND</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-wnd_rcv">variable WND_RCV</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">WND_RCV</span> <span class="o">=</span> <span class="mi">128</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-mtu_def">variable MTU_DEF</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">MTU_DEF</span> <span class="o">=</span> <span class="mi">1200</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-ack_fast">variable ACK_FAST</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">ACK_FAST</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-interval">variable INTERVAL</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">INTERVAL</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-overhead">variable OVERHEAD</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">OVERHEAD</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-deadlink">variable DEADLINK</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">DEADLINK</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-thresh_init">variable THRESH_INIT</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">THRESH_INIT</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-thresh_min">variable THRESH_MIN</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">THRESH_MIN</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-probe_init">variable PROBE_INIT</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">PROBE_INIT</span> <span class="o">=</span> <span class="mi">7000</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-probe_limit">variable PROBE_LIMIT</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">PROBE_LIMIT</span> <span class="o">=</span> <span class="mi">120000</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-fastack_limit">variable FASTACK_LIMIT</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">FASTACK_LIMIT</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-waitsnd">variable WaitSnd</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">WaitSnd</span> <span class="o">=&gt;</span> <span class="n">snd_buf</span><span class="p">.</span><span class="n">Count</span> <span class="o">+</span> <span class="n">snd_queue</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:28 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:33 UTC</p>
                 
                   
                 

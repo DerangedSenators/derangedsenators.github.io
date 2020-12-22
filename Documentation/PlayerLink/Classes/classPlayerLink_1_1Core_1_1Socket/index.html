@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6616,7 +6616,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PlayerLink</span><span class="o">::</span><span class="n">Core</span><span class="o">::</span><span class="n">Socket</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Lowest socket implementation. This class will be used by top level socket implementations. </p>
 <p><strong>Author</strong>: Hanzalah Ravat </p>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
@@ -6627,7 +6626,6 @@
     <span class="kt">int</span> <span class="n">flag</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Constructs a <a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1Socket/">Socket</a> object. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6642,40 +6640,33 @@
     <span class="kt">int</span> <span class="n">fd</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getaddress">function getAddress</h3>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">getAddress</span><span class="p">()</span> <span class="k">const</span>
 </code></pre></div>
-
 <p>Returns the IP Address of the remote device. </p>
 <p><strong>Return</strong>: Gets the address of the remote device </p>
 <h3 id="function-getport">function getPort</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">uint32_t</span> <span class="n">getPort</span><span class="p">()</span> <span class="k">const</span>
 </code></pre></div>
-
 <p><strong>Return</strong>: The port number used for this connection </p>
 <h3 id="function-getsocketdescriptor">function getSocketDescriptor</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">getSocketDescriptor</span><span class="p">()</span> <span class="k">const</span>
 </code></pre></div>
-
 <p><strong>Return</strong>: The socket descriptor used for this socket </p>
 <h3 id="function-close">function close</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">close</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Closes the connection. </p>
 <p><strong>Return</strong>: True if socket closes or false if there was an error while closing the socket </p>
 <h3 id="function-isclosed">function isClosed</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isClosed</span><span class="p">()</span>
 </code></pre></div>
-
 <p><strong>Return</strong>: true if the socket connection has been closed or false if it is still open </p>
 <h3 id="function-setblocking">function setBlocking</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">setBlocking</span><span class="p">(</span>
     <span class="kt">bool</span> <span class="n">swtch</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Allows you to set the blocking mode for this file descriptor. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6685,26 +6676,22 @@
 <h3 id="function-getlasterror">function getLastError</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">getLastError</span><span class="p">()</span>
 </code></pre></div>
-
 <p><strong>Return</strong>: The last error number </p>
 <h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
 <h3 id="variable-msocketfd">variable mSocketFD</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">mSocketFD</span><span class="p">;</span>
 </code></pre></div>
-
 <p>File Descriptor for this socket instance. </p>
 <h3 id="variable-socketisclosed">variable socketIsClosed</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">socketIsClosed</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Flag if socket is open or closed. </p>
 <h3 id="variable-isblocked">variable isBlocked</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isBlocked</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Boolean to determine if blocking is enabled on this socket instance. </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:20 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:27 UTC</p>
                 
                   
                 

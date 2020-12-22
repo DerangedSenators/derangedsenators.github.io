@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -7344,7 +7344,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkRoomManager</span><span class="p">;</span>
 </code></pre></div>
-
 <p>This is a specialized <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a> that includes a networked room. </p>
 <p>The room has slots that track the joined players, and a maximum player count that is enforced. It requires that the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomPlayer/">NetworkRoomPlayer</a> component be on the room player objects.</p>
 <p><a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/">NetworkRoomManager</a> is derived from <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a>, and so it implements many of the virtual functions provided by the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a> class. To avoid accidentally replacing functionality of the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/">NetworkRoomManager</a>, there are new virtual functions on the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/">NetworkRoomManager</a> that begin with "OnRoom". These should be used on classes derived from <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/">NetworkRoomManager</a> instead of the virtual functions on <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a>.</p>
@@ -7353,7 +7352,6 @@
 <h3 id="function-onvalidate">function OnValidate</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnValidate</span><span class="p">()</span>
 </code></pre></div>
-
 <p>virtual so that inheriting classes' <a href="">OnValidate()</a> can call base.OnValidate() too </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-onvalidate">Mirror::NetworkManager::OnValidate</a></p>
 <h3 id="function-onserverready">function OnServerReady</h3>
@@ -7361,7 +7359,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a client is ready. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7372,7 +7369,6 @@
 <h3 id="function-checkreadytobegin">function CheckReadyToBegin</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">CheckReadyToBegin</span><span class="p">()</span>
 </code></pre></div>
-
 <p>CheckReadyToBegin checks all of the players in the room to see if their readyToBegin flag is set. </p>
 <p>If all of the players are ready, then the server switches from the RoomScene to the PlayScene, essentially starting the game. This is called automatically in response to NetworkRoomPlayer.CmdChangeReadyState.</p>
 <h3 id="function-onserverconnect">function OnServerConnect</h3>
@@ -7380,7 +7376,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a new client connects. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7393,7 +7388,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a client disconnects. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7406,7 +7400,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a client adds a new player with ClientScene.AddPlayer. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7417,13 +7410,11 @@
 <h3 id="function-recalculateroomplayerindices">function RecalculateRoomPlayerIndices</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">RecalculateRoomPlayerIndices</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-serverchangescene">function ServerChangeScene</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">ServerChangeScene</span><span class="p">(</span>
     <span class="n">string</span> <span class="n">newSceneName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This causes the server to switch scenes and sets the networkSceneName. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7436,7 +7427,6 @@
     <span class="n">string</span> <span class="n">sceneName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the server when a scene is completed loaded, when the scene load was initiated by the server with <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-serverchangescene">ServerChangeScene()</a>. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7446,33 +7436,28 @@
 <h3 id="function-onstartserver">function OnStartServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked when a server is started - including when a host is started. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-onstartserver">Mirror::NetworkManager::OnStartServer</a></p>
 <p>StartServer has multiple signatures, but they all cause this hook to be called.</p>
 <h3 id="function-onstarthost">function OnStartHost</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartHost</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked when a host is started. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-onstarthost">Mirror::NetworkManager::OnStartHost</a></p>
 <p>StartHost has multiple signatures, but they all cause this hook to be called.</p>
 <h3 id="function-onstopserver">function OnStopServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStopServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called when a server is stopped - including when a host is stopped. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-onstopserver">Mirror::NetworkManager::OnStopServer</a></p>
 <h3 id="function-onstophost">function OnStopHost</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStopHost</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called when a host is stopped. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-onstophost">Mirror::NetworkManager::OnStopHost</a></p>
 <h3 id="function-onstartclient">function OnStartClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked when the client is started. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-onstartclient">Mirror::NetworkManager::OnStartClient</a></p>
 <h3 id="function-onclientconnect">function OnClientConnect</h3>
@@ -7480,7 +7465,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on the client when connected to a server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7493,7 +7477,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on clients when disconnected from a server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7504,7 +7487,6 @@
 <h3 id="function-onstopclient">function OnStopClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStopClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called when a client is stopped. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/#function-onstopclient">Mirror::NetworkManager::OnStopClient</a></p>
 <h3 id="function-onclientscenechanged">function OnClientSceneChanged</h3>
@@ -7512,7 +7494,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on clients when a scene has completed loaded, when the scene load was initiated by the server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7523,22 +7504,18 @@
 <h3 id="function-onroomstarthost">function OnRoomStartHost</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomStartHost</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the host when a host is started. </p>
 <h3 id="function-onroomstophost">function OnRoomStopHost</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomStopHost</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the host when the host is stopped. </p>
 <h3 id="function-onroomstartserver">function OnRoomStartServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomStartServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the server when the server is started - including when a host is started. </p>
 <h3 id="function-onroomstopserver">function OnRoomStopServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomStopServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the server when the server is started - including when a host is stopped. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1NetworkRoom_1_1NetworkRoomManagerExt/#function-onroomstopserver">Mirror::Examples::NetworkRoom::NetworkRoomManagerExt::OnRoomStopServer</a></p>
 <h3 id="function-onroomserverconnect">function OnRoomServerConnect</h3>
@@ -7546,7 +7523,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This is called on the server when a new client connects to the server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7557,7 +7533,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This is called on the server when a client disconnects. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7568,7 +7543,6 @@
     <span class="n">string</span> <span class="n">sceneName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This is called on the server when a networked scene finishes loading. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7579,7 +7553,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This allows customization of the creation of the room-player object on the server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7593,7 +7566,6 @@
     <span class="n">GameObject</span> <span class="n">roomPlayer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This allows customization of the creation of the GamePlayer object on the server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7607,7 +7579,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This allows customization of the creation of the GamePlayer object on the server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7622,7 +7593,6 @@
     <span class="n">GameObject</span> <span class="n">gamePlayer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This is called on the server when it is told that a client has finished switching from the room scene to a game player scene. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7636,32 +7606,27 @@
 <h3 id="function-onroomserverplayersready">function OnRoomServerPlayersReady</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomServerPlayersReady</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the server when all the players in the room are ready. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1NetworkRoom_1_1NetworkRoomManagerExt/#function-onroomserverplayersready">Mirror::Examples::NetworkRoom::NetworkRoomManagerExt::OnRoomServerPlayersReady</a></p>
 <p>The default implementation of this function uses <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomManager/#function-serverchangescene">ServerChangeScene()</a> to switch to the game player scene. By implementing this callback you can customize what happens when all the players in the room are ready, such as adding a countdown or a confirmation for a group leader.</p>
 <h3 id="function-onroomserverplayersnotready">function OnRoomServerPlayersNotReady</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomServerPlayersNotReady</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the server when CheckReadyToBegin finds that players are not ready </p>
 <p>May be called multiple times while not ready players are joining</p>
 <h3 id="function-onroomcliententer">function OnRoomClientEnter</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomClientEnter</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is a hook to allow custom behaviour when the game client enters the room. </p>
 <h3 id="function-onroomclientexit">function OnRoomClientExit</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomClientExit</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is a hook to allow custom behaviour when the game client exits the room. </p>
 <h3 id="function-onroomclientconnect">function OnRoomClientConnect</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomClientConnect</span><span class="p">(</span>
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This is called on the client when it connects to server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7672,7 +7637,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This is called on the client when disconnected from a server. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7681,7 +7645,6 @@
 <h3 id="function-onroomstartclient">function OnRoomStartClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomStartClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the client when a client is started. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7690,7 +7653,6 @@
 <h3 id="function-onroomstopclient">function OnRoomStopClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomStopClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is called on the client when the client stops. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1NetworkRoom_1_1NetworkRoomManagerExt/#function-onroomstopclient">Mirror::Examples::NetworkRoom::NetworkRoomManagerExt::OnRoomStopClient</a></p>
 <h3 id="function-onroomclientscenechanged">function OnRoomClientSceneChanged</h3>
@@ -7698,7 +7660,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This is called on the client when the client is finished loading a new networked scene. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7707,57 +7668,47 @@
 <h3 id="function-onroomclientaddplayerfailed">function OnRoomClientAddPlayerFailed</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnRoomClientAddPlayerFailed</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Called on the client when adding a player to the room fails. </p>
 <p>This could be because the room is full, or the connection is not allowed to have more players.</p>
 <h3 id="function-ongui">function OnGUI</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnGUI</span><span class="p">()</span>
 </code></pre></div>
-
 <p>virtual so inheriting classes can roll their own </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1NetworkRoom_1_1NetworkRoomManagerExt/#function-ongui">Mirror::Examples::NetworkRoom::NetworkRoomManagerExt::OnGUI</a></p>
 <h2 id="public-property-documentation">Public Property Documentation</h2>
 <h3 id="property-allplayersready">property allPlayersReady</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">allPlayersReady</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-roomscene">variable RoomScene</h3>
 <div class="highlight"><pre><span></span><code><span class="n">string</span> <span class="n">RoomScene</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The scene to use for the room. This is similar to the offlineScene of the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a>. </p>
 <h3 id="variable-gameplayscene">variable GameplayScene</h3>
 <div class="highlight"><pre><span></span><code><span class="n">string</span> <span class="n">GameplayScene</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The scene to use for the playing the game from the room. This is similar to the onlineScene of the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkManager/">NetworkManager</a>. </p>
 <h3 id="variable-pendingplayers">variable pendingPlayers</h3>
 <div class="highlight"><pre><span></span><code><span class="n">List</span><span class="o">&lt;</span> <span class="n">PendingPlayer</span> <span class="o">&gt;</span> <span class="n">pendingPlayers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">List</span><span class="o">&lt;</span><span class="p">[</span><span class="n">PendingPlayer</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">structMirror_1_1NetworkRoomManager_1_1PendingPlayer</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <p>List of players that are in the Room </p>
 <h3 id="variable-roomslots">variable roomSlots</h3>
 <div class="highlight"><pre><span></span><code><span class="n">List</span><span class="o">&lt;</span> <span class="n">NetworkRoomPlayer</span> <span class="o">&gt;</span> <span class="n">roomSlots</span> <span class="o">=</span> <span class="k">new</span> <span class="n">List</span><span class="o">&lt;</span><span class="p">[</span><span class="n">NetworkRoomPlayer</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">classMirror_1_1NetworkRoomPlayer</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <p>These slots track players that enter the room. </p>
 <p>The slotId on players is global to the game - across all players.</p>
 <h3 id="variable-clientindex">variable clientIndex</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">clientIndex</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
 <h3 id="variable-minplayers">variable minPlayers</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">minPlayers</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-roomplayerprefab">variable roomPlayerPrefab</h3>
 <div class="highlight"><pre><span></span><code><span class="n">NetworkRoomPlayer</span> <span class="n">roomPlayerPrefab</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

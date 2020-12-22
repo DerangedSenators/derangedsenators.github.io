@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6645,57 +6645,48 @@
     <span class="n">Type</span> <span class="n">t</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-is-t">function Is&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">bool</span> <span class="n">Is</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeReference</span> <span class="n">td</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-isderivedfrom-t">function IsDerivedFrom&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">bool</span> <span class="n">IsDerivedFrom</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeDefinition</span> <span class="n">td</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-isderivedfrom">function IsDerivedFrom</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">bool</span> <span class="n">IsDerivedFrom</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeDefinition</span> <span class="n">td</span><span class="p">,</span>
     <span class="n">Type</span> <span class="n">baseClass</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getenumunderlyingtype">function GetEnumUnderlyingType</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">TypeReference</span> <span class="n">GetEnumUnderlyingType</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeDefinition</span> <span class="n">td</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-implementsinterface-tinterface">function ImplementsInterface&lt; TInterface &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">bool</span> <span class="n">ImplementsInterface</span><span class="o">&lt;</span> <span class="n">TInterface</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeDefinition</span> <span class="n">td</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-ismultidimensionalarray">function IsMultidimensionalArray</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">bool</span> <span class="n">IsMultidimensionalArray</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeReference</span> <span class="n">tr</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-canberesolved">function CanBeResolved</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">bool</span> <span class="n">CanBeResolved</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeReference</span> <span class="n">parent</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-makehostinstancegeneric">function MakeHostInstanceGeneric</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">MethodReference</span> <span class="n">MakeHostInstanceGeneric</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">MethodReference</span> <span class="n">self</span><span class="p">,</span>
     <span class="n">GenericInstanceType</span> <span class="n">instanceType</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Given a method of a generic class such as ArraySegment<code>T.get_Count, and a generic instance such as ArraySegment</code>int Creates a reference to the specialized method ArraySegment<code>int</code>.get_Count </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6710,7 +6701,6 @@
     <span class="n">GenericInstanceType</span> <span class="n">instanceType</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Given a field of a generic class such as Writer<T>.write, and a generic instance such as ArraySegment<code>int Creates a reference to the specialized method ArraySegment</code>int`.get_Count </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6724,13 +6714,11 @@
     <span class="k">this</span> <span class="n">ICustomAttributeProvider</span> <span class="n">method</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-hascustomattribute-tattribute">function HasCustomAttribute&lt; TAttribute &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">bool</span> <span class="n">HasCustomAttribute</span><span class="o">&lt;</span> <span class="n">TAttribute</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">ICustomAttributeProvider</span> <span class="n">attributeProvider</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getfield-t">function GetField&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">T</span> <span class="n">GetField</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">CustomAttribute</span> <span class="n">ca</span><span class="p">,</span>
@@ -6738,34 +6726,29 @@
     <span class="n">T</span> <span class="n">defaultValue</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getmethod">function GetMethod</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">MethodDefinition</span> <span class="n">GetMethod</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeDefinition</span> <span class="n">td</span><span class="p">,</span>
     <span class="n">string</span> <span class="n">methodName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getmethods">function GetMethods</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">List</span><span class="o">&lt;</span> <span class="n">MethodDefinition</span> <span class="o">&gt;</span> <span class="n">GetMethods</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeDefinition</span> <span class="n">td</span><span class="p">,</span>
     <span class="n">string</span> <span class="n">methodName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getmethodinbasetype">function GetMethodInBaseType</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">MethodDefinition</span> <span class="n">GetMethodInBaseType</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeDefinition</span> <span class="n">td</span><span class="p">,</span>
     <span class="n">string</span> <span class="n">methodName</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-findallpublicfields">function FindAllPublicFields</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">FieldDefinition</span> <span class="o">&gt;</span> <span class="n">FindAllPublicFields</span><span class="p">(</span>
     <span class="k">this</span> <span class="n">TypeReference</span> <span class="n">variable</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Finds public fields in type and base type </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6777,7 +6760,6 @@
     <span class="k">this</span> <span class="n">TypeDefinition</span> <span class="n">typeDefinition</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Finds public fields in type and base type </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6785,7 +6767,7 @@
 </ul>
 <p><strong>Return</strong>: </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:28 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:33 UTC</p>
                 
                   
                 

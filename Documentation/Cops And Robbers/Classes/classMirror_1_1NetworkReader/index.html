@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6626,7 +6626,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkReader</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Binary stream Reader. Supports simple types, buffers, arrays, structs, and nested types </p>
 <p>Use [NetworkReaderPool.GetReader] to reduce memory allocation</p>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
@@ -6635,54 +6634,43 @@
     <span class="n">byte</span> <span class="p">[]</span> <span class="n">bytes</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-networkreader_1">function NetworkReader</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">NetworkReader</span><span class="p">(</span>
     <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="n">segment</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-readbyte">function ReadByte</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">byte</span> <span class="n">ReadByte</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-readint32">function ReadInt32</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">ReadInt32</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-readuint32">function ReadUInt32</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">uint</span> <span class="n">ReadUInt32</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-readint64">function ReadInt64</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">long</span> <span class="n">ReadInt64</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-readuint64">function ReadUInt64</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">ulong</span> <span class="n">ReadUInt64</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-readbytes">function ReadBytes</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">byte</span> <span class="p">[]</span> <span class="n">ReadBytes</span><span class="p">(</span>
     <span class="n">byte</span> <span class="p">[]</span> <span class="n">bytes</span><span class="p">,</span>
     <span class="kt">int</span> <span class="n">count</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-readbytessegment">function ReadBytesSegment</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="n">ReadBytesSegment</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">count</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-tostring">function ToString</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">override</span> <span class="n">string</span> <span class="n">ToString</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-read-t">function Read&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">T</span> <span class="n">Read</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Reads any data type that mirror supports </p>
 <p><strong>Template Parameters</strong>: </p>
 <ul>
@@ -6693,13 +6681,11 @@
 <h3 id="variable-position">variable Position</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">Position</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-length">variable Length</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">Length</span> <span class="o">=&gt;</span> <span class="n">buffer</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

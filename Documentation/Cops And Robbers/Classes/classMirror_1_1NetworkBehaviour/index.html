@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -7103,7 +7103,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkBehaviour</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Base class which should be inherited by scripts which contain networking functionality. </p>
 <p>This is a MonoBehaviour class so scripts which need to use the networking feature should inherit this class instead of MonoBehaviour. It allows you to invoke networked actions, receive various callbacks, and automatically synchronize state from server-to-client.</p>
 <p>The <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/">NetworkBehaviour</a> component requires a <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a> on the game object. There can be multiple NetworkBehaviours on a single game object. For an object with sub-components in a hierarchy, the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a> must be on the root object, and <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/">NetworkBehaviour</a> scripts must also be on the root object.</p>
@@ -7114,7 +7113,6 @@
     <span class="n">ulong</span> <span class="n">dirtyBit</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Used to set the behaviour as dirty, so that a network update will be sent for the object. these are masks, not bit numbers, ie. 0x004 not 2 </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7123,20 +7121,17 @@
 <h3 id="function-clearalldirtybits">function ClearAllDirtyBits</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">ClearAllDirtyBits</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This clears all the dirty bits that were set on this script by SetDirtyBits(); </p>
 <p>This is automatically invoked when an update is sent for this object, but can be called manually as well.</p>
 <h3 id="function-isdirty">function IsDirty</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">IsDirty</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-onserialize">function OnSerialize</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">bool</span> <span class="n">OnSerialize</span><span class="p">(</span>
     <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="kt">bool</span> <span class="n">initialState</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Virtual function to override to send custom serialization data. The corresponding function to send serialization data is <a href="">OnDeserialize()</a>. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7154,7 +7149,6 @@
     <span class="kt">bool</span> <span class="n">initialState</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Virtual function to override to receive custom serialization data. The corresponding function to send serialization data is <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onserialize">OnSerialize()</a>. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7167,24 +7161,20 @@
     <span class="n">NetworkWriter</span> <span class="n">writer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-serializeobjectsdelta">function SerializeObjectsDelta</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">SerializeObjectsDelta</span><span class="p">(</span>
     <span class="n">NetworkWriter</span> <span class="n">writer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-onstopclient">function OnStopClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStopClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked on clients when the server has caused this object to be destroyed. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1Player/#function-onstopclient">Me::DerangedSenators::CopsAndRobbers::Player::OnStopClient</a></p>
 <p>This can be used as a hook to invoke effects or do client specific cleanup.</p>
 <h3 id="function-onstartserver">function OnStartServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStartServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked for <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/">NetworkBehaviour</a> objects when they become active on the server. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1NetworkRoom_1_1RandomColor/#function-onstartserver">Mirror::Examples::NetworkRoom::RandomColor::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1MultipleAdditiveScenes_1_1RandomColor/#function-onstartserver">Mirror::Examples::MultipleAdditiveScenes::RandomColor::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Additive_1_1RandomColor/#function-onstartserver">Mirror::Examples::Additive::RandomColor::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1NetworkRoom_1_1Spawner/#function-onstartserver">Mirror::Examples::NetworkRoom::Spawner::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Pong_1_1Ball/#function-onstartserver">Mirror::Examples::Pong::Ball::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1MultipleAdditiveScenes_1_1Spawner/#function-onstartserver">Mirror::Examples::MultipleAdditiveScenes::Spawner::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Cloud_1_1Examples_1_1Pong_1_1Ball/#function-onstartserver">Mirror::Cloud::Examples::Pong::Ball::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Tanks_1_1Projectile/#function-onstartserver">Mirror::Examples::Tanks::Projectile::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Cloud_1_1Examples_1_1Pong_1_1BallManager/#function-onstartserver">Mirror::Cloud::Examples::Pong::BallManager::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Benchmark_1_1MonsterMovement/#function-onstartserver">Mirror::Examples::Benchmark::MonsterMovement::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Basic_1_1Player/#function-onstartserver">Mirror::Examples::Basic::Player::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkProximityChecker/#function-onstartserver">Mirror::NetworkProximityChecker::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkSceneChecker/#function-onstartserver">Mirror::NetworkSceneChecker::OnStartServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkMatchChecker/#function-onstartserver">Mirror::NetworkMatchChecker::OnStartServer</a></p>
 <p>This could be triggered by NetworkServer.Listen() for objects in the scene, or by NetworkServer.Spawn() for objects that are dynamically created.</p>
@@ -7192,35 +7182,30 @@
 <h3 id="function-onstopserver">function OnStopServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStopServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Invoked on the server when the object is unspawned </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Cloud_1_1Examples_1_1Pong_1_1BallManager/#function-onstopserver">Mirror::Cloud::Examples::Pong::BallManager::OnStopServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkProximityChecker/#function-onstopserver">Mirror::NetworkProximityChecker::OnStopServer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1Player/#function-onstopserver">Me::DerangedSenators::CopsAndRobbers::Player::OnStopServer</a></p>
 <p>Useful for saving object data in persistant storage</p>
 <h3 id="function-onstartclient">function OnStartClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStartClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Called on every <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/">NetworkBehaviour</a> when it is activated on a client. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1NetworkRoom_1_1NetworkRoomPlayerExt/#function-onstartclient">Mirror::Examples::NetworkRoom::NetworkRoomPlayerExt::OnStartClient</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1Player/#function-onstartclient">Me::DerangedSenators::CopsAndRobbers::Player::OnStartClient</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Basic_1_1Player/#function-onstartclient">Mirror::Examples::Basic::Player::OnStartClient</a></p>
 <p>Objects on the host have this function called, as there is a local client on the host. The values of SyncVars on object are guaranteed to be initialized correctly with the latest state from the server when this function is called on the client.</p>
 <h3 id="function-onstartlocalplayer">function OnStartLocalPlayer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStartLocalPlayer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Called when the local player object has been set up. </p>
 <p><strong>Reimplemented by</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMe_1_1DerangedSenators_1_1CopsAndRobbers_1_1CameraController/#function-onstartlocalplayer">Me::DerangedSenators::CopsAndRobbers::CameraController::OnStartLocalPlayer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1NetworkRoom_1_1PlayerController/#function-onstartlocalplayer">Mirror::Examples::NetworkRoom::PlayerController::OnStartLocalPlayer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Additive_1_1PlayerController/#function-onstartlocalplayer">Mirror::Examples::Additive::PlayerController::OnStartLocalPlayer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1MultipleAdditiveScenes_1_1PlayerController/#function-onstartlocalplayer">Mirror::Examples::MultipleAdditiveScenes::PlayerController::OnStartLocalPlayer</a>, <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Basic_1_1Player/#function-onstartlocalplayer">Mirror::Examples::Basic::Player::OnStartLocalPlayer</a></p>
 <p>This happens after <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstartclient">OnStartClient()</a>, as it is triggered by an ownership message from the server. This is an appropriate place to activate components or functionality that should only be active for the local player, such as cameras and input.</p>
 <h3 id="function-onstartauthority">function OnStartAuthority</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStartAuthority</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked on behaviours that have authority, based on context and <a href="">NetworkIdentity.hasAuthority</a>. </p>
 <p>This is called after <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstartserver">OnStartServer</a> and before <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstartclient">OnStartClient.</a></p>
 <p>When <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/#function-assignclientauthority">AssignClientAuthority</a> is called on the server, this will be called on the client that owns the object. When an object is spawned with [NetworkServer.Spawn] with a <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkConnection/">NetworkConnection</a> parameter included, this will be called on the client that owns the object.</p>
 <h3 id="function-onstopauthority">function OnStopAuthority</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnStopAuthority</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked on behaviours when authority is removed. </p>
 <p>When <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/#function-removeclientauthority">NetworkIdentity.RemoveClientAuthority</a> is called on the server, this will be called on the client that owns the object.</p>
 <h2 id="protected-functions-documentation">Protected Functions Documentation</h2>
@@ -7229,20 +7214,17 @@
     <span class="n">ulong</span> <span class="n">dirtyBit</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-setsyncvarhookguard">function setSyncVarHookGuard</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">setSyncVarHookGuard</span><span class="p">(</span>
     <span class="n">ulong</span> <span class="n">dirtyBit</span><span class="p">,</span>
     <span class="kt">bool</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-initsyncobject">function InitSyncObject</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">InitSyncObject</span><span class="p">(</span>
     <span class="n">SyncObject</span> <span class="n">syncObject</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-sendcommandinternal">function SendCommandInternal</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SendCommandInternal</span><span class="p">(</span>
     <span class="n">Type</span> <span class="n">invokeClass</span><span class="p">,</span>
@@ -7252,7 +7234,6 @@
     <span class="kt">bool</span> <span class="n">ignoreAuthority</span> <span class="o">=</span><span class="nb">false</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-sendrpcinternal">function SendRPCInternal</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SendRPCInternal</span><span class="p">(</span>
     <span class="n">Type</span> <span class="n">invokeClass</span><span class="p">,</span>
@@ -7262,7 +7243,6 @@
     <span class="kt">bool</span> <span class="n">excludeOwner</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-sendtargetrpcinternal">function SendTargetRPCInternal</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SendTargetRPCInternal</span><span class="p">(</span>
     <span class="n">NetworkConnection</span> <span class="n">conn</span><span class="p">,</span>
@@ -7272,14 +7252,12 @@
     <span class="kt">int</span> <span class="n">channelId</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-syncvargameobjectequal">function SyncVarGameObjectEqual</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">SyncVarGameObjectEqual</span><span class="p">(</span>
     <span class="n">GameObject</span> <span class="n">newGameObject</span><span class="p">,</span>
     <span class="n">uint</span> <span class="n">netIdField</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-setsyncvargameobject">function SetSyncVarGameObject</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SetSyncVarGameObject</span><span class="p">(</span>
     <span class="n">GameObject</span> <span class="n">newGameObject</span><span class="p">,</span>
@@ -7288,21 +7266,18 @@
     <span class="n">ref</span> <span class="n">uint</span> <span class="n">netIdField</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getsyncvargameobject">function GetSyncVarGameObject</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">GameObject</span> <span class="n">GetSyncVarGameObject</span><span class="p">(</span>
     <span class="n">uint</span> <span class="n">netId</span><span class="p">,</span>
     <span class="n">ref</span> <span class="n">GameObject</span> <span class="n">gameObjectField</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-syncvarnetworkidentityequal">function SyncVarNetworkIdentityEqual</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">SyncVarNetworkIdentityEqual</span><span class="p">(</span>
     <span class="n">NetworkIdentity</span> <span class="n">newIdentity</span><span class="p">,</span>
     <span class="n">uint</span> <span class="n">netIdField</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-setsyncvarnetworkidentity">function SetSyncVarNetworkIdentity</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SetSyncVarNetworkIdentity</span><span class="p">(</span>
     <span class="n">NetworkIdentity</span> <span class="n">newIdentity</span><span class="p">,</span>
@@ -7311,21 +7286,18 @@
     <span class="n">ref</span> <span class="n">uint</span> <span class="n">netIdField</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getsyncvarnetworkidentity">function GetSyncVarNetworkIdentity</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">NetworkIdentity</span> <span class="n">GetSyncVarNetworkIdentity</span><span class="p">(</span>
     <span class="n">uint</span> <span class="n">netId</span><span class="p">,</span>
     <span class="n">ref</span> <span class="n">NetworkIdentity</span> <span class="n">identityField</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-syncvarequal-t">function SyncVarEqual&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">SyncVarEqual</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="n">T</span> <span class="n">value</span><span class="p">,</span>
     <span class="n">ref</span> <span class="n">T</span> <span class="n">fieldValue</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-setsyncvar-t">function SetSyncVar&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SetSyncVar</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="n">T</span> <span class="n">value</span><span class="p">,</span>
@@ -7333,105 +7305,87 @@
     <span class="n">ulong</span> <span class="n">dirtyBit</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-serializesyncvars">function SerializeSyncVars</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">bool</span> <span class="n">SerializeSyncVars</span><span class="p">(</span>
     <span class="n">NetworkWriter</span> <span class="n">writer</span><span class="p">,</span>
     <span class="kt">bool</span> <span class="n">initialState</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-deserializesyncvars">function DeserializeSyncVars</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">DeserializeSyncVars</span><span class="p">(</span>
     <span class="n">NetworkReader</span> <span class="n">reader</span><span class="p">,</span>
     <span class="kt">bool</span> <span class="n">initialState</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h2 id="public-property-documentation">Public Property Documentation</h2>
 <h3 id="property-netidentity">property netIdentity</h3>
 <div class="highlight"><pre><span></span><code><span class="n">NetworkIdentity</span> <span class="n">netIdentity</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Returns the <a href="">NetworkIdentity</a> of this object </p>
 <h3 id="property-componentindex">property ComponentIndex</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">ComponentIndex</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Returns the index of the component on this object </p>
 <h2 id="protected-property-documentation">Protected Property Documentation</h2>
 <h3 id="property-syncvardirtybits">property syncVarDirtyBits</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ulong</span> <span class="n">syncVarDirtyBits</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-syncmode">variable syncMode</h3>
 <div class="highlight"><pre><span></span><code><span class="n">SyncMode</span> <span class="n">syncMode</span> <span class="o">=</span> <span class="n">SyncMode</span><span class="p">.</span><span class="n">Observers</span><span class="p">;</span>
 </code></pre></div>
-
 <p>sync mode for OnSerialize </p>
 <h3 id="variable-syncinterval">variable syncInterval</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="n">syncInterval</span> <span class="o">=</span> <span class="mf">0.1f</span><span class="p">;</span>
 </code></pre></div>
-
 <p>sync interval for OnSerialize (in seconds) </p>
 <h3 id="variable-isserver">variable isServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isServer</span> <span class="o">=&gt;</span> <span class="n">netIdentity</span><span class="p">.</span><span class="n">isServer</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Returns true if this object is active on an active server. </p>
 <p>This is only true if the object has been spawned. This is different from NetworkServer.active, which is true if the server itself is active rather than this object being active.</p>
 <h3 id="variable-isclient">variable isClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isClient</span> <span class="o">=&gt;</span> <span class="n">netIdentity</span><span class="p">.</span><span class="n">isClient</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Returns true if running as a client and this object was spawned by a server. </p>
 <h3 id="variable-islocalplayer">variable isLocalPlayer</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isLocalPlayer</span> <span class="o">=&gt;</span> <span class="n">netIdentity</span><span class="p">.</span><span class="n">isLocalPlayer</span><span class="p">;</span>
 </code></pre></div>
-
 <p>This returns true if this object is the one that represents the player on the local machine. </p>
 <p>In multiplayer games, there are multiple instances of the Player object. The client needs to know which one is for "themselves" so that only that player processes input and potentially has a camera attached. The IsLocalPlayer function will return true only for the player instance that belongs to the player on the local machine, so it can be used to filter out input for non-local players.</p>
 <h3 id="variable-isserveronly">variable isServerOnly</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isServerOnly</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="n">isServer</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">classMirror_1_1NetworkBehaviour</span><span class="o">/</span><span class="err">#</span><span class="n">variable</span><span class="o">-</span><span class="n">isserver</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="p">[</span><span class="n">isClient</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">classMirror_1_1NetworkBehaviour</span><span class="o">/</span><span class="err">#</span><span class="n">variable</span><span class="o">-</span><span class="n">isclient</span><span class="p">);</span>
 </code></pre></div>
-
 <p>True if this object only exists on the server </p>
 <h3 id="variable-isclientonly">variable isClientOnly</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">isClientOnly</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="n">isClient</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">classMirror_1_1NetworkBehaviour</span><span class="o">/</span><span class="err">#</span><span class="n">variable</span><span class="o">-</span><span class="n">isclient</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="p">[</span><span class="n">isServer</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">classMirror_1_1NetworkBehaviour</span><span class="o">/</span><span class="err">#</span><span class="n">variable</span><span class="o">-</span><span class="n">isserver</span><span class="p">);</span>
 </code></pre></div>
-
 <p>True if this object exists on a client that is not also acting as a server </p>
 <h3 id="variable-hasauthority">variable hasAuthority</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">hasAuthority</span> <span class="o">=&gt;</span> <span class="n">netIdentity</span><span class="p">.</span><span class="n">hasAuthority</span><span class="p">;</span>
 </code></pre></div>
-
 <p>This returns true if this object is the authoritative version of the object in the distributed network application. </p>
 <p>The <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/#property-hasauthority">NetworkIdentity.hasAuthority</a> value on the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a> determines how authority is determined. For most objects, authority is held by the server. For objects with <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/#property-hasauthority">NetworkIdentity.hasAuthority</a> set, authority is held by the client of that player.</p>
 <h3 id="variable-netid">variable netId</h3>
 <div class="highlight"><pre><span></span><code><span class="n">uint</span> <span class="n">netId</span> <span class="o">=&gt;</span> <span class="n">netIdentity</span><span class="p">.</span><span class="n">netId</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The unique network Id of this object. </p>
 <p>This is assigned at runtime by the network server and will be unique for all objects for that network session.</p>
 <h3 id="variable-connectiontoserver">variable connectionToServer</h3>
 <div class="highlight"><pre><span></span><code><span class="n">NetworkConnection</span> <span class="n">connectionToServer</span> <span class="o">=&gt;</span> <span class="n">netIdentity</span><span class="p">.</span><span class="n">connectionToServer</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The <a href="">NetworkConnection</a> associated with this <a href="">NetworkIdentity.</a> This is only valid for player objects on the client. </p>
 <h3 id="variable-connectiontoclient">variable connectionToClient</h3>
 <div class="highlight"><pre><span></span><code><span class="n">NetworkConnection</span> <span class="n">connectionToClient</span> <span class="o">=&gt;</span> <span class="n">netIdentity</span><span class="p">.</span><span class="n">connectionToClient</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The <a href="">NetworkConnection</a> associated with this <a href="">NetworkIdentity.</a> This is only valid for player objects on the server. </p>
 <h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
 <h3 id="variable-syncobjects">variable syncObjects</h3>
 <div class="highlight"><pre><span></span><code><span class="n">readonly</span> <span class="n">List</span><span class="o">&lt;</span> <span class="n">SyncObject</span> <span class="o">&gt;</span> <span class="n">syncObjects</span> <span class="o">=</span> <span class="k">new</span> <span class="n">List</span><span class="o">&lt;</span><span class="p">[</span><span class="n">SyncObject</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">interfaceMirror_1_1SyncObject</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <p>objects that can synchronize themselves, such as synclists </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:24 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6722,7 +6722,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkClient</span><span class="p">;</span>
 </code></pre></div>
-
 <p>This is a network client class used by the networking system. It contains a <a href="">NetworkConnection</a> that is used to connect to a network server. </p>
 <p>The [NetworkClient] handle connection state, messages handlers, and connection configuration. There can be many [NetworkClient] instances in a process at a time, but only one that is connected to a game server ([NetworkServer]) that uses spawned objects.</p>
 <p>[NetworkClient] has an internal update function where it handles events from the transport layer. This includes asynchronous connect events, disconnect events and incoming data from a server.</p>
@@ -6733,7 +6732,6 @@
     <span class="n">string</span> <span class="n">address</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Connect client to a NetworkServer instance. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6744,7 +6742,6 @@
     <span class="n">Uri</span> <span class="n">uri</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Connect client to a NetworkServer instance. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6753,21 +6750,17 @@
 <h3 id="function-connecthost">function ConnectHost</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">ConnectHost</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-connectlocalserver">function ConnectLocalServer</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">ConnectLocalServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>connect host mode </p>
 <h3 id="function-disconnectlocalserver">function DisconnectLocalServer</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">DisconnectLocalServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>disconnect host mode. this is needed to call <a href="/Documentation/Cops%20And%20Robbers/Classes/structMirror_1_1DisconnectMessage/">DisconnectMessage</a> for the host client too. </p>
 <h3 id="function-disconnect">function Disconnect</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">Disconnect</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Disconnect from server. </p>
 <p>The disconnect message will be invoked.</p>
 <h3 id="function-send-t">function Send&lt; T &gt;</h3>
@@ -6776,7 +6769,6 @@
     <span class="kt">int</span> <span class="n">channelId</span> <span class="o">=</span><span class="n">Channels</span><span class="p">.</span><span class="n">DefaultReliable</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This sends a network message with a message Id to the server. This message is sent on channel zero, which by default is the reliable channel. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6792,14 +6784,12 @@
 <h3 id="function-update">function Update</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">Update</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-registerhandler-t">function RegisterHandler&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">RegisterHandler</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">(</span>
     <span class="n">Action</span><span class="o">&lt;</span> <span class="n">NetworkConnection</span><span class="p">,</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">handler</span><span class="p">,</span>
     <span class="kt">bool</span> <span class="n">requireAuthentication</span> <span class="o">=</span><span class="nb">true</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Register a handler for a particular message type. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6817,7 +6807,6 @@
     <span class="kt">bool</span> <span class="n">requireAuthentication</span> <span class="o">=</span><span class="nb">true</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Register a handler for a particular message type. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6835,7 +6824,6 @@
     <span class="kt">bool</span> <span class="n">requireAuthentication</span> <span class="o">=</span><span class="nb">true</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Replaces a handler for a particular message type. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6853,7 +6841,6 @@
     <span class="kt">bool</span> <span class="n">requireAuthentication</span> <span class="o">=</span><span class="nb">true</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Replaces a handler for a particular message type. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6868,7 +6855,6 @@
 <h3 id="function-unregisterhandler-t">function UnregisterHandler&lt; T &gt;</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">bool</span> <span class="n">UnregisterHandler</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Unregisters a network message handler. </p>
 <p><strong>Template Parameters</strong>: </p>
 <ul>
@@ -6877,39 +6863,33 @@
 <h3 id="function-shutdown">function Shutdown</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">Shutdown</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Shut down a client. </p>
 <p>This should be done when a client is no longer going to be used.</p>
 <h2 id="public-property-documentation">Public Property Documentation</h2>
 <h3 id="property-connection">property connection</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">NetworkConnection</span> <span class="n">connection</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The <a href="">NetworkConnection</a> object this client is using. </p>
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-serverip">variable serverIp</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">string</span> <span class="n">serverIp</span> <span class="o">=&gt;</span> <span class="n">connection</span><span class="p">.</span><span class="n">address</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The IP address of the server that this client is connected to. </p>
 <p>This will be empty if the client has not connected yet.</p>
 <h3 id="variable-active">variable active</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">bool</span> <span class="n">active</span> <span class="o">=&gt;</span> <span class="n">connectState</span> <span class="o">==</span> <span class="n">ConnectState</span><span class="p">.</span><span class="n">Connecting</span> <span class="o">||</span> <span class="n">connectState</span> <span class="o">==</span> <span class="n">ConnectState</span><span class="p">.</span><span class="n">Connected</span><span class="p">;</span>
 </code></pre></div>
-
 <p>active is true while a client is connecting/connected (= while the network is active) </p>
 <h3 id="variable-isconnected">variable isConnected</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">bool</span> <span class="n">isConnected</span> <span class="o">=&gt;</span> <span class="n">connectState</span> <span class="o">==</span> <span class="n">ConnectState</span><span class="p">.</span><span class="n">Connected</span><span class="p">;</span>
 </code></pre></div>
-
 <p>This gives the current connection status of the client. </p>
 <h3 id="variable-islocalclient">variable isLocalClient</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">bool</span> <span class="n">isLocalClient</span> <span class="o">=&gt;</span> <span class="n">connection</span> <span class="n">is</span> <span class="n">ULocalConnectionToServer</span><span class="p">;</span>
 </code></pre></div>
-
 <p>NetworkClient can connect to local server in host mode too </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:24 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

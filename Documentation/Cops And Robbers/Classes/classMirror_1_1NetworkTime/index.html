@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6586,58 +6586,48 @@
 <h3 id="function-reset">function Reset</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">Reset</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-pingfrequency">variable PingFrequency</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">float</span> <span class="n">PingFrequency</span> <span class="o">=</span> <span class="mf">2.0f</span><span class="p">;</span>
 </code></pre></div>
-
 <p>how often are we sending ping messages used to calculate network time and RTT </p>
 <h3 id="variable-pingwindowsize">variable PingWindowSize</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">int</span> <span class="n">PingWindowSize</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
 </code></pre></div>
-
 <p>average out the last few results from Ping </p>
 <h3 id="variable-time">variable time</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">double</span> <span class="n">time</span> <span class="o">=&gt;</span> <span class="n">LocalTime</span><span class="p">()</span> <span class="o">-</span> <span class="n">_offset</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The time in seconds since the server started. </p>
 <h3 id="variable-timevar">variable timeVar</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">double</span> <span class="n">timeVar</span> <span class="o">=&gt;</span> <span class="n">_offset</span><span class="p">.</span><span class="n">Var</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Measurement of the variance of time. </p>
 <p>The higher the variance, the less accurate the time is</p>
 <h3 id="variable-timesd">variable timeSd</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">double</span> <span class="n">timeSd</span> <span class="o">=&gt;</span> <span class="n">Math</span><span class="p">.</span><span class="n">Sqrt</span><span class="p">(</span><span class="n">timeVar</span><span class="p">);</span>
 </code></pre></div>
-
 <p>standard deviation of time. </p>
 <p>The higher the variance, the less accurate the time is</p>
 <h3 id="variable-offset">variable offset</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">double</span> <span class="n">offset</span> <span class="o">=&gt;</span> <span class="n">_offset</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Clock difference in seconds between the client and the server </p>
 <p>Note this value is always 0 at the server </p>
 <h3 id="variable-rtt">variable rtt</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">double</span> <span class="n">rtt</span> <span class="o">=&gt;</span> <span class="n">_rtt</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
 </code></pre></div>
-
 <p>how long in seconds does it take for a message to go to the server and come back </p>
 <h3 id="variable-rttvar">variable rttVar</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">double</span> <span class="n">rttVar</span> <span class="o">=&gt;</span> <span class="n">_rtt</span><span class="p">.</span><span class="n">Var</span><span class="p">;</span>
 </code></pre></div>
-
 <p>measure variance of rtt the higher the number, the less accurate rtt is </p>
 <h3 id="variable-rttsd">variable rttSd</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">double</span> <span class="n">rttSd</span> <span class="o">=&gt;</span> <span class="n">Math</span><span class="p">.</span><span class="n">Sqrt</span><span class="p">(</span><span class="n">rttVar</span><span class="p">);</span>
 </code></pre></div>
-
 <p>Measure the standard deviation of rtt the higher the number, the less accurate rtt is </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

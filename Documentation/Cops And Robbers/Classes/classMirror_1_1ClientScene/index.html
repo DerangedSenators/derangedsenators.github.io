@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6797,7 +6797,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">ClientScene</span><span class="p">;</span>
 </code></pre></div>
-
 <p>A client manager which contains static client information and functions. </p>
 <p>This manager contains references to tracked static local objects such as spawner registrations. It also has the default message handlers used by clients when they registered none themselves. The manager handles adding/removing player objects to the game after a client connection has been set as ready.</p>
 <p>The ClientScene is a singleton, and it has static convenience methods such as ClientScene.Ready().</p>
@@ -6808,7 +6807,6 @@
 <h3 id="event-onlocalplayerchanged">event onLocalPlayerChanged</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">LocalplayerChanged</span> <span class="n">onLocalPlayerChanged</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-localplayerchanged">function LocalplayerChanged</h3>
 <div class="highlight"><pre><span></span><code><span class="n">delegate</span> <span class="kt">void</span> <span class="n">LocalplayerChanged</span><span class="p">(</span>
@@ -6816,13 +6814,11 @@
     <span class="n">NetworkIdentity</span> <span class="n">newPlayer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-addplayer">function AddPlayer</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">bool</span> <span class="n">AddPlayer</span><span class="p">(</span>
     <span class="n">NetworkConnection</span> <span class="n">readyConn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This adds a player GameObject for this client. This causes an AddPlayer message to be sent to the server, and <a href="">NetworkManager.OnServerAddPlayer</a> is called. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6834,7 +6830,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Signal that the client connection is ready to enter the game. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6845,7 +6840,6 @@
 <h3 id="function-preparetospawnsceneobjects">function PrepareToSpawnSceneObjects</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">PrepareToSpawnSceneObjects</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Call this after loading/unloading a scene in the client after connection to register the spawnable objects </p>
 <h3 id="function-getprefab">function GetPrefab</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">bool</span> <span class="n">GetPrefab</span><span class="p">(</span>
@@ -6853,7 +6847,6 @@
     <span class="n">out</span> <span class="n">GameObject</span> <span class="n">prefab</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Find the registered prefab for this asset id. Useful for debuggers </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6867,7 +6860,6 @@
     <span class="n">Guid</span> <span class="n">newAssetId</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Registers a prefab with the spawning system. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6883,7 +6875,6 @@
     <span class="n">GameObject</span> <span class="n">prefab</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Registers a prefab with the spawning system. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6900,7 +6891,6 @@
     <span class="n">UnSpawnDelegate</span> <span class="n">unspawnHandler</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Registers a prefab with the spawning system. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6920,7 +6910,6 @@
     <span class="n">UnSpawnDelegate</span> <span class="n">unspawnHandler</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Registers a prefab with the spawning system. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6939,7 +6928,6 @@
     <span class="n">UnSpawnDelegate</span> <span class="n">unspawnHandler</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Registers a prefab with the spawning system. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6959,7 +6947,6 @@
     <span class="n">UnSpawnDelegate</span> <span class="n">unspawnHandler</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Registers a prefab with the spawning system. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6975,7 +6962,6 @@
     <span class="n">GameObject</span> <span class="n">prefab</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Removes a registered spawn prefab that was setup with ClientScene.RegisterPrefab. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6988,7 +6974,6 @@
     <span class="n">UnSpawnDelegate</span> <span class="n">unspawnHandler</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This is an advanced spawning function that registers a custom assetId with the UNET spawning system. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7004,7 +6989,6 @@
     <span class="n">UnSpawnDelegate</span> <span class="n">unspawnHandler</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This is an advanced spawning function that registers a custom assetId with the UNET spawning system. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7018,7 +7002,6 @@
     <span class="n">Guid</span> <span class="n">assetId</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Removes a registered spawn handler function that was registered with ClientScene.RegisterHandler(). </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -7027,24 +7010,20 @@
 <h3 id="function-clearspawners">function ClearSpawners</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">ClearSpawners</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This clears the registered spawn prefabs and spawn handler functions for this client. </p>
 <h3 id="function-destroyallclientobjects">function DestroyAllClientObjects</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">DestroyAllClientObjects</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Destroys all networked objects on the client. </p>
 <p>This can be used to clean up when a network connection is closed.</p>
 <h2 id="public-property-documentation">Public Property Documentation</h2>
 <h3 id="property-localplayer">property localPlayer</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">NetworkIdentity</span> <span class="n">localPlayer</span><span class="p">;</span>
 </code></pre></div>
-
 <p><a href="">NetworkIdentity</a> of the localPlayer </p>
 <h3 id="property-ready">property ready</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">bool</span> <span class="n">ready</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Returns true when a client's connection has been set to ready. </p>
 <p>A client that is ready recieves state updates from the server, while a client that is not ready does not. This useful when the state of the game is not normal, such as a scene change or end-of-game.</p>
 <p>This is read-only. To change the ready state of a client, use ClientScene.Ready(). The server is able to set the ready state of clients using NetworkServer.SetClientReady(), NetworkServer.SetClientNotReady() and NetworkServer.SetAllClientsNotReady().</p>
@@ -7052,24 +7031,21 @@
 <h3 id="property-readyconnection">property readyConnection</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">NetworkConnection</span> <span class="n">readyConnection</span><span class="p">;</span>
 </code></pre></div>
-
 <p>The <a href="">NetworkConnection</a> object that is currently "ready". This is the connection to the server where objects are spawned from. </p>
 <p>This connection can be used to send messages to the server. There can only be one ClientScene and ready connection at a time.</p>
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-prefabs">variable prefabs</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">readonly</span> <span class="n">Dictionary</span><span class="o">&lt;</span> <span class="n">Guid</span><span class="p">,</span> <span class="n">GameObject</span> <span class="o">&gt;</span> <span class="n">prefabs</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="o">&lt;</span><span class="n">Guid</span><span class="p">,</span> <span class="n">GameObject</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <p>This is a dictionary of the prefabs that are registered on the client with ClientScene.RegisterPrefab(). </p>
 <p>The key to the dictionary is the prefab asset Id.</p>
 <h3 id="variable-spawnableobjects">variable spawnableObjects</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">readonly</span> <span class="n">Dictionary</span><span class="o">&lt;</span> <span class="n">ulong</span><span class="p">,</span> <span class="n">NetworkIdentity</span> <span class="o">&gt;</span> <span class="n">spawnableObjects</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="o">&lt;</span><span class="n">ulong</span><span class="p">,</span> <span class="p">[</span><span class="n">NetworkIdentity</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">classMirror_1_1NetworkIdentity</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <p>This is dictionary of the disabled <a href="">NetworkIdentity</a> objects in the scene that could be spawned by messages from the server. </p>
 <p>The key to the dictionary is the <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkIdentity/">NetworkIdentity</a> sceneId.</p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:24 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6515,7 +6515,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">NetworkWriterPool</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Pool of NetworkWriters </p>
 <p>Use this pool instead of <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkWriter/">NetworkWriter</a> to reduce memory allocation</p>
 <p>Use [Capacity] to change size of pool</p>
@@ -6523,7 +6522,6 @@
 <h3 id="function-getwriter">function GetWriter</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="n">PooledNetworkWriter</span> <span class="n">GetWriter</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Get the next writer in the pool </p>
 <p>If pool is empty, creates a new Writer</p>
 <h3 id="function-recycle">function Recycle</h3>
@@ -6531,19 +6529,17 @@
     <span class="n">PooledNetworkWriter</span> <span class="n">writer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Puts writer back into pool </p>
 <p>When pool is full, the extra writer is left for the GC</p>
 <h2 id="public-property-documentation">Public Property Documentation</h2>
 <h3 id="property-capacity">property Capacity</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">int</span> <span class="n">Capacity</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Size of the pool </p>
 <p>If pool is too small getting writers will causes memory allocation</p>
 <p>Default value: 100 </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:31 UTC</p>
                 
                   
                 

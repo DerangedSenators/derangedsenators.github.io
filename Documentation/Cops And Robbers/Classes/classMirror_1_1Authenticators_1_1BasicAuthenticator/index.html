@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6644,7 +6644,6 @@
 <h3 id="function-onstartserver">function OnStartServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Called on server from StartServer to initialize the Authenticator </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkAuthenticator/#function-onstartserver">Mirror::NetworkAuthenticator::OnStartServer</a></p>
 <p>Server message handlers should be registered in this method.</p>
@@ -6653,7 +6652,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on server from OnServerAuthenticateInternal when a client needs to authenticate </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6666,7 +6664,6 @@
     <span class="n">AuthRequestMessage</span> <span class="n">msg</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on server when the client's <a href="">AuthRequestMessage</a> arrives </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6676,7 +6673,6 @@
 <h3 id="function-onstartclient">function OnStartClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Called on client from StartClient to initialize the Authenticator </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkAuthenticator/#function-onstartclient">Mirror::NetworkAuthenticator::OnStartClient</a></p>
 <p>Client message handlers should be registered in this method.</p>
@@ -6685,7 +6681,6 @@
     <span class="n">NetworkConnection</span> <span class="n">conn</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on client from OnClientAuthenticateInternal when a client needs to authenticate </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6698,7 +6693,6 @@
     <span class="n">AuthResponseMessage</span> <span class="n">msg</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Called on client when the server's <a href="">AuthResponseMessage</a> arrives </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6709,13 +6703,11 @@
 <h3 id="variable-username">variable username</h3>
 <div class="highlight"><pre><span></span><code><span class="n">string</span> <span class="n">username</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-password">variable password</h3>
 <div class="highlight"><pre><span></span><code><span class="n">string</span> <span class="n">password</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:26 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:31 UTC</p>
                 
                   
                 

@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6865,12 +6865,10 @@
 <span class="n">TValue</span> <span class="o">&gt;</span>
 <span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">SyncIDictionary</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-events-documentation">Public Events Documentation</h2>
 <h3 id="event-callback">event Callback</h3>
 <div class="highlight"><pre><span></span><code><span class="n">SyncDictionaryChanged</span> <span class="n">Callback</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-syncdictionarychanged">function SyncDictionaryChanged</h3>
 <div class="highlight"><pre><span></span><code><span class="n">delegate</span> <span class="kt">void</span> <span class="n">SyncDictionaryChanged</span><span class="p">(</span>
@@ -6879,17 +6877,14 @@
     <span class="n">TValue</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-reset">function Reset</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Reset</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Resets the <a href="">SyncObject</a> so that it can be re-used </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/interfaceMirror_1_1SyncObject/#function-reset">Mirror::SyncObject::Reset</a></p>
 <h3 id="function-flush">function Flush</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">Flush</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Discard all the queued changes </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/interfaceMirror_1_1SyncObject/#function-flush">Mirror::SyncObject::Flush</a></p>
 <p>Consider the object fully synchronized with clients</p>
@@ -6898,13 +6893,11 @@
     <span class="n">IDictionary</span><span class="o">&lt;</span> <span class="n">TKey</span><span class="p">,</span> <span class="n">TValue</span> <span class="o">&gt;</span> <span class="n">objects</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-onserializeall">function OnSerializeAll</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">OnSerializeAll</span><span class="p">(</span>
     <span class="n">NetworkWriter</span> <span class="n">writer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Write a full copy of the object </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6916,7 +6909,6 @@
     <span class="n">NetworkWriter</span> <span class="n">writer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Write the changes made to the object since last sync </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6928,7 +6920,6 @@
     <span class="n">NetworkReader</span> <span class="n">reader</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Reads a full copy of the object </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6940,7 +6931,6 @@
     <span class="n">NetworkReader</span> <span class="n">reader</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Reads the changes made to the object since last sync </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6950,95 +6940,78 @@
 <h3 id="function-clear">function Clear</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Clear</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-containskey">function ContainsKey</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">ContainsKey</span><span class="p">(</span>
     <span class="n">TKey</span> <span class="n">key</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-remove">function Remove</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">Remove</span><span class="p">(</span>
     <span class="n">TKey</span> <span class="n">key</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-trygetvalue">function TryGetValue</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">TryGetValue</span><span class="p">(</span>
     <span class="n">TKey</span> <span class="n">key</span><span class="p">,</span>
     <span class="n">out</span> <span class="n">TValue</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-add">function Add</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Add</span><span class="p">(</span>
     <span class="n">TKey</span> <span class="n">key</span><span class="p">,</span>
     <span class="n">TValue</span> <span class="n">value</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-add_1">function Add</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">Add</span><span class="p">(</span>
     <span class="n">KeyValuePair</span><span class="o">&lt;</span> <span class="n">TKey</span><span class="p">,</span> <span class="n">TValue</span> <span class="o">&gt;</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-contains">function Contains</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">Contains</span><span class="p">(</span>
     <span class="n">KeyValuePair</span><span class="o">&lt;</span> <span class="n">TKey</span><span class="p">,</span> <span class="n">TValue</span> <span class="o">&gt;</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-copyto">function CopyTo</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">CopyTo</span><span class="p">(</span>
     <span class="n">KeyValuePair</span><span class="o">&lt;</span> <span class="n">TKey</span><span class="p">,</span> <span class="n">TValue</span> <span class="o">&gt;</span> <span class="p">[]</span> <span class="n">array</span><span class="p">,</span>
     <span class="kt">int</span> <span class="n">arrayIndex</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-remove_1">function Remove</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">Remove</span><span class="p">(</span>
     <span class="n">KeyValuePair</span><span class="o">&lt;</span> <span class="n">TKey</span><span class="p">,</span> <span class="n">TValue</span> <span class="o">&gt;</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getenumerator">function GetEnumerator</h3>
 <div class="highlight"><pre><span></span><code><span class="n">IEnumerator</span><span class="o">&lt;</span> <span class="n">KeyValuePair</span><span class="o">&lt;</span> <span class="n">TKey</span><span class="p">,</span> <span class="n">TValue</span> <span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">GetEnumerator</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-property-documentation">Public Property Documentation</h2>
 <h3 id="property-isreadonly">property IsReadOnly</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsReadOnly</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="property-thistkey-i">property this[TKey i]</h3>
 <div class="highlight"><pre><span></span><code><span class="n">TValue</span> <span class="k">this</span><span class="p">[</span><span class="n">TKey</span> <span class="n">i</span><span class="p">];</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-count">variable Count</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">Count</span> <span class="o">=&gt;</span> <span class="n">objects</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-isdirty">variable IsDirty</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsDirty</span> <span class="o">=&gt;</span> <span class="n">changes</span><span class="p">.</span><span class="n">Count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-keys">variable Keys</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ICollection</span><span class="o">&lt;</span> <span class="n">TKey</span> <span class="o">&gt;</span> <span class="n">Keys</span> <span class="o">=&gt;</span> <span class="n">objects</span><span class="p">.</span><span class="n">Keys</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-values">variable Values</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ICollection</span><span class="o">&lt;</span> <span class="n">TValue</span> <span class="o">&gt;</span> <span class="n">Values</span> <span class="o">=&gt;</span> <span class="n">objects</span><span class="p">.</span><span class="n">Values</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
 <h3 id="variable-objects">variable objects</h3>
 <div class="highlight"><pre><span></span><code><span class="n">readonly</span> <span class="n">IDictionary</span><span class="o">&lt;</span> <span class="n">TKey</span><span class="p">,</span> <span class="n">TValue</span> <span class="o">&gt;</span> <span class="n">objects</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:31 UTC</p>
                 
                   
                 

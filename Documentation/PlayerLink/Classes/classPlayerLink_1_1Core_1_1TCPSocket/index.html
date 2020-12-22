@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6674,7 +6674,6 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PlayerLink</span><span class="o">::</span><span class="n">Core</span><span class="o">::</span><span class="n">TCPSocket</span><span class="p">;</span>
 </code></pre></div>
-
 <p><a href="/Documentation/PlayerLink/Classes/classPlayerLink_1_1Core_1_1TCPSocket/">TCPSocket</a> Class extends the base socket class </p>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-tcpsocket">function TCPSocket</h3>
@@ -6682,18 +6681,15 @@
     <span class="kt">int</span> <span class="n">fd</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-tcpsocket_1">function TCPSocket</h3>
 <div class="highlight"><pre><span></span><code><span class="k">explicit</span> <span class="n">TCPSocket</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-connect">function connect</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">connect</span><span class="p">(</span>
     <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">address</span><span class="p">,</span>
     <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">port</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Connects to an address and port. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6709,7 +6705,6 @@
     <span class="kt">int</span> <span class="n">microseconds</span> <span class="o">=</span><span class="n">TIMEOUT_MICROSECONDS</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Connects to an address and port with a timeout. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6724,7 +6719,6 @@
     <span class="kt">int</span> <span class="n">timeout</span> <span class="o">=</span><span class="mi">10000</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Checks if the remote machine can recieve. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6737,18 +6731,15 @@
     <span class="kt">size_t</span> <span class="n">bufferLength</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-recieveall">function recieveAll</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">size_t</span> <span class="n">recieveAll</span><span class="p">(</span>
     <span class="kt">void</span> <span class="o">*</span> <span class="n">buffer</span><span class="p">,</span>
     <span class="kt">size_t</span> <span class="n">bufferLength</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-recievebytes">function recieveBytes</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">recieveBytes</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Recieves bytes from the remote. </p>
 <p><strong>Return</strong>: an char* type used to hold incoming bytes </p>
 <h3 id="function-setrecvtimeout">function setRecvTimeout</h3>
@@ -6757,27 +6748,23 @@
     <span class="kt">int</span> <span class="n">microseconds</span> <span class="o">=</span><span class="n">TIMEOUT_MICROSECONDS</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-send">function send</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">size_t</span> <span class="n">send</span><span class="p">(</span>
     <span class="kt">void</span> <span class="k">const</span> <span class="o">*</span> <span class="n">buffer</span><span class="p">,</span>
     <span class="kt">size_t</span> <span class="n">bufferLength</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-sendall">function sendAll</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">size_t</span> <span class="n">sendAll</span><span class="p">(</span>
     <span class="kt">void</span> <span class="k">const</span> <span class="o">*</span> <span class="n">buffer</span><span class="p">,</span>
     <span class="kt">size_t</span> <span class="n">bufferLength</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-sendbytes">function sendBytes</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">sendBytes</span><span class="p">(</span>
     <span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">message</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Sends bytes to remote. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6790,9 +6777,8 @@
     <span class="kt">int</span> <span class="n">microseconds</span> <span class="o">=</span><span class="n">TIMEOUT_MICROSECONDS</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:20 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:27 UTC</p>
                 
                   
                 

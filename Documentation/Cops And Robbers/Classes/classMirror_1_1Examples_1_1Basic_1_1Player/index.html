@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6828,7 +6828,6 @@
 <h3 id="function-onstartserver">function OnStartServer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartServer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is invoked for <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/">NetworkBehaviour</a> objects when they become active on the server. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstartserver">Mirror::NetworkBehaviour::OnStartServer</a></p>
 <p>This could be triggered by NetworkServer.Listen() for objects in the scene, or by NetworkServer.Spawn() for objects that are dynamically created.</p>
@@ -6836,14 +6835,12 @@
 <h3 id="function-onstartclient">function OnStartClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Called on every <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/">NetworkBehaviour</a> when it is activated on a client. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstartclient">Mirror::NetworkBehaviour::OnStartClient</a></p>
 <p>Objects on the host have this function called, as there is a local client on the host. The values of SyncVars on object are guaranteed to be initialized correctly with the latest state from the server when this function is called on the client.</p>
 <h3 id="function-onstartlocalplayer">function OnStartLocalPlayer</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartLocalPlayer</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Called when the local player object has been set up. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstartlocalplayer">Mirror::NetworkBehaviour::OnStartLocalPlayer</a></p>
 <p>This happens after <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Examples_1_1Basic_1_1Player/#function-onstartclient">OnStartClient()</a>, as it is triggered by an ownership message from the server. This is an appropriate place to activate components or functionality that should only be active for the local player, such as cameras and input.</p>
@@ -6851,33 +6848,26 @@
 <h3 id="variable-recttransform">variable rectTransform</h3>
 <div class="highlight"><pre><span></span><code><span class="n">RectTransform</span> <span class="n">rectTransform</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-image">variable image</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Image</span> <span class="n">image</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-playernametext">variable playerNameText</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Text</span> <span class="n">playerNameText</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-playerdatatext">variable playerDataText</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Text</span> <span class="n">playerDataText</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-playernumber">variable playerNumber</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">playerNumber</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-playercolor">variable playerColor</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Color</span> <span class="n">playerColor</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-playerdata">variable playerData</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">playerData</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:26 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:31 UTC</p>
                 
                   
                 

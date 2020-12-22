@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6572,68 +6572,56 @@
 <h2 id="detailed-description">Detailed Description</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">SimpleWeb</span><span class="o">::</span><span class="n">Constants</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Constant values that should never change </p>
 <p>Some values are from <a href="https://tools.ietf.org/html/rfc6455">https://tools.ietf.org/html/rfc6455</a></p>
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-headersize">variable HeaderSize</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">HeaderSize</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Header is at most 4 bytes </p>
 <p>If message is less than 125 then header is 2 bytes, else header is 4 bytes </p>
 <h3 id="variable-headerminsize">variable HeaderMinSize</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">HeaderMinSize</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Smallest size of header </p>
 <p>If message is less than 125 then header is 2 bytes, else header is 4 bytes </p>
 <h3 id="variable-shortlength">variable ShortLength</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">ShortLength</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 </code></pre></div>
-
 <p>bytes for short length </p>
 <h3 id="variable-masksize">variable MaskSize</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">MaskSize</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
 </code></pre></div>
-
 <p><a href="">Message</a> mask is always 4 bytes </p>
 <h3 id="variable-bytepayloadlength">variable BytePayloadLength</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">BytePayloadLength</span> <span class="o">=</span> <span class="mi">125</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Max size of a message for length to be 1 byte long </p>
 <p>payload length between 0-125 </p>
 <h3 id="variable-ushortpayloadlength">variable UshortPayloadLength</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">UshortPayloadLength</span> <span class="o">=</span> <span class="mi">126</span><span class="p">;</span>
 </code></pre></div>
-
 <p>if payload length is 126 when next 2 bytes will be the length </p>
 <h3 id="variable-ulongpayloadlength">variable UlongPayloadLength</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">UlongPayloadLength</span> <span class="o">=</span> <span class="mi">127</span><span class="p">;</span>
 </code></pre></div>
-
 <p>if payload length is 127 when next 8 bytes will be the length </p>
 <h3 id="variable-handshakeguid">variable HandshakeGUID</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="n">string</span> <span class="n">HandshakeGUID</span> <span class="o">=</span> <span class="s">&quot;258EAFA5-E914-47DA-95CA-C5AB0DC85B11&quot;</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Guid used for WebSocket Protocol </p>
 <h3 id="variable-handshakeguidlength">variable HandshakeGUIDLength</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">readonly</span> <span class="kt">int</span> <span class="n">HandshakeGUIDLength</span> <span class="o">=</span> <span class="n">HandshakeGUID</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-handshakeguidbytes">variable HandshakeGUIDBytes</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">readonly</span> <span class="n">byte</span> <span class="p">[]</span> <span class="n">HandshakeGUIDBytes</span> <span class="o">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">ASCII</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">HandshakeGUID</span><span class="p">);</span>
 </code></pre></div>
-
 <h3 id="variable-endofhandshake">variable endOfHandshake</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="n">readonly</span> <span class="n">byte</span> <span class="p">[]</span> <span class="n">endOfHandshake</span> <span class="o">=</span> <span class="k">new</span> <span class="n">byte</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="p">{</span> <span class="p">(</span><span class="n">byte</span><span class="p">)</span><span class="sc">&#39;\r&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">byte</span><span class="p">)</span><span class="sc">&#39;\n&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">byte</span><span class="p">)</span><span class="sc">&#39;\r&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">byte</span><span class="p">)</span><span class="sc">&#39;\n&#39;</span> <span class="p">};</span>
 </code></pre></div>
-
 <p>Handshake messages will end with </p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:28 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:33 UTC</p>
                 
                   
                 

@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6611,55 +6611,43 @@
     <span class="n">Action</span><span class="o">&lt;</span> <span class="n">Connection</span> <span class="o">&gt;</span> <span class="n">onDispose</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-dispose">function Dispose</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Dispose</span><span class="p">()</span>
 </code></pre></div>
-
 <p>disposes client and stops threads </p>
 <h3 id="function-tostring">function ToString</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">override</span> <span class="n">string</span> <span class="n">ToString</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-idnotset">variable IdNotSet</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">IdNotSet</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-client">variable client</h3>
 <div class="highlight"><pre><span></span><code><span class="n">TcpClient</span> <span class="n">client</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-connid">variable connId</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">connId</span> <span class="o">=</span> <span class="n">IdNotSet</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-stream">variable stream</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Stream</span> <span class="n">stream</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-receivethread">variable receiveThread</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Thread</span> <span class="n">receiveThread</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-sendthread">variable sendThread</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Thread</span> <span class="n">sendThread</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-sendpending">variable sendPending</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ManualResetEventSlim</span> <span class="n">sendPending</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ManualResetEventSlim</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
 </code></pre></div>
-
 <h3 id="variable-sendqueue">variable sendQueue</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ConcurrentQueue</span><span class="o">&lt;</span> <span class="n">ArrayBuffer</span> <span class="o">&gt;</span> <span class="n">sendQueue</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ConcurrentQueue</span><span class="o">&lt;</span><span class="p">[</span><span class="n">ArrayBuffer</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">classMirror_1_1SimpleWeb_1_1ArrayBuffer</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <h3 id="variable-ondispose">variable onDispose</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Action</span><span class="o">&lt;</span> <span class="n">Connection</span> <span class="o">&gt;</span> <span class="n">onDispose</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:28 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:33 UTC</p>
                 
                   
                 

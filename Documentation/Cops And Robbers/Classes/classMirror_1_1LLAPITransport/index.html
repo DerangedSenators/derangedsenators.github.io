@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6825,7 +6825,6 @@
 <h3 id="function-available">function Available</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">bool</span> <span class="n">Available</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Is this transport available in the current platform? </p>
 <p><strong>Return</strong>: True if this transport works in the current platform</p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Transport/#function-available">Mirror::Transport::Available</a></p>
@@ -6835,7 +6834,6 @@
 <h3 id="function-clientconnected">function ClientConnected</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">bool</span> <span class="n">ClientConnected</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Determines if we are currently connected to the server </p>
 <p><strong>Return</strong>: True if a connection has been established to the server</p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Transport/#function-clientconnected">Mirror::Transport::ClientConnected</a></p>
@@ -6844,7 +6842,6 @@
     <span class="n">string</span> <span class="n">address</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Establish a connection to a server </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6856,7 +6853,6 @@
     <span class="n">Uri</span> <span class="n">uri</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Establish a connection to a server </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6869,7 +6865,6 @@
     <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="n">segment</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Send data to the server </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6880,35 +6875,29 @@
 <h3 id="function-processclientmessage">function ProcessClientMessage</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">ProcessClientMessage</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-clientgetaddress">function ClientGetAddress</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">string</span> <span class="n">ClientGetAddress</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-clientdisconnect">function ClientDisconnect</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">ClientDisconnect</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Disconnect this client from the server </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Transport/#function-clientdisconnect">Mirror::Transport::ClientDisconnect</a></p>
 <h3 id="function-serveruri">function ServerUri</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="n">Uri</span> <span class="n">ServerUri</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Retrieves the address of this server. Useful for network discovery </p>
 <p><strong>Return</strong>: the url at which this server can be reached</p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Transport/#function-serveruri">Mirror::Transport::ServerUri</a></p>
 <h3 id="function-serveractive">function ServerActive</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">bool</span> <span class="n">ServerActive</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Determines if the server is up and running </p>
 <p><strong>Return</strong>: true if the transport is ready for connections from clients</p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Transport/#function-serveractive">Mirror::Transport::ServerActive</a></p>
 <h3 id="function-serverstart">function ServerStart</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">ServerStart</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Start listening for clients </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Transport/#function-serverstart">Mirror::Transport::ServerStart</a></p>
 <h3 id="function-serversend">function ServerSend</h3>
@@ -6918,7 +6907,6 @@
     <span class="n">ArraySegment</span><span class="o">&lt;</span> <span class="n">byte</span> <span class="o">&gt;</span> <span class="n">segment</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Send data to a client. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6930,13 +6918,11 @@
 <h3 id="function-processservermessage">function ProcessServerMessage</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">ProcessServerMessage</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-serverdisconnect">function ServerDisconnect</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">bool</span> <span class="n">ServerDisconnect</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">connectionId</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Disconnect a client from this server. Useful to kick people out. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6949,7 +6935,6 @@
     <span class="kt">int</span> <span class="n">connectionId</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Get the client address </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6960,17 +6945,14 @@
 <h3 id="function-serverstop">function ServerStop</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">ServerStop</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Stop listening for clients and disconnect all existing clients </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Transport/#function-serverstop">Mirror::Transport::ServerStop</a></p>
 <h3 id="function-lateupdate">function LateUpdate</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">LateUpdate</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-shutdown">function Shutdown</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">Shutdown</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Shut down the transport, both as client and server </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1Transport/#function-shutdown">Mirror::Transport::Shutdown</a></p>
 <h3 id="function-getmaxpacketsize">function GetMaxPacketSize</h3>
@@ -6978,7 +6960,6 @@
     <span class="kt">int</span> <span class="n">channelId</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>The maximum packet size for a given channel. Unreliable transports usually can only deliver small packets. Reliable fragmented channels can usually deliver large ones. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6990,20 +6971,16 @@
 <h3 id="function-tostring">function ToString</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">override</span> <span class="n">string</span> <span class="n">ToString</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-scheme">variable Scheme</h3>
 <div class="highlight"><pre><span></span><code><span class="k">const</span> <span class="n">string</span> <span class="n">Scheme</span> <span class="o">=</span> <span class="s">&quot;unet&quot;</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-port">variable port</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ushort</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">7777</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-usewebsockets">variable useWebsockets</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">useWebsockets</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-connectionconfig">variable connectionConfig</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ConnectionConfig</span> <span class="n">connectionConfig</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ConnectionConfig</span>
         <span class="p">{</span>
@@ -7031,7 +7008,6 @@
             <span class="n">UdpSocketReceiveBufferMaxSize</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="p">};</span>
 </code></pre></div>
-
 <h3 id="variable-globalconfig">variable globalConfig</h3>
 <div class="highlight"><pre><span></span><code><span class="n">GlobalConfig</span> <span class="n">globalConfig</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GlobalConfig</span>
         <span class="p">{</span>
@@ -7046,9 +7022,8 @@
             <span class="n">MaxTimerTimeout</span> <span class="o">=</span> <span class="mi">12000</span>
         <span class="p">};</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:24 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

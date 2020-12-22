@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6661,7 +6661,6 @@
     <span class="n">out</span> <span class="n">Message</span> <span class="n">message</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h2 id="protected-functions-documentation">Protected Functions Documentation</h2>
 <h3 id="function-sendmessagesblocking">function SendMessagesBlocking</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">bool</span> <span class="n">SendMessagesBlocking</span><span class="p">(</span>
@@ -6669,7 +6668,6 @@
     <span class="n">byte</span> <span class="n">messages</span><span class="p">[][]</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-readmessageblocking">function ReadMessageBlocking</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">bool</span> <span class="n">ReadMessageBlocking</span><span class="p">(</span>
     <span class="n">NetworkStream</span> <span class="n">stream</span><span class="p">,</span>
@@ -6677,7 +6675,6 @@
     <span class="n">out</span> <span class="n">byte</span> <span class="p">[]</span> <span class="n">content</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-receiveloop">function ReceiveLoop</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">ReceiveLoop</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">connectionId</span><span class="p">,</span>
@@ -6686,7 +6683,6 @@
     <span class="kt">int</span> <span class="n">MaxMessageSize</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-sendloop">function SendLoop</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">SendLoop</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">connectionId</span><span class="p">,</span>
@@ -6695,35 +6691,28 @@
     <span class="n">ManualResetEvent</span> <span class="n">sendPending</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-receivequeuecount">variable ReceiveQueueCount</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">ReceiveQueueCount</span> <span class="o">=&gt;</span> <span class="n">receiveQueue</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-nodelay">variable NoDelay</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">NoDelay</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-maxmessagesize">variable MaxMessageSize</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">MaxMessageSize</span> <span class="o">=</span> <span class="mi">16</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-sendtimeout">variable SendTimeout</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">SendTimeout</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-messagequeuesizewarning">variable messageQueueSizeWarning</h3>
 <div class="highlight"><pre><span></span><code><span class="k">static</span> <span class="kt">int</span> <span class="n">messageQueueSizeWarning</span> <span class="o">=</span> <span class="mi">100000</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
 <h3 id="variable-receivequeue">variable receiveQueue</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ConcurrentQueue</span><span class="o">&lt;</span> <span class="n">Message</span> <span class="o">&gt;</span> <span class="n">receiveQueue</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ConcurrentQueue</span><span class="o">&lt;</span><span class="p">[</span><span class="n">Message</span><span class="p">](</span><span class="o">/</span><span class="n">Documentation</span><span class="o">/</span><span class="n">Cops</span><span class="o">%</span><span class="mi">20</span><span class="n">And</span><span class="o">%</span><span class="mi">20</span><span class="n">Robbers</span><span class="o">/</span><span class="n">Classes</span><span class="o">/</span><span class="n">structTelepathy_1_1Message</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:24 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:30 UTC</p>
                 
                   
                 

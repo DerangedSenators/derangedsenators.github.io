@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6897,12 +6897,10 @@
 <div class="highlight"><pre><span></span><code><span class="k">template</span> <span class="o">&lt;</span><span class="n">T</span> <span class="o">&gt;</span>
 <span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">SyncSet</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-events-documentation">Public Events Documentation</h2>
 <h3 id="event-callback">event Callback</h3>
 <div class="highlight"><pre><span></span><code><span class="n">SyncSetChanged</span> <span class="n">Callback</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-syncsetchanged">function SyncSetChanged</h3>
 <div class="highlight"><pre><span></span><code><span class="n">delegate</span> <span class="kt">void</span> <span class="n">SyncSetChanged</span><span class="p">(</span>
@@ -6910,23 +6908,19 @@
     <span class="n">T</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-syncset">function SyncSet</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">SyncSet</span><span class="p">(</span>
     <span class="n">ISet</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">objects</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-reset">function Reset</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Reset</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Resets the <a href="/Documentation/Cops%20And%20Robbers/Classes/interfaceMirror_1_1SyncObject/">SyncObject</a> so that it can be re-used </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/interfaceMirror_1_1SyncObject/#function-reset">Mirror::SyncObject::Reset</a></p>
 <h3 id="function-flush">function Flush</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">Flush</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Discard all the queued changes </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/interfaceMirror_1_1SyncObject/#function-flush">Mirror::SyncObject::Flush</a></p>
 <p>Consider the object fully synchronized with clients</p>
@@ -6935,7 +6929,6 @@
     <span class="n">NetworkWriter</span> <span class="n">writer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Write a full copy of the object </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6947,7 +6940,6 @@
     <span class="n">NetworkWriter</span> <span class="n">writer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Write the changes made to the object since last sync </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6959,7 +6951,6 @@
     <span class="n">NetworkReader</span> <span class="n">reader</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Reads a full copy of the object </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6971,7 +6962,6 @@
     <span class="n">NetworkReader</span> <span class="n">reader</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Reads the changes made to the object since last sync </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6983,115 +6973,95 @@
     <span class="n">T</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-clear">function Clear</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Clear</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-contains">function Contains</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">Contains</span><span class="p">(</span>
     <span class="n">T</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-copyto">function CopyTo</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">CopyTo</span><span class="p">(</span>
     <span class="n">T</span> <span class="p">[]</span> <span class="n">array</span><span class="p">,</span>
     <span class="kt">int</span> <span class="n">index</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-remove">function Remove</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">Remove</span><span class="p">(</span>
     <span class="n">T</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getenumerator">function GetEnumerator</h3>
 <div class="highlight"><pre><span></span><code><span class="n">IEnumerator</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">GetEnumerator</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-exceptwith">function ExceptWith</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">ExceptWith</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">other</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-intersectwith">function IntersectWith</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">IntersectWith</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">other</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-ispropersubsetof">function IsProperSubsetOf</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsProperSubsetOf</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">other</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-ispropersupersetof">function IsProperSupersetOf</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsProperSupersetOf</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">other</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-issubsetof">function IsSubsetOf</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsSubsetOf</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">other</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-issupersetof">function IsSupersetOf</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsSupersetOf</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">other</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-overlaps">function Overlaps</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">Overlaps</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">other</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-setequals">function SetEquals</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">SetEquals</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">other</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-symmetricexceptwith">function SymmetricExceptWith</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">SymmetricExceptWith</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">other</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-unionwith">function UnionWith</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">UnionWith</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">other</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h2 id="public-property-documentation">Public Property Documentation</h2>
 <h3 id="property-isreadonly">property IsReadOnly</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsReadOnly</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-count">variable Count</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">Count</span> <span class="o">=&gt;</span> <span class="n">objects</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-isdirty">variable IsDirty</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsDirty</span> <span class="o">=&gt;</span> <span class="n">changes</span><span class="p">.</span><span class="n">Count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
 <h3 id="variable-objects">variable objects</h3>
 <div class="highlight"><pre><span></span><code><span class="n">readonly</span> <span class="n">ISet</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">objects</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:31 UTC</p>
                 
                   
                 

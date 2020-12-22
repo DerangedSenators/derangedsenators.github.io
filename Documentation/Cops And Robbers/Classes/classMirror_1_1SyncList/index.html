@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6898,12 +6898,10 @@
 <div class="highlight"><pre><span></span><code><span class="k">template</span> <span class="o">&lt;</span><span class="n">T</span> <span class="o">&gt;</span>
 <span class="k">class</span> <span class="nc">Mirror</span><span class="o">::</span><span class="n">SyncList</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="public-events-documentation">Public Events Documentation</h2>
 <h3 id="event-callback">event Callback</h3>
 <div class="highlight"><pre><span></span><code><span class="n">SyncListChanged</span> <span class="n">Callback</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-synclistchanged">function SyncListChanged</h3>
 <div class="highlight"><pre><span></span><code><span class="n">delegate</span> <span class="kt">void</span> <span class="n">SyncListChanged</span><span class="p">(</span>
@@ -6913,35 +6911,29 @@
     <span class="n">T</span> <span class="n">newItem</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-synclist">function SyncList</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">SyncList</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-synclist_1">function SyncList</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">SyncList</span><span class="p">(</span>
     <span class="n">IEqualityComparer</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">comparer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-synclist_2">function SyncList</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">SyncList</span><span class="p">(</span>
     <span class="n">IList</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">objects</span><span class="p">,</span>
     <span class="n">IEqualityComparer</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">comparer</span> <span class="o">=</span><span class="n">null</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-flush">function Flush</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">Flush</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Discard all the queued changes </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/interfaceMirror_1_1SyncObject/#function-flush">Mirror::SyncObject::Flush</a></p>
 <p>Consider the object fully synchronized with clients</p>
 <h3 id="function-reset">function Reset</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Reset</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Resets the <a href="">SyncObject</a> so that it can be re-used </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/interfaceMirror_1_1SyncObject/#function-reset">Mirror::SyncObject::Reset</a></p>
 <h3 id="function-onserializeall">function OnSerializeAll</h3>
@@ -6949,7 +6941,6 @@
     <span class="n">NetworkWriter</span> <span class="n">writer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Write a full copy of the object </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6961,7 +6952,6 @@
     <span class="n">NetworkWriter</span> <span class="n">writer</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Write the changes made to the object since last sync </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6973,7 +6963,6 @@
     <span class="n">NetworkReader</span> <span class="n">reader</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Reads a full copy of the object </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6985,7 +6974,6 @@
     <span class="n">NetworkReader</span> <span class="n">reader</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Reads the changes made to the object since last sync </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6997,110 +6985,91 @@
     <span class="n">T</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-addrange">function AddRange</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">AddRange</span><span class="p">(</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">range</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-clear">function Clear</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Clear</span><span class="p">()</span>
 </code></pre></div>
-
 <h3 id="function-contains">function Contains</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">Contains</span><span class="p">(</span>
     <span class="n">T</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-copyto">function CopyTo</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="n">CopyTo</span><span class="p">(</span>
     <span class="n">T</span> <span class="p">[]</span> <span class="n">array</span><span class="p">,</span>
     <span class="kt">int</span> <span class="n">index</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-indexof">function IndexOf</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">int</span> <span class="n">IndexOf</span><span class="p">(</span>
     <span class="n">T</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-findindex">function FindIndex</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">int</span> <span class="n">FindIndex</span><span class="p">(</span>
     <span class="n">Predicate</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">match</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-find">function Find</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">T</span> <span class="n">Find</span><span class="p">(</span>
     <span class="n">Predicate</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">match</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-findall">function FindAll</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="n">List</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">FindAll</span><span class="p">(</span>
     <span class="n">Predicate</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">match</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-insert">function Insert</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">Insert</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">index</span><span class="p">,</span>
     <span class="n">T</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-insertrange">function InsertRange</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">InsertRange</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">index</span><span class="p">,</span>
     <span class="n">IEnumerable</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">range</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-remove">function Remove</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">bool</span> <span class="n">Remove</span><span class="p">(</span>
     <span class="n">T</span> <span class="n">item</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-removeat">function RemoveAt</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">void</span> <span class="n">RemoveAt</span><span class="p">(</span>
     <span class="kt">int</span> <span class="n">index</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-removeall">function RemoveAll</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="kt">int</span> <span class="n">RemoveAll</span><span class="p">(</span>
     <span class="n">Predicate</span><span class="o">&lt;</span> <span class="n">T</span> <span class="o">&gt;</span> <span class="n">match</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h3 id="function-getenumerator">function GetEnumerator</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Enumerator</span> <span class="n">GetEnumerator</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="public-property-documentation">Public Property Documentation</h2>
 <h3 id="property-isreadonly">property IsReadOnly</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsReadOnly</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="property-thisint-i">property this[int i]</h3>
 <div class="highlight"><pre><span></span><code><span class="n">T</span> <span class="k">this</span><span class="p">[</span><span class="kt">int</span> <span class="n">i</span><span class="p">];</span>
 </code></pre></div>
-
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-count">variable Count</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">Count</span> <span class="o">=&gt;</span> <span class="n">objects</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="variable-isdirty">variable IsDirty</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span> <span class="n">IsDirty</span> <span class="o">=&gt;</span> <span class="n">changes</span><span class="p">.</span><span class="n">Count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span>
 </code></pre></div>
-
 <hr />
-<p>Updated on 22 December 2020 at 13:32:25 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:31 UTC</p>
                 
                   
                 

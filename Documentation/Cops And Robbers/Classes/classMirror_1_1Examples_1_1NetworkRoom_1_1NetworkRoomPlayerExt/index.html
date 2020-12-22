@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -6793,21 +6793,18 @@
 <h3 id="function-onstartclient">function OnStartClient</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnStartClient</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Called on every <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/">NetworkBehaviour</a> when it is activated on a client. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkBehaviour/#function-onstartclient">Mirror::NetworkBehaviour::OnStartClient</a></p>
 <p>Objects on the host have this function called, as there is a local client on the host. The values of SyncVars on object are guaranteed to be initialized correctly with the latest state from the server when this function is called on the client.</p>
 <h3 id="function-oncliententerroom">function OnClientEnterRoom</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnClientEnterRoom</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is a hook that is invoked on clients for all room player objects when entering the room. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomPlayer/#function-oncliententerroom">Mirror::NetworkRoomPlayer::OnClientEnterRoom</a></p>
 <p>Note: isLocalPlayer is not guaranteed to be set until OnStartLocalPlayer is called.</p>
 <h3 id="function-onclientexitroom">function OnClientExitRoom</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">inline</span> <span class="k">virtual</span> <span class="k">override</span> <span class="kt">void</span> <span class="n">OnClientExitRoom</span><span class="p">()</span>
 </code></pre></div>
-
 <p>This is a hook that is invoked on clients for all room player objects when exiting the room. </p>
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomPlayer/#function-onclientexitroom">Mirror::NetworkRoomPlayer::OnClientExitRoom</a></p>
 <h3 id="function-readystatechanged">function ReadyStateChanged</h3>
@@ -6816,7 +6813,6 @@
     <span class="kt">bool</span> <span class="n">newReadyState</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>This is a hook that is invoked on clients when a RoomPlayer switches between ready or not ready. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
@@ -6825,7 +6821,7 @@
 <p><strong>Reimplements</strong>: <a href="/Documentation/Cops%20And%20Robbers/Classes/classMirror_1_1NetworkRoomPlayer/#function-readystatechanged">Mirror::NetworkRoomPlayer::ReadyStateChanged</a></p>
 <p>This function is called when the a client player calls CmdChangeReadyState.</p>
 <hr />
-<p>Updated on 22 December 2020 at 13:32:27 UTC</p>
+<p>Updated on 22 December 2020 at 14:26:32 UTC</p>
                 
                   
                 
