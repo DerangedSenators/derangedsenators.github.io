@@ -3,7 +3,7 @@ GEM
   specs:
     activesupport (4.2.7)
       i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
+      json (>= 2.3.0)
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
@@ -39,7 +39,7 @@ GEM
       jekyll-sitemap (= 0.12.0)
       jekyll-swiss (= 0.4.0)
       jemoji (= 0.7.0)
-      kramdown (= 1.11.1)
+      kramdown (= 2.3.0)
       liquid (= 3.0.6)
       listen (= 3.0.6)
       mercenary (~> 0.3)
@@ -114,7 +114,7 @@ GEM
     minitest (5.10.1)
     multipart-post (2.0.0)
     net-dns (0.8.0)
-    nokogiri (1.8.2)
+    nokogiri (>= 1.11.0)
       mini_portile2 (~> 2.3.0)
     octokit (4.6.2)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -123,7 +123,7 @@ GEM
     public_suffix (1.5.3)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
-      ffi (>= 0.5.0)
+      ffi (>= 1.9.24)
     ref (2.0.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
@@ -148,7 +148,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 106)
-  jekyll (= 3.3.1)
+  jekyll (>= 3.6.3)
   therubyracer (= 0.12.3)
 
 BUNDLED WITH
