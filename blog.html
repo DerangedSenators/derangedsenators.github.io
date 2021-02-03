@@ -1,0 +1,30 @@
+---
+layout: default
+title: Blog
+---
+
+
+<div class="jumbotron" style="background: #15191b">
+  <div class="container">
+    <h1>Blog</h1>
+    <p>Changelogs and news from the DerangedSenators team.</p>
+  </div>
+</div>
+
+<div class="container post" style="background: #15191b">
+  {% for post in site.categories.blog %}
+  <div class="card" style="background: #3b3f42">
+    <div class="card-body" style="background: #3b3f42">
+      <h6>{{ post.excerpt }}</h6>
+      <h2 class="card-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="card-text" style="fill: white">{% include svg/clock.svg %} {{ post.date | date: '%B %d, %Y' }}{% if post.author %}
+{% include svg/author.svg %} {{ post.author }}{% endif %}</p>
+    </div>
+
+    <div class="card-button">
+      <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-link text-primary">Read More</a>
+    </div>
+
+  </div>
+  {% endfor %}
+</div>

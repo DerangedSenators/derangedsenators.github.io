@@ -1,0 +1,31 @@
+.game-desc {
+  font-weight: bolder;
+  padding-bottom: 38px;
+  text-align: center;
+}
+
+.choose-side {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 60px 0;
+  text-align: center;
+}
+.choose-side p {
+  margin-bottom: 0;
+  color: #fff;
+}
+.first-block {
+  padding-top: 38px;
+  padding-bottom: 38px;
+  text-align: center;
+}
+
+.center-title {
+  font-family: "Alfa Slab One", cursive;
+  color: $brand-accent;
+}
+
+.about-desc{
+  background-color: $brand-primary-darker;
+}

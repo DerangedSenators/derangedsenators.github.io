@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/material-kit.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/robber-head-transparent-122x118.png">
+    <!--jquery js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- popper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- boostrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+
+  <body id="page-top" style="background: #15191b">
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark">
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="{{site.baseurl}}/" style="position: relative; top: -18px;"><img src="{{ site.baseurl }}/assets/images/robber-head-transparent-122x118.png ">Cops and Robbers</a>
+          <!-- Right aligned menu below button -->
+          <!-- Raised button with ripple -->
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" style="fill:white;">
+            {% include svg/menu.svg %}
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div id="navbarNav" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}/howto">How To Play</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}/blog">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}/team">Meet The Team</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}/Documentation/">{% include svg/open_in_new.svg %} Documentation</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="main" role="main">
+     <div style="margin-bottom: 20px"></div>
+      <noscript>
+        <div class="no-script">
+          <div class="container">
+            For full functionality of this site it is necessary to enable JavaScript.
+            Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.
+          </div>
+        </div>
+      </noscript>
+
+      {{ content }}
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md footer-logo" style="fill:white">
+            {% include svg/deranged_senators.svg %}
+            <p class="footer-text">
+              <b>&copy; 2020-2021 Deranged Senators </b><br />
+            </p>
+          </div>
+          <div class="col-md">
+            <div class="footer-icons">
+              {% include footer-icons.html %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {% if page.scrolljs %}
+    <script>
+      var rotation = 0;
+      var scrollLoc = $(document).scrollTop();
+
+      $(window).on("scroll", function() {
+          var newLoc = $(document).scrollTop();
+          var diff = (scrollLoc - newLoc) / 3;
+          rotation += diff, scrollLoc = newLoc;
+          var rotationStr = "rotate(" + rotation + "deg)";
+
+          $("#rotate-on-scroll").css({
+              "-webkit-transform": rotationStr,
+              "-moz-transform": rotationStr,
+              "transform": rotationStr
+          });
+      });
+    </script>
+    {% endif %}
+
+  </body>
+</html>

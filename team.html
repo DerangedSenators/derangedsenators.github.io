@@ -1,0 +1,23 @@
+---
+layout: default
+title: Meet The Team
+---
+
+<body>
+  <div class="team-section">
+      <h1 class="title-font">Meet the Team</h1>
+      <div class="team">
+          {% for post in site.categories.team %}
+          <div class="team-member">
+              <div class="member-image">
+                  <img src="{{site.baseurl}}/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
+              </div>
+              <h3>{{post.author}}</h3>
+              <p class="project-role">{{post.excerpt}}</p>
+              <p class="member-description">{{post.content}}</p>
+          </div>
+          {% endfor %}
+      </div>
+
+  </div>
+</body>

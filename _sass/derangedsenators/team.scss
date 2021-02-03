@@ -1,0 +1,38 @@
+.team-section {
+  background-color: $brand-primary-darker;
+}
+
+.team-section h1 {
+  padding-top: 30px;
+  text-align: center;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  font-family: "Inconsolata", monospace;
+}
+
+.team .team-member {
+  margin: 5px 5px 50px;
+  width: 300px;
+  padding: 20px;
+}
+
+.team .team-member h3 {
+  color: $brand-accent;
+}
+
+.title-font{
+  color: $brand-accent;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.project-role{
+  color:white;
+}
+
+.member-description{
+  color:white;
+}
