@@ -15,6 +15,7 @@ jobs:
       - name: Jekyll and Build Site
         run: |
           sudo gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
+          rm Gemfile.lock
           bundle install
           bundle exec jekyll build
           ls _site
