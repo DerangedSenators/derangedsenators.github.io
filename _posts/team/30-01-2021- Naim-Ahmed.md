@@ -1,6 +1,6 @@
 ---
 layout: post
-category: Team
+category: team
 excerpt: Website/Game Developer
 author: Naim Ahmed
 title: Member
