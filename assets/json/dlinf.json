@@ -1,0 +1,21 @@
+{
+  "windows": "launcher",
+  "mac": "launcher",
+  "linux": "pkgman",
+  "android": "standalone",
+  "ios": "unsupported",
+
+  "launcher": {
+    "windows": "DerangedSenatorsLauncherWin.exe",
+    "mac": "DerangedSenatorsLauncher.jar",
+    "linux": "DerangedSenatorsLauncherLinux"
+  },
+  "launcher_api": "https://api.github.com/repos/DerangedSenators/launcher/releases/latest",
+  "standalone": {
+    "windows": "CopsAndRobbersWindows.zip",
+    "linux": "CopsAndRobbersLinux.tar.xz",
+    "mac-os": "CopsAndRobbersMac.tar.xz",
+    "android": "copsandrobbers.apk"
+  },
+  "standalone_api": "https://api.github.com/repos/DerangedSenators/copsandrobbersreleases/releases/latest"
+}
