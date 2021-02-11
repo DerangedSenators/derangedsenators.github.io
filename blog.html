@@ -11,10 +11,10 @@ title: Blog
   </div>
 </div>
 
-<div class="container post" style="background: #15191b">
+<div class="container post">
   {% for post in site.categories.blog %}
-  <div class="card" style="background: #3b3f42">
-    <div class="card-body" style="background: #3b3f42">
+  <div class="card" >
+    <div class="card-body" >
       <h6>{{ post.excerpt }}</h6>
       <h2 class="card-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <p class="card-text" style="fill: white">{% include svg/clock.svg %} {{ post.date | date: '%B %d, %Y' }}{% if post.author %}

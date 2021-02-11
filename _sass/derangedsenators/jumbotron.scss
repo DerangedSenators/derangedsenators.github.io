@@ -1,11 +1,14 @@
 @charset "UTF-8";
 .jumbotron {
-  background: #15191b;
+  background-color: $brand-primary-darker;
   color: $brand-accent;
   padding: 2.125rem 0 !important;
   margin-bottom: 2rem;
   border-radius: 0 !important;
 
+  h1{
+    color:$brand-accent;
+  }
   p {
     font-size: 1.125rem !important;
     line-height: 1.75rem;
