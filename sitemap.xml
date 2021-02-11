@@ -58,10 +58,16 @@
 <loc>https://copsandrobbers.co.uk/download/download-for-linux/</loc>
 </url>
 <url>
+<loc>https://copsandrobbers.co.uk/download/download/</loc>
+</url>
+<url>
 <loc>https://copsandrobbers.co.uk/howto/</loc>
 </url>
 <url>
 <loc>https://copsandrobbers.co.uk/</loc>
+</url>
+<url>
+<loc>https://copsandrobbers.co.uk/download/others/</loc>
 </url>
 <url>
 <loc>https://copsandrobbers.co.uk/team/</loc>
@@ -70,7 +76,6 @@
 <loc>https://copsandrobbers.co.uk/download/thankyou-for-downloading/</loc>
 </url>
 <url>
-<loc>https://copsandrobbers.co.uk/download/download.html</loc>
-<lastmod>2021-02-10T21:55:37+00:00</lastmod>
+<loc>https://copsandrobbers.co.uk/download/unsupported/</loc>
 </url>
 </urlset>
