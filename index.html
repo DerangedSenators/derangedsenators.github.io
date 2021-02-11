@@ -66,34 +66,24 @@ scrolljs: true
     
   <!-- CAROUSEL -->
  <section class="carousel" id="carousel">
-  <div id="demo" class="carousel slide" data-ride="carousel">
+     <script type="text/javascript" src="{{site.baseurl}}/assets/js/carousel.js"></script>
+     <div class="carousel-main">
+         <div class="item active">
+             <img src="{{site.baseurl}}/assets/images/map1.PNG" height="500px" alt="Gameplay1" >
+         </div>
+         <div class="item">
+             <img src="{{site.baseurl}}/assets/images/map2.PNG" height="500px" alt="Gameplay1" >
+         </div>
+         <div class="item">
+             <img src="{{site.baseurl}}/assets/images/gameplay.PNG" height="500px" alt="Gameplay1" >
+         </div>
+     </div>
 
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active" align="center">
-      <img src="assets/images/map1.PNG" height="400px" alt="Gameplay1" >
-    </div>
-    <div class="carousel-item" align="center">
-      <img src="assets/images/map2.PNG" height="400px" alt="Gameplay2" >
-    </div>
-    <div class="carousel-item" align="center">
-      <img src="assets/images/gameplay.PNG" height="400px" alt="Gameplay3" >
-    </div>
-  </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
  </section>
-  
+
   
   <!-- game desc -->
-    <section class="choose-side" >
+  <section class="choose-side" >
   <div class="container">
 
    <p>
@@ -101,5 +91,4 @@ scrolljs: true
    </p>
   </div>
   </section>
-	
 </body>
