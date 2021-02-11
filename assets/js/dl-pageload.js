@@ -1,25 +1,13 @@
 //Script for loading the thanks for downloading script
-import {baseurl,downloadStandalone,downloadLauncher,downloadDynamic} from './download.js'
+import {downloadDynamic,getMainDLType} from './download.js'
+import {baseurl,getOS} from "./utils.js";
 
-window.onload = (event) => {
-    const queryString = window.location.search;
-    console.log(queryString);
-    if(queryString ===""){
-        console.log("Its Empty")
-        downloadDynamic();
-    }
-    const urlParams = new URLSearchParams(queryString);
-    const dlType = urlParams.get('type');
-    const platform = urlParams.get('platform');
-    if(platform === 'linux'){
-        window.location.href(baseurl() + "/download/download-for-linux/")
-    }
-    switch (dlType){
-        case 'standalone':
-            downloadStandalone(platform);
-            break;
-        case 'launcher':
-            downloadLauncher(platform);
-            break;
-    }
-};
+const os = getOS();
+const dltype = getMainDLType(os);
+if(os === 'linux'){
+    window.location.href = baseurl()+"download/download-for-linux";
+} else if(dltype === "unsupported"){
+    window.location.href = baseurl()+"download/unsupported";
+} else {
+    window.location.href = baseurl() + "download/thankyou-for-downloading/?type=" + dltype + "&platform=" + os;
+}

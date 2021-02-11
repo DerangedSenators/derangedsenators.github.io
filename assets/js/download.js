@@ -1,3 +1,5 @@
+import{baseurl, getOS} from "./utils.js";
+
 /**
  * Attempts to download based on Platform
  */
@@ -5,12 +7,14 @@ function downloadDynamic(){
     download(getOS());
 }
 
-export{downloadDynamic,downloadStandalone,downloadLauncher,baseurl}
 /**
  * Attempts to download based on a specifed platform
  * @param os Te OS to download for in lowercase
  */
 function download(os){
+    if(os ==='undefined'){
+        unsupportedPlatform();
+    }
     var osCfg = getConfig()
     var dlType = osCfg[os]; //Finds out if we need Launcher, Package Manager or Standalone Release
     switch (dlType){
@@ -34,6 +38,25 @@ function getConfig(){
     dlinfRequest.open("GET", baseurl()+"/assets/json/dlinf.json",false);
     dlinfRequest.send();
     return JSON.parse(dlinfRequest.responseText);
+}
+
+/**
+ * Function to determine the best option to deliver the package to users of defined platform or returns "unsupported" if selected platform is unsupported
+ * @param os The OS/platform of the user
+ */
+function getMainDLType(os){
+    var config = getConfig();
+    var dlType = config[os]; //Finds out if we need Launcher, Package Manager or Standalone Release
+    switch (dlType){
+        case "launcher":
+            return "launcher";
+        case "standalone":
+            return "standalone";
+        case "pkgman":
+            return "standalone"
+        default:
+            return "unsupported";
+    }
 }
 /**
  * Downloads the launcher for a specified OS
@@ -99,43 +122,8 @@ function downloadFromPackageManager(){
     window.location.href = baseurl()+"/download/download-for-linux";
 }
 function unsupportedPlatform(){
-    window.location.href = baseurl()+"//download//unsupported";
+    window.location.href = baseurl()+"/download/unsupported";
 }
 
 
-/**
- * Function which returns a String of the running OS
- * @returns The name of the OS that the user is using
- */
-function getOS() {
-    var userAgent = window.navigator.userAgent,
-        platform = window.navigator.platform,
-        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
-        os = null;
-
-    if (macosPlatforms.indexOf(platform) !== -1) {
-        os = 'mac-os';
-    } else if (iosPlatforms.indexOf(platform) !== -1) {
-        os = 'ios';
-    } else if (windowsPlatforms.indexOf(platform) !== -1) {
-        os = 'windows';
-    } else if (/Android/.test(userAgent)) {
-        os = 'android';
-    } else if (!os && /Linux/.test(platform)) {
-        os = 'linux';
-    }
-
-    return os;
-}
-
-/**
- * Returns the baseurl of the website
- * @returns {string}
- */
-function baseurl(){
-    var getUrl = window.location;
-    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/";
-    return baseUrl;
-}
+export{downloadDynamic,downloadStandalone,downloadLauncher,getConfig,getMainDLType}
