@@ -103,16 +103,21 @@ GEM
       jekyll (>= 3.0)
     json (1.8.6)
     kramdown (1.11.1)
+    libv8 (3.16.14.17)
     libv8 (3.16.14.17-x86_64-linux)
     liquid (3.0.6)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     mercenary (0.3.6)
+    mini_portile2 (2.5.0)
     minima (2.0.0)
     minitest (5.13.0)
     multipart-post (2.0.0)
     net-dns (0.8.0)
+    nokogiri (1.11.1)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     nokogiri (1.11.1-x86_64-linux)
       racc (~> 1.4)
     octokit (4.6.2)
@@ -144,6 +149,7 @@ GEM
     unicode-display_width (1.1.3)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
