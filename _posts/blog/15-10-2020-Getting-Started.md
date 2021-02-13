@@ -115,11 +115,11 @@ Below you can see the different desing features in the game:
 
 ## Multiplayer
 Our project will include a bespoke multiplayer solution. To keep communications fast and secure,
-there are several components. The Server will consist of the following key components: <br />
-<br />
+there are several components. The Server will consist of the following key components: 
+
 • Key Exchange Server: This server application will serve random 32-bit values for Diffie Helman Key Exchange.
-These values will automatically update every 90 seconds. <br />
-<br />
+These values will automatically update every 90 seconds. 
+
 • Game Server: The Game Server will be used for gameplay. 
 Initially we will keep all processing to client side to preserve server bandwidth, so all the server needs to
 do is send data from one player to others in the game. We intend to do this by placing groups into virtual
