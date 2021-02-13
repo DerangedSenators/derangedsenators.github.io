@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cops And Robbers – Cops And Robbers by Deranged Senators</title>
+    <title>Getting Started – Cops And Robbers – Cops And Robbers by Deranged Senators</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,11 +9,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="Cops And Robbers by Deranged Senators">
-    <meta property="og:description" content="Cops And Robbers by Deranged Senators" />
+    <meta name="description" content="Our Game :)" />
+    <meta property="og:description" content="Our Game :)" />
     
     <meta name="author" content="Cops And Robbers" />
 
+    
+    <meta property="og:title" content="Getting Started" />
     
 
     
@@ -92,24 +94,143 @@
         </div>
       </noscript>
 
-      <article class="page">
-  <div class="jumbotron">
+      <article class="post">
+  <div class="jumbotron" style="background: #15191b">
     <div class="container">
-      <h1></h1>
+
+      <h1>Getting Started</h1>
+      <h6>Written on October 15, 2020  by Naim Ahmed </h6>
+
     </div>
   </div>
-  <div class="container">
-    <div class="entry">
-      <script type="module" src="/assets/js/thankyou-load.js">
-</script>
-<div class="jumbotron" style="background: #15191b">
-    <div class="container" style="text-align: center;">
-        <h1>Thanks for Downloading Cops And Robbers</h1>
-        <p>Your Download will begin shortly. If it does not start click here.</p> <!-- Link to be added -->
+
+  <div class="container post" style="color:white">
+
+    <style>
+    
+    .column1 {
+        float: left;
+        width: 30%;
+        padding: 5px;
+    }
+
+    .row1::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #cop0 {
+        padding-left: 50px;
+    }
+
+    /* #ground {
+        padding-left: 50px;
+    }
+
+    #wall {
+        padding-left: 50px;
+    } */
+
+    #lampPost {
+        padding-left: 50px;
+    }
+
+</style>
+
+<h2 id="introduction">Introduction</h2>
+<p>Cops and Robbers is an online multiplayer party game with competitive elements as two teams battle for
+dominance of resources.
+Designed to be compatible on PC devices. The game makes use of both fast-paced action and thoughtful strategy
+tactics, as players must decide when to make use of the money they’ve gathered to either, secure the win
+through sum or potentially gain an advantage in the tide of battle through use of items and powerups.
+Whilst the game has its competitive elements its focus is to be casual enough as
+to not be off-putting for new users who may feel they are at a disadvantage to veterans in the game.</p>
+
+<h2 id="game-design">Game Design</h2>
+<p>We planned the overall theme of the game and started developing the design and look of the main 
+characters. After various discussions and meetings we concluded on the final design of the two main
+chacraters as well as a rough map idea of how the game is going to look like and where the cops and robbers will be posiitoned.
+The following graphs were made using Clip Studio Paint and each design was made according to the theme of teh game. <br />
+Below you can see the different desing features in the game:</p>
+
+<h3 id="characters-and-first-draft-map">Characters and first draft map</h3>
+
+<div class="row1">
+    <div class="column1" id="cop0">
+        <img src="/assets/images/cop resize.png" height="200" alt="Cop" style="width:30%" />
+    </div>
+    <div class="column1">
+        <img src="/assets/images/robber resize left.png" height="200" alt="Robber" style="width:30%" />
+    </div>
+    <div class="column1">
+        <img src="/assets/images/MAP.png" height="150" alt="Map" style="width:100%" />
     </div>
 </div>
+
+<h3 id="weapons">Weapons</h3>
+
+<div class="container center">
+    <div class="row weapons">
+        <div class="col-md-12">
+            </div>
+            <div class="col-md-3">
+              <img src="/assets/images/bat.PNG" class="img-fluid img-border" alt="" />
+            </div>
+            <div class="col-md-3">
+              <img src="/assets/images/pipe.PNG" class="img-fluid img-border" alt="" />
+            </div>
+            <div class="col-md-3">
+              <img src="/assets/images/robbergun.PNG" class="img-fluid img-border" alt="" />
+            </div>
+            <div class="col-md-3">
+              <img src="/assets/images/coppergun.PNG" class="img-fluid img-border" alt="" />
+        </div>
+     </div>
+</div>
+
+<h3 id="ground">Ground</h3>
+
+<div class="row1" id="ground">
+    <div class="column1">
+        <img src="/assets/images/ground.png" height="50" alt="Map" style="width:200%" />
     </div>
+</div>
+
+<h3 id="wall">Wall</h3>
+
+<div class="row1" id="wall">
+    <div class="column1">
+          <img src="/assets/images/walls.png" height="60" alt="Map" style="width:33%" />
+    </div>
+</div>
+
+<h3 id="lamp-post">Lamp post</h3>
+
+<div class="row1">
+    <div class="column1" id="lampPost">
+        <img src="/assets/images/Lamp" height="250" alt="Cop" style="width:45%" />
+    </div>
+</div>
+
+<h2 id="multiplayer">Multiplayer</h2>
+<p>Our project will include a bespoke multiplayer solution. To keep communications fast and secure,
+there are several components. The Server will consist of the following key components:</p>
+
+<p>• Key Exchange Server: This server application will serve random 32-bit values for Diffie Helman Key Exchange.
+These values will automatically update every 90 seconds.</p>
+
+<p>• Game Server: The Game Server will be used for gameplay. 
+Initially we will keep all processing to client side to preserve server bandwidth, so all the server needs to
+do is send data from one player to others in the game. We intend to do this by placing groups into virtual
+rooms. Initially, these groups will consist of random members from the matchmaking lobby, but we plan on
+introducing accounts or private lobbies to allow friends to play together</p>
+
+
   </div>
+
+  
+
 </article>
 
     </div>
@@ -166,24 +287,6 @@ fill="#000000" stroke="none">
       </div>
     </footer>
 
-    
-    <script>
-      var rotation = 0;
-      var scrollLoc = $(document).scrollTop();
-
-      $(window).on("scroll", function() {
-          var newLoc = $(document).scrollTop();
-          var diff = (scrollLoc - newLoc) / 3;
-          rotation += diff, scrollLoc = newLoc;
-          var rotationStr = "rotate(" + rotation + "deg)";
-
-          $("#rotate-on-scroll").css({
-              "-webkit-transform": rotationStr,
-              "-moz-transform": rotationStr,
-              "transform": rotationStr
-          });
-      });
-    </script>
     
 
   </body>
