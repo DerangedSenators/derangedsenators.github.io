@@ -11,7 +11,7 @@ Hi everyone. We have been working on the project for around two months now and o
 ## PlayerLink Progress
 The Development of PlayerLink has been progressing fairly smoothly so far with myself and Ash having implemented the majority of the low-level native part of the framework and are now beginning to turn our attention towards running tests and adding a `.NET` layer to allow PlayerLink to be accessed by `CLR` so that it can be used by Unity. The progress can be tracked via the [PlayerLink Repository](http://www.github.com/derangedsenators/playerlink)
 
-## Why Migrate to Mirror
+## Why have we had to pause PlayerLink Integration
 Unfortunately, we have strict deadlines to meet with the Cops And Robbers project which dictates the majority of decisions we make with the project. In this case, we have to deliver an MVP next week and we must have some form of multiplayer implemented by then and with PlayerLink at such a primitive stage with limited test data available, we have had to look elsewhere
 
 ### Enter Mirror
