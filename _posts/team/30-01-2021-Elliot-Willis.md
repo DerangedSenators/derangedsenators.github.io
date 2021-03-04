@@ -6,5 +6,5 @@ excerpt: Support
 author: Elliot Willis
 ---
 
-Currently in my second year of Bsc Cyber Security.
+I am currently a second year cyber security student - I program in Java and have been creating the in-game UI and the Launcher application. I am also part of the security portion of the team.
 
