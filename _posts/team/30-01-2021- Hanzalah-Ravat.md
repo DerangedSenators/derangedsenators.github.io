@@ -3,7 +3,7 @@ layout: post
 title: HR
 category: team
 excerpt: Server and Game Developer
-image: hanzalah.jpg
+image: hanzalah.png
 author: Hanzalah Ravat
 ---
 
