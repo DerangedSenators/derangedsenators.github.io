@@ -3,6 +3,7 @@ layout: post
 title: AJ
 category: team
 excerpt: Game Developer
+image: Ash.jpeg
 author: Ash Jaimal
 ---
 

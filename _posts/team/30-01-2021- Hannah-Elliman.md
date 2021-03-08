@@ -2,7 +2,8 @@
 layout: post
 title: HE
 category: team
-excerpt: Web/Game Developer
+excerpt: Website and Game Developer
+image: Hannah.jpeg
 author: Hannah Elliman
 ---
 

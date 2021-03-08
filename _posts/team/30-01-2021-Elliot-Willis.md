@@ -3,6 +3,7 @@ layout: post
 title: EW
 category: team
 excerpt: Support
+image: Elliot.jpeg
 author: Elliot Willis
 ---
 

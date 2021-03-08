@@ -3,6 +3,7 @@ layout: post
 title: NMN
 category: team
 excerpt: Game Developer
+image: Nisath.jfif
 author: Nisath M Nasar
 ---
 

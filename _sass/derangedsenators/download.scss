@@ -3,14 +3,6 @@
     padding: 0;
 }
 
-.downloadBody{
-    background: #353b48;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 a {
     color: $brand-accent;
 }
@@ -37,6 +29,7 @@ a:hover {
     top: 150px;
     left: 650px;
     text-decoration: none;
+
 }
 
 .btn1::before, .btn1::after, .btn2::before, .btn2::after, .btn3::before, .btn3::after, .btn4::before, .btn4::after, .btn5::before, .btn5::after {
@@ -66,3 +59,19 @@ a:hover {
 .btn1:hover::after, .btn2:hover::after, .btn2:hover::after, .btn3:hover::after, .btn4:hover::after, .btn5:hover::after{
     right: 80%;
 }
+
+// @media screen and (max-width: 1024px) {
+//     .btn1, .btn2, .btn3, .btn4, .btn5 {
+//         width: 200px;
+//         left: 125px;
+//         top: 60px;
+//     }
+// }
+
+// @media screen and (max-width: 480px) {
+//     .btn1, .btn2, .btn3, .btn4, .btn5 {
+//         width: 200px;
+//         left: 125px;
+//         top: 60px;
+//     }
+// }

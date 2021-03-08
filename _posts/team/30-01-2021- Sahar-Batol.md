@@ -2,7 +2,8 @@
 layout: post
 category: team
 title: SB
-excerpt: Website Dev/Graphics Lead
+excerpt: Website and Graphics Lead
+image: robber-head-transparent-122x118.PNG
 author: Sahar Batol
 ---
 
