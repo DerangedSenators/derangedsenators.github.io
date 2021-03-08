@@ -1,38 +1,91 @@
-.team-section {
-  background-color: $brand-primary-darker;
+.container {
+  margin: 20px 40px;
+  color: white;
 }
 
-.team-section h1 {
-  padding-top: 30px;
-  text-align: center;
+.heading{
+  font-size: 60px;
+  color: white;
 }
-.team {
+
+.profiles {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  display: flex;
+  justify-content:center;
   flex-wrap: wrap;
-  font-family: "Inconsolata", monospace;
+  margin: 20px 40px;
 }
 
-.team .team-member {
-  margin: 5px 5px 50px;
-  width: 300px;
-  padding: 20px;
+.profile {
+  flex-basis: 200px;
+  margin: 20px;
+  align-items: center;
 }
 
-.team .team-member h3 {
-  color: $brand-accent;
+.profile .profile-img {
+  height: 250px;
+  width: 200px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
 }
 
-.title-font{
-  color: $brand-accent;
-  font-family: "Alfa Slab One", cursive;
+.profile:hover .profile-img {
+  filter: grayscale(0);
 }
 
-.project-role{
-  color:white;
+.user-name {
+  margin-top: 30px;
+  font-size: 25px;
+  text-align: center;
 }
 
-.member-description{
-  color:white;
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+  text-align: center;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+@media only screen and (max-width: 1150px) {
+  .profilesv {
+      flex-direction: column;
+  }
+
+  .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .profile p {
+      text-align: center;
+      margin: 20px 60px 80px 60px;
+      font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+      font-size: 40px;
+      color: white; 
+      text-align: center;
+  }
+  
+  .profiles {
+      margin: 20px 0;  
+  }
+
+  .profile p {
+      margin: 20px 10px 80px 10px;
+  }
 }

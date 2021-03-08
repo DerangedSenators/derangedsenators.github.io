@@ -1,8 +1,9 @@
 ---
 layout: post
 category: team
-excerpt: Website/Game Developer
+excerpt: Website and Game Developer
 author: Naim Ahmed
+image: Naim.png
 title: Member
 ---
 
