@@ -3,7 +3,7 @@ layout: post
 category: team
 excerpt: Project Lead
 author: Piotr Krawiec
-image: Peter.png
+image: Peter.jpeg
 title: PK
 ---
 
