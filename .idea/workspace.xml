@@ -26,11 +26,21 @@
   <component name="ChangeListManager">
     <list default="true" id="3ff28553-4dfb-4f7f-8a88-1dbc3dad7433" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/dl-pageload.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/dl-pageload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/download.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/download.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/download.html" beforeDir="false" afterPath="$PROJECT_DIR$/download/download.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/thankyou-for-downloading.html" beforeDir="false" afterPath="$PROJECT_DIR$/download/thankyou-for-downloading.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/meta.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/meta.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Abid-Raja.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Abid-Raja.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Ash-Jaimal.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Ash-Jaimal.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Hannah-Elliman.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Hannah-Elliman.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Hanzalah-Ravat.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Hanzalah-Ravat.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- J-K.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- J-K.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Naim-Ahmed.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Naim-Ahmed.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Piotr-Krawiec.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Piotr-Krawiec.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Sahar-Batol.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Sahar-Batol.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021-Elliot-Willis.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021-Elliot-Willis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021-Nisath-M-Nasar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021-Nisath-M-Nasar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/derangedsenators/download.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/derangedsenators/download.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/derangedsenators/team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/derangedsenators/team.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/download/download-options.html" beforeDir="false" afterPath="$PROJECT_DIR$/download/download-options.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -65,19 +76,6 @@
       <recent name="$PROJECT_DIR$/download" />
       <recent name="$PROJECT_DIR$" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,6 +88,7 @@
       <workItem from="1612979029435" duration="5757000" />
       <workItem from="1612989265473" duration="3307000" />
       <workItem from="1613053322149" duration="3507000" />
+      <workItem from="1613861126554" duration="192000" />
     </task>
     <servers />
   </component>
@@ -106,6 +105,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1404" y="536" width="622" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612991638228">
