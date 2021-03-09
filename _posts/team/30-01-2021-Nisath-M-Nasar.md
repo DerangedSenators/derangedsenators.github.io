@@ -7,5 +7,5 @@ image: Nisath.jfif
 author: Nisath M Nasar
 ---
 
-Currently in second year of BSc Computer Science. I am skilled in various fields especially in Java and MS Excel. Member of the game and multiplayer development.
+Member of the game development, responsible for adding features, solving problems and building solutions. Also has rad painting skills! 
 
