@@ -7,5 +7,4 @@ image: Naim.png
 title: Member
 ---
 
-2nd year student at Aston University Member of the web development team and main game development
-
+Member of the web development team and main game development. Coding and helping with C# and making the website.
