@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 * {-webkit-font-smoothing: antialiased;}
 
@@ -26,55 +28,14 @@
   margin-left:-44px;
 }
 
-// nav {
-//   position: relative;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100px;
-//   padding: 10px 100px;
-//   box-sizing: border-box;
-//   transition: .5s;
-//   background: #15191b;
-// }
-
-
 #logo img {
   height: 80px;
   width: 70%;
 }
 
-// nav ul {
-//   float: right;
-//   margin: 0;
-//   margin-top: 0px;
-//   padding: 0;
-//   display: flex;
-// }
-
-// nav ul li {
-//   list-style: none;
-// }
-
-// nav ul li a {
-//   line-height: 80px;
-//   color: #b1b1b1;
-//   padding: 5px 20px;
-//   font-family: 'Roboto', sans-serif;
-//   text-decoration: none;
-//   text-transform: uppercase;
-//   transition: .5s;
-// }
-
-// nav ul li a:hover {
-//   color: #fff;
-//   background: rgb(161, 161, 161);
-// }
-
 section.sec1 {
   width: 100%;
   height: 100vh;
-  background: rgb(39, 39, 39);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,22 +58,11 @@ section.sec3 {
   text-align: center;
 }
 
-// nav .animation {
-//   min-height: 10px;
-//   background: black;
-//   transition: 0.35s all ease;
-// }
-
-// nav .animation ul {
-//   padding: 1rem 2rem;
-//   transition: 0.35s all ease;
-// }
-
-// nav .animation li {
-//   color: white;
-//   transition: 0.2s all ease-in-out;
-// }
-
+section.sec5 {
+  width: 100%;
+  height: 100vh;
+  background: rgb(39, 39, 39);
+}
 
 /* Cop and Robber */
 
@@ -124,7 +74,7 @@ section.sec3 {
   height: 754px;
   margin-right: 70%;
   vertical-align: middle;
-  background-image: "{{site.baseurl}}/assets/images/cop-resize.png";
+  padding-top: 50px;
 }
 .copDesc{
   width: 60%;
@@ -149,8 +99,8 @@ section.sec3 {
   width: 35%;
   height: 754px;
   margin-left: 71%;
-  background-image: "{{site.baseurl}}/assets/images/robber-resize-left.png)";
   vertical-align: middle;
+  padding-top: 50px;
 }
 .robberDesc{
   width: 60%;
@@ -175,7 +125,6 @@ section.sec3 {
   margin-top: 20px;
   font-size: 20px;
 }
-
 
 /* Download Button */
 
@@ -237,4 +186,62 @@ section.sec3 {
 .downloadBtn:hover::after{
   right: 80%;
 }
+
+/* Slideshow */
+// .slidershow{
+//   width: 700px;
+//   height: 400px;
+//   overflow: hidden;
+// }
+// .middle{
+//   position: absolute;
+//   top: 350%;
+//   left: 50%;
+//   transform: translate(-50%,-50%);
+// }
+// .navigation{
+//   position: absolute;
+//   bottom: 20px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   display: flex;
+// }
+// .bar{
+//   width: 50px;
+//   height: 10px;
+//   border: 2px solid #fff;
+//   margin: 6px;
+//   cursor: pointer;
+//   transition: 0.4s;
+// }
+// .bar:hover{
+//   background: #fff;
+// }
+
+// input[name="r"]{
+//     position: absolute;
+//     visibility: hidden;
+// }
+
+// .slides{
+//   width: 500%;
+//   height: 100%;
+//   display: flex;
+// }
+
+// .slide{
+//   width: 20%;
+//   transition: 0.6s;
+// }
+// .slide img{
+//   width: 100%;
+//   height: 100%;
+// }
+
+// #r1:checked ~ .s1{
+//   margin-left: 0;
+// }
+// #r2:checked ~ .s1{
+//   margin-left: -20%;
+// }
 
