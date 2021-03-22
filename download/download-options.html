@@ -2,10 +2,43 @@
 layout: default
 scrolljs: true
 ---
-<div class = "buttons">
-    <button class="btn1" type="submit"><a download="{{site.baseurl}}/download/download/?type=standalone&platform=android"><strong>Android</strong></a></button>
-    <button class="btn2" type="submit"><a download="{{site.baseurl}}/download/download/?type=standalone&platform=ios"><strong>IOS</strong></a></button>
-    <button class="btn3" type="submit"><a download="{{site.baseurl}}/download/download/?type=launcher&platform=windows"><strong>Windows</strong></a></button>
-    <button class="btn4" type="submit"><a download="{{site.baseurl}}/download/download/?type=launcher&platform=mac"><strong>MacOS</strong></a></button>
-    <button class="btn5" type="submit"><a download="{{site.baseurl}}/download/download/?type=standalone&platform=linux"><strong>Linux</strong></a></button>
-</div>
+
+    <head>
+        <script src = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js">
+        </script>
+        <link rel = "stylesheet"
+              href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body>
+    <div class="jumbotron" style="background: #15191b">
+        <div class="container">
+            <h1>Download</h1>
+            <p>Download Cops And Robbers for your selected platform</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect" >
+            <div class="mdl-tabs__tab-bar">
+                {% for download_platform in site.download_platforms limit:1 %}
+                <a href="#{{download_platform.platform}}" class="mdl-tabs__tab is-active">{{download_platform.platform}}</a>
+                {% endfor %}
+                {% for download_platform in site.download_platforms offset:1 %}
+                <a href="#{{download_platform.platform}}" class="mdl-tabs__tab">{{download_platform.platform}}</a>
+                {% endfor %}
+            </div>
+            {% for platform in site.download_platforms limit:1 %}
+            <div class="mdl-tabs__panel is-active" id="{{platform.platform}}">
+                {{platform.content}}
+            </div>
+            {% endfor %}
+
+            {% for platform in site.download_platforms offset:1 %}
+            <div class="mdl-tabs__panel" id="{{platform.platform}}">
+                {{platform.content}}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>

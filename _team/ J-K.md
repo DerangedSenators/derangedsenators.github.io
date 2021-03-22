@@ -2,7 +2,7 @@
 category: team
 title: JK
 excerpt: Support
-image: robber-head-transparent-122x118.png
+image: robberhead.png
 author: J.K
 ---
 

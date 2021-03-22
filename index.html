@@ -3,91 +3,59 @@ layout: default
 scrolljs: true
 ---
 
-<body>
-   <!-- pitch and modal images  -->
-    <section class="first-block" id="title">
-	<div class="container-fluid">
-	  <div class="row ">
-	  
-		<!-- Left Image -->
-        <div class="col-md-4" align="center">
-          <img id="copImg" class="cop-img shaker"  data-toggle="modal" data-target="#myModal" src="assets/images/cop resize.png" height="500px" alt="Cops">
-        </div>
-		<!-- Left modal-->
-		<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="model-content">
-		      <div class="modal-body">
-				<img src="assets/images/COPS TEAM.png" class="img-fluid">
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		
-        <!-- Center Image -->
-        <div class="col-md-4 center-img" align="center" >
-			</br>
-			<h1 class="center-title">Cops and Robbers</h1>
-			</br>
-			</br>
-          <video width="470" controls>
-		  <source src="assets/videos/pitch-video.mp4" type="video/mp4" frameborder="0" allowfullscreen class="img-fluid">
-		  </video>
-            <a class="btn btn-primary text-primary" href="/download">{% include svg/download.svg %} Download</a>
-        </div>
-		
-		<!-- Right Image -->
-        <div class="col-md-4" align ="center">
-          <img id="robberImg" class="robber-img shaker"  data-toggle="modal" data-target="#robModal" src="assets/images/robber resize left.png" height="500px" alt="Cops">
-        </div>
-		<!-- Right modal-->
-		<div id="robModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="model-content">
-		      <div class="modal-body">
-				<img src="assets/images/ROBBERS TEAM.png" class="img-fluid">
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		
-      </div>
-      </div>
-  </section>
-  <section class="game-desc" >
+<body style="margin: auto; width: 100%">
+<section class="sec1 jumbotron welcome" style="background-image: url('{{site.baseurl}}/assets/images/Scene1.png'); background-size: cover; width: 100% ">
     <div class="container">
-  
-     <p>
-         Set in America 2020, a country full of opportunities, people, and wealth. Having an abundance of wealth means more than ever. Nice cars, nice mansion and most importantly FAME!</p><p> It is time for The Robbers to come out of their hideouts and acquire some fame for themselves. On the other hand, The Cops’ numbers and their ways of suppressing criminals are now more tremendous than ever.
-     </p>
+        <div class="row justify-content-between align-items-bottom">
+            <div class="col-lg-5 text-center text-lg-left pb-10">
+                <div class="content" style="align-content: center">
+                    <h1>Cops And Robbers by Deranged Senators</h1>
+                    <p>A free-to-play multiplayer Cops And Robbers Game, Developed for the Aston University Computing Team Project Module</p>
+                    <a class="btn btn-primary text-primary" href="/download">{% include svg/download.svg %} Download</a>
+                    <a class="btn btn-link text-white" href="{{ site.baseurl }}/blog">Blog</a>
+                </div>
+            </div>
+        </div>
     </div>
-    </section>
-    
-  <!-- CAROUSEL -->
- <section class="carousel" id="carousel">
-     <script type="text/javascript" src="{{site.baseurl}}/assets/js/carousel.js"></script>
-     <div class="carousel-main">
-         <div class="item active">
-             <img src="{{site.baseurl}}/assets/images/map1.PNG" height="500px" alt="Gameplay1" >
-         </div>
-         <div class="item">
-             <img src="{{site.baseurl}}/assets/images/map2.PNG" height="500px" alt="Gameplay1" >
-         </div>
-         <div class="item">
-             <img src="{{site.baseurl}}/assets/images/gameplay.PNG" height="500px" alt="Gameplay1" >
-         </div>
-     </div>
+</section>
 
- </section>
+<section class="game-desc" >
+    <div class="container">
+        <p>
+            Set in America 2020, a country full of opportunities, people, and wealth. Having an abundance of wealth means more than ever. Nice cars a nice mansion and most importantly FAME!</p><p> It is time for The Robbers to come out of their hideouts and acquire some fame for themselves. On the other hand, The Cops’ numbers and their ways of suppressing criminals are now more tremendous than ever.
+        </p>
+    </div>
+</section>
+<!-- CAROUSEL -->
+<section class="carousel">
+    <div class="container">
+        <script type="text/javascript" src="{{site.baseurl}}/assets/js/carousel.js"></script>
+        <section class="carousel-main " id="carousel" style="
+            height: 50vh;
+            display: flex;
+            background-size: cover !important;
+            width: 100%;">
+                <div class="item active">
+                    <img src="{{site.baseurl}}/assets/images/map1.PNG"  alt="Gameplay1">
+                </div>
+                <div class="item">
+                    <img src="{{site.baseurl}}/assets/images/map2.PNG"  alt="Gameplay1">
+                </div>
+                <div class="item">
+                    <img src="{{site.baseurl}}/assets/images/gameplay.PNG"  alt="Gameplay1">
+                </div>
+<!--            width="100%" height="100%" style="object-fit: contain"-->
+        </section>
+    </div>
+</section>
 
-  
-  <!-- game desc -->
-  <section class="choose-side" >
-  <div class="container">
 
-   <p>
-  IN THIS CARDINAL BATTLE BETWEEN THE COPS AND THE ROBBERS, WHOSE SIDE WILL YOU CHOOSE?
-   </p>
-  </div>
-  </section>
+<!-- game desc -->
+<section class="choose-side" >
+    <div class="container">
+        <p>
+            IN THIS CARDINAL BATTLE BETWEEN THE COPS AND THE ROBBERS, WHOSE SIDE WILL YOU CHOOSE?
+        </p>
+    </div>
+</section>
 </body>
