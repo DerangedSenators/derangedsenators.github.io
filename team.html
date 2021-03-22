@@ -11,13 +11,13 @@ title: Meet The Team
     </div>
     <div class="container">
       <div class="profiles">
-        {% for post in site.categories.team %}
+        {% for member in site.team %}
             <div class="profile">
-                <img src="{{site.baseurl}}/assets/images/{{post.image}}" class="profile-img">
+                <img src="{{site.baseurl}}/assets/images/team/{{member.image}}" class="profile-img">
         
-                <h3 class="user-name">{{post.author}}</h3>
-                <h5>{{post.excerpt}}</h5>
-                <p>{{post.content}}</p>
+                <h3 class="user-name">{{member.author}}</h3>
+                <h5>{{member.excerpt}}</h5>
+                <p>{{member.content}}</p>
             </div>
             {% endfor %}
         </div>

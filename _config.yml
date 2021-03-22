@@ -63,4 +63,4 @@ exclude:
 
 collections:
   - download_platforms
-
+  - team
