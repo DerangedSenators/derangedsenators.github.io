@@ -22,17 +22,17 @@
 
 
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="/assets/css/material-kit.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
     <link rel="shortcut icon" href="/assets/images/robber-head-transparent-122x118.png">
-    <link rel="stylesheet" href="/assets/css/bootstrap.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <!-- popper js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <!-- boostrap js -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+<!--    &lt;!&ndash; popper js &ndash;&gt;-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<!--    &lt;!&ndash; boostrap js &ndash;&gt;-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -47,13 +47,16 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="/assets/js/material-kit.js"> </script>
 
+    <script src="/assets/js/home-nav-controller.js"></script>
+
+
   </head>
 
   <body id="page-top" style="background: #15191b">
     <nav class="navbar fixed-top navbar-expand-lg bg-dark">
       <div class="container">
         <div class="navbar-translate">
-          <a class="navbar-brand" href="/" style="position: relative; top: -18px;"><img src="/assets/images/robber-head-transparent-122x118.png ">Cops and Robbers</a>
+          <a class="navbar-brand" href="/" style="position: relative;"><img src="/assets/images/robber-head-transparent-122x118.png" width="100px" height="100px">Cops and Robbers</a>
           <!-- Right aligned menu below button -->
           <!-- Raised button with ripple -->
           <button class="navbar-toggler " type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" style="fill:white;">
@@ -82,7 +85,6 @@
     </nav>
 
     <div id="main" role="main">
-     <div style="margin-bottom: 20px"></div>
       <noscript>
         <div class="no-script">
           <div class="container">
@@ -103,70 +105,25 @@
       <div class="profiles">
         
             <div class="profile">
-                <img src="/assets/images/Nisath.jfif" class="profile-img">
+                <img src="/assets/images/team/Abid.PNG" class="profile-img">
         
-                <h3 class="user-name">Nisath M Nasar</h3>
+                <h3 class="user-name">Abid Raja</h3>
+                <h5>Sound Developer</h5>
+                <p><p>Currently in my second year of Bsc Computer Science.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Ash.jpeg" class="profile-img">
+        
+                <h3 class="user-name">Ash Jaimal</h3>
                 <h5>Game Developer</h5>
-                <p><p>Member of the game development, responsible for adding features, solving problems and building solutions. Also has rad painting skills!</p>
+                <p><p>Hi my name is Ash Jaimal I’m 20 years old and currently in my second year of BSc Computer Science. My role throughout this project has been mostly developer, i have been helping develop the main game within Unity adding features when necessary and also been incorporating multiplayer into the game.</p>
 </p>
             </div>
             
             <div class="profile">
-                <img src="/assets/images/Elliot.jpeg" class="profile-img">
-        
-                <h3 class="user-name">Elliot Willis</h3>
-                <h5>Support</h5>
-                <p><p>I am currently a second year cyber security student - I program in Java and have been creating the in-game UI and the Launcher application. I am also part of the security portion of the team.</p>
-</p>
-            </div>
-            
-            <div class="profile">
-                <img src="/assets/images/robber-head-transparent-122x118.png" class="profile-img">
-        
-                <h3 class="user-name">Sahar Batol</h3>
-                <h5>Website and Graphics Lead</h5>
-                <p><p>I am the leader of the web development team and I am also the graphics designer for our game. My roles include collaborating on the creation of the webpage, creating graphical assets and designing the game map layout.</p>
-</p>
-            </div>
-            
-            <div class="profile">
-                <img src="/assets/images/Peter.PNG" class="profile-img">
-        
-                <h3 class="user-name">Piotr Krawiec</h3>
-                <h5>Project Lead</h5>
-                <p><p>Currently in second year of BSc Cyber Security. I am the project leader, overseeing what progress the team are making towards the project and keeping things organised.</p>
-</p>
-            </div>
-            
-            <div class="profile">
-                <img src="/assets/images/Naim.PNG" class="profile-img">
-        
-                <h3 class="user-name">Naim Ahmed</h3>
-                <h5>Website and Game Developer</h5>
-                <p><p>Member of the web development team and main game development. Coding and helping with C# and making the website.</p>
-</p>
-            </div>
-            
-            <div class="profile">
-                <img src="/assets/images/robber-head-transparent-122x118.png" class="profile-img">
-        
-                <h3 class="user-name">J.K</h3>
-                <h5>Support</h5>
-                <p><p>Currently in my second year of Bsc Cyber Security.</p>
-</p>
-            </div>
-            
-            <div class="profile">
-                <img src="/assets/images/hanzalah.PNG" class="profile-img">
-        
-                <h3 class="user-name">Hanzalah Ravat</h3>
-                <h5>Server and Game Developer</h5>
-                <p><p>Hi, I am Hanzalah and I’m currently in my second year of BSc Cyber Security at Aston. I am a software engineer mainly working on the low-level components in the project notably leading the multiplayer development and integrating security features. In my free time, I like to tinker with Android AOSP source code and build customised versions.</p>
-</p>
-            </div>
-            
-            <div class="profile">
-                <img src="/assets/images/Hannah.jpeg" class="profile-img">
+                <img src="/assets/images/team/Hannah.jpeg" class="profile-img">
         
                 <h3 class="user-name">Hannah Elliman</h3>
                 <h5>Website and Game Developer</h5>
@@ -176,20 +133,65 @@
             </div>
             
             <div class="profile">
-                <img src="/assets/images/Ash.jpeg" class="profile-img">
+                <img src="/assets/images/team/hanzalah.PNG" class="profile-img">
         
-                <h3 class="user-name">Ash Jaimal</h3>
-                <h5>Game Developer</h5>
-                <p><p>Hi my name is Ash Jaimal I’m 20 years old and currently in my second year of BSc Computer Science. My role throughout this project has been mostly developer, i have been helping develop the main game within Unity adding features when necessary and also been incorporating multiplayer into the game.</p>
+                <h3 class="user-name">Hanzalah Ravat</h3>
+                <h5>Server and Game Developer</h5>
+                <p><p>Hi, I am Hanzalah and I’m currently in my second year of BSc Cyber Security at Aston. I am a software engineer mainly working on the low-level components in the project notably leading the multiplayer development and integrating security features. In my free time, I like to tinker with Android AOSP source code and build customised versions.</p>
 </p>
             </div>
             
             <div class="profile">
-                <img src="/assets/images/Abid.PNG" class="profile-img">
+                <img src="/assets/images/team/robberhead.png" class="profile-img">
         
-                <h3 class="user-name">Abid Raja</h3>
-                <h5>Sound Developer</h5>
-                <p><p>Currently in my second year of Bsc Computer Science.</p>
+                <h3 class="user-name">J.K</h3>
+                <h5>Support</h5>
+                <p><p>Currently in my second year of Bsc Cyber Security.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Naim.PNG" class="profile-img">
+        
+                <h3 class="user-name">Naim Ahmed</h3>
+                <h5>Website and Game Developer</h5>
+                <p><p>Member of the web development team and main game development. Coding and helping with C# and making the website.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Peter.PNG" class="profile-img">
+        
+                <h3 class="user-name">Piotr Krawiec</h3>
+                <h5>Project Lead</h5>
+                <p><p>Currently in second year of BSc Cyber Security. I am the project leader, overseeing what progress the team are making towards the project and keeping things organised.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/robberhead.png" class="profile-img">
+        
+                <h3 class="user-name">Sahar Batol</h3>
+                <h5>Website and Graphics Lead</h5>
+                <p><p>I am the leader of the web development team and I am also the graphics designer for our game. My roles include collaborating on the creation of the webpage, creating graphical assets and designing the game map layout.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Elliot.jpeg" class="profile-img">
+        
+                <h3 class="user-name">Elliot Willis</h3>
+                <h5>Support</h5>
+                <p><p>I am currently a second year cyber security student - I program in Java and have been creating the in-game UI and the Launcher application. I am also part of the security portion of the team.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Nisath.png" class="profile-img">
+        
+                <h3 class="user-name">Nisath M Nasar</h3>
+                <h5>Game Developer</h5>
+                <p><p>Member of the game development, responsible for adding features, solving problems and building solutions. Also has rad painting skills!</p>
 </p>
             </div>
             
