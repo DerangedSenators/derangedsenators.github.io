@@ -9,3 +9,5 @@ scrolljs: true
 {{dl.content}}
 {% endif %}
 {% endfor %}
+
+Check out the game for other platforms by clicking this [link]({{site.baseurl}}/download/download-options)
