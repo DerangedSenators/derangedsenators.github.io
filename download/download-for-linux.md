@@ -1,9 +1,8 @@
 ---
 layout: page
 scrolljs: true
+title: Download Cops And Robbers On Linux
 ---
-# Our game in Linux 
-
 {% for dl in site.download_platforms %}
 {% if dl.platform == "Linux" %}
 {{dl.content}}
