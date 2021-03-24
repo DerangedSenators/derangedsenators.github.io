@@ -1,6 +1,6 @@
 {
-  "windows": "launcher",
-  "mac": "launcher",
+  "windows": "standalone",
+  "mac": "standalone",
   "linux": "pkgman",
   "android": "standalone",
   "ios": "unsupported",
