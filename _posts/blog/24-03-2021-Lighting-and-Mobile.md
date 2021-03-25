@@ -6,7 +6,6 @@ author: Ashwin Jaimal
 
 ![hero]({{site.baseurl}}/assets/images/2020-04-01/MAP3.png){: .blog_post_image_full }
 
-
 ## Hello Lighting & Mobile
 Hi everyone. So we are on the final stretch of our project now and the end is in sight. 
 The final deadline is approaching fast and there’s still a few bugs and tweaks we need to iron out to make sure this game is the best it can be for all of our users. 
