@@ -1,8 +1,6 @@
 @charset "UTF-8";
-@import "variables/brand";
-
 .post {
-  background-color: #15191b;
+
   .jumbotron h1 {
   font-size: 2.5rem;
   }
@@ -15,7 +13,13 @@
     fill: white;
     height: 1.15rem;
   }
+  
 }
+
+.blog_post_image {
+  max-width: 100%;
+}
+
 .blog_post_image_full {
   width: 100%;
 }
@@ -24,15 +28,6 @@
   max-width: 100%;
   padding: 50px;
 }
-width: auto;
-}
-
-}
-
-.blog_post_image {
-  max-width: 100%;
-}
-
 
 
 @include media-breakpoint-down(sm) {
