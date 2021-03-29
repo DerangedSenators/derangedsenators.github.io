@@ -1,0 +1,27 @@
+---
+layout: default
+title: Security
+permalink: /security/
+---
+<div class="jumbotron">
+    <div class="container">
+
+        <h1>Security</h1>
+        <p>This Page contains some useful links to our different security pages.</p>
+
+    </div>
+</div>
+<div class="container">
+    {% for section in site.data.security %}
+    <h2>{{ section.name }}</h2>
+    <div class="row">
+        {% for item in section.data %}
+        <div class="col-sm-6">
+            <h3><a href="{{item.url}}">{{ item.name }}</a></h3>
+            <p>{{ item.text }}</p>
+        </div>
+        {% endfor %}
+    </div><br />
+    {% endfor %}
+</div>
+<!-- Some parts of the text on this page are taken from the LineageOS Project. Licensed under Creative Commons Share Alike 3.0 -->

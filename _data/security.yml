@@ -1,0 +1,12 @@
+---
+- name: Useful Links
+  data:
+    - name: Security Policy
+      text: The Security Policy used by DerangedSenators for all our projects
+      url: "{{site.baseurl}}/security/policy"
+    - name: Report a Security Vulnerability
+      text:  Report a Security Vulnerability for all of our products or services
+      url: "{{site.baseurl}}/security/report"
+    - name: PGP Key
+      text: Use the DerangedSenators PGP key if you want to send us something securely
+      url: "{{site.baseurl}}/security/pgp"
