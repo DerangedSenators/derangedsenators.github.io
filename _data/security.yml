@@ -1,0 +1,13 @@
+---
+# Relative links to the different security man pages
+- name: Useful Links
+  data:
+    - name: Security Policy
+      text: The Security Policy used by DerangedSenators for all our projects
+      url: "policy"
+    - name: Report a Security Vulnerability
+      text:  Report a Security Vulnerability for all of our products or services
+      url: "report"
+    - name: PGP Key
+      text: Use the DerangedSenators PGP key if you want to send us something securely
+      url: "pgp"

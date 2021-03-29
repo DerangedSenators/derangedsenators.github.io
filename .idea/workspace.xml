@@ -26,21 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3ff28553-4dfb-4f7f-8a88-1dbc3dad7433" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/meta.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/meta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Abid-Raja.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Abid-Raja.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Ash-Jaimal.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Ash-Jaimal.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Hannah-Elliman.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Hannah-Elliman.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Hanzalah-Ravat.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Hanzalah-Ravat.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- J-K.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- J-K.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Naim-Ahmed.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Naim-Ahmed.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Piotr-Krawiec.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Piotr-Krawiec.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021- Sahar-Batol.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021- Sahar-Batol.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021-Elliot-Willis.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021-Elliot-Willis.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team/30-01-2021-Nisath-M-Nasar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/team/30-01-2021-Nisath-M-Nasar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/derangedsenators/download.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/derangedsenators/download.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/derangedsenators/team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/derangedsenators/team.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/download-options.html" beforeDir="false" afterPath="$PROJECT_DIR$/download/download-options.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/security.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/security/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML4 File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -63,19 +52,39 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/security" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/security" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/json" />
       <recent name="$PROJECT_DIR$/assets/js" />
       <recent name="$PROJECT_DIR$/download" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,6 +98,7 @@
       <workItem from="1612989265473" duration="3307000" />
       <workItem from="1613053322149" duration="3507000" />
       <workItem from="1613861126554" duration="192000" />
+      <workItem from="1617017951193" duration="10284000" />
     </task>
     <servers />
   </component>
@@ -107,14 +117,8 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="1404" y="536" width="622" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612991638228">
-      <screen x="0" y="32" width="3440" height="1408" />
-    </state>
-    <state x="1404" y="536" width="622" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.32.3440.1408/3440.0.1920.1080@0.32.3440.1408" timestamp="1612991638228" />
-    <state x="1384" y="345" key="run.anything.popup" timestamp="1612983217068">
-      <screen x="0" y="32" width="3440" height="1408" />
-    </state>
-    <state x="1384" y="345" key="run.anything.popup/0.32.3440.1408/3440.0.1920.1080@0.32.3440.1408" timestamp="1612983217068" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
