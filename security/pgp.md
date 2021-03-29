@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Deranged Senators GPG Key
+title: Deranged Senators PGP Key
 permalink: /security/pgp
 ---
 DerangedSenators uses this PGP key-set to secure messages, and we strongly encourage you encrypt any information using this key when sending sensitive information to us
+You can report a security vulnerability using this [link]({{site.baseurl}}/security/report)
 
 ```
 :-----BEGIN PGP PUBLIC KEY BLOCK-----
