@@ -36,6 +36,9 @@
 <loc>https://copsandrobbers.co.uk/howto/</loc>
 </url>
 <url>
+<loc>https://copsandrobbers.co.uk/security/</loc>
+</url>
+<url>
 <loc>https://copsandrobbers.co.uk/download/</loc>
 </url>
 <url>
@@ -43,6 +46,15 @@
 </url>
 <url>
 <loc>https://copsandrobbers.co.uk/download/others/</loc>
+</url>
+<url>
+<loc>https://copsandrobbers.co.uk/security/pgp</loc>
+</url>
+<url>
+<loc>https://copsandrobbers.co.uk/security/policy</loc>
+</url>
+<url>
+<loc>https://copsandrobbers.co.uk/security/report</loc>
 </url>
 <url>
 <loc>https://copsandrobbers.co.uk/team/</loc>

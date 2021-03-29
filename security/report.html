@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cops And Robbers – Cops And Robbers by Deranged Senators</title>
+    <title>Report a Security Vulnerability – Cops And Robbers – Cops And Robbers by Deranged Senators</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -14,6 +14,8 @@
     
     <meta name="author" content="Cops And Robbers" />
 
+    
+    <meta property="og:title" content="Report a Security Vulnerability" />
     
 
     
@@ -97,20 +99,48 @@
       <article class="page">
   <div class="jumbotron">
     <div class="container">
-      <h1></h1>
+      <h1>Report a Security Vulnerability</h1>
     </div>
   </div>
   <div class="container">
     <div class="entry">
-      <script type="module" src="/assets/js/thankyou-load.js">
-</script>
-<div class="jumbotron" style="background: #15191b">
-    <div class="container" style="text-align: center;">
-        <h1>Thanks for Downloading Cops And Robbers</h1>
-        <p>Your Download will begin shortly. If it does not start click here.</p>
-        <p>You can also download Cops And Robbers for other platforms by clicking on this <a href="/download/download-options" >link</a> </p><!-- Link to be added -->
+      <h3>
+  Please use this form to report any security vulnerabilities that you have found
+</h3>
+<div class="container">
+  <form action="https://getform.io/f/c52fbce0-4a66-464c-87aa-b5bb58f66ebe" method="POST" enctype="multipart/form-data">
+    <div class = "form-group">
+      <label for="emailInput">Email address</label>
+      <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" name="email" required="required">
+      <small id="emailHelp" class="form-text text-muted">We'll use this email to get in touch with you if required. It will not be shared with anyone else.</small>
     </div>
+    <div class="form-group">
+      <label for="projectInput">Project</label>
+      <input type="text" class="form-control" id="projectInput" placeholder="Please Enter the Project Name Here..." required="required">
+    </div>
+    <div class="file_input_div form-file">
+      <div id="file_input_text_div ">
+        <input class="form-control" type="text" disabled readonly id="file_input_text" />
+        <label class="form-text" for="file_input_text"></label>
+      </div>
+      <div class="file_input">
+        <label class="image_input_button btn">
+          <i class="material-icons">file_upload</i>
+          Upload File
+          <input id="file_input_file" class="none" type="file" />
+        </label>
+        <br>
+        <small>Please Encrypt the contents of the file using our <a href="/security/pgp">PGP Key</a>.</small>
+      </div>
+    </div>
+    <script src="/assets/js/file-upload.js"></script>
+    <div class="form-group">
+    <button class="btn btn-primary text-primary" type="submit">Submit</button>
+    </div>
+  </form>
 </div>
+
+
     </div>
   </div>
 </article>
@@ -169,24 +199,6 @@ fill="#000000" stroke="none">
       </div>
     </footer>
 
-    
-    <script>
-      var rotation = 0;
-      var scrollLoc = $(document).scrollTop();
-
-      $(window).on("scroll", function() {
-          var newLoc = $(document).scrollTop();
-          var diff = (scrollLoc - newLoc) / 3;
-          rotation += diff, scrollLoc = newLoc;
-          var rotationStr = "rotate(" + rotation + "deg)";
-
-          $("#rotate-on-scroll").css({
-              "-webkit-transform": rotationStr,
-              "-moz-transform": rotationStr,
-              "transform": rotationStr
-          });
-      });
-    </script>
     
 
   </body>
