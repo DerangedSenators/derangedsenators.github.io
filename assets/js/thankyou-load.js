@@ -1,4 +1,6 @@
-
+/**
+ * @author Hanzalah Ravat
+ */
 //Script for loading the thanks for downloading script
 import {downloadStandalone,downloadLauncher,downloadDynamic,getMainDLType} from './download.js'
 window.onload = (event) => {

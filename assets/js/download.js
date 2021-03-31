@@ -1,5 +1,7 @@
 import{baseurl, getOS} from "./utils.js";
-
+/**
+ * @author Hanzalah Ravat
+ */
 /**
  * Attempts to download based on Platform
  */
