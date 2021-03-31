@@ -2,12 +2,20 @@
 platform: Linux
 download_type: Launcher
 ---
-### Install Using command Line
 
-#### Snap
-You can install Cops and Robbers from your command line easily with Snap.
-Just run the following command on your terminal:
+### Download a Pre-Release Version for Linux
 
+You can download the pre-release version of the game [here]({{site.baseurl}}/download/thankyou-for-downloading/?type=standalone&platform=linux)
+
+To Play, run the following command to extract the `tar.xz` archive:
+
+```bash
+$ tar -xf <archive_name>.tar.xz
 ```
-snap install copsandrobbers
+To run, either double click on the file `CopsAndRobbers.x86_64` from your file browser or start from the command line with the command:
+```bash
+$ chmod +x CopsAndRobbers.x86_64 # This might be required to grant the required execution permission to launch
+$ ./CopsAndRobbers.x86_64
 ```
+
+#### Install with Snap (Coming Soon)
