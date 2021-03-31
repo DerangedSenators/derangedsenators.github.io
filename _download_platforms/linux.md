@@ -1,6 +1,6 @@
 ---
 platform: Linux
-download_type: Launcher
+download_type: Standalone
 ---
 
 ### Download a Pre-Release Version for Linux
