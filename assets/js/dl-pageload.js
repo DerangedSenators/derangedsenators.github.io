@@ -1,4 +1,7 @@
 //Script for loading the thanks for downloading script
+/**
+ * @author Hanzalah Ravat
+ */
 import {downloadDynamic,getMainDLType} from './download.js'
 import {baseurl,getOS} from "./utils.js";
 

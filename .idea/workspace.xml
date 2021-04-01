@@ -27,6 +27,12 @@
     <list default="true" id="3ff28553-4dfb-4f7f-8a88-1dbc3dad7433" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_data/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/security.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/dl-pageload.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/dl-pageload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/download.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/download.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/thankyou-load.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/thankyou-load.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/download/download-options.html" beforeDir="false" afterPath="$PROJECT_DIR$/download/download-options.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/security/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,13 +80,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
