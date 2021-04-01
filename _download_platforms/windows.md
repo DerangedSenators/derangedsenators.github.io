@@ -1,5 +1,5 @@
 ---
-platform: Windows
+platform: Windows (Pre-Release)
 download_type: Launcher
 ---
 ### Download a Pre-Release Version for Windows
