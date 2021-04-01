@@ -1,5 +1,5 @@
 ---
-platform: Linux (Pre-Release)
+platform: Linux
 download_type: Standalone
 ---
 
@@ -7,6 +7,8 @@ download_type: Standalone
 
 You can download the pre-release version of the game [here]({{site.baseurl}}/download/thankyou-for-downloading/?type=standalone&platform=linux)
 
+
+#### Installation Instructions
 To Play, run the following command to extract the `tar.xz` archive:
 
 ```bash
