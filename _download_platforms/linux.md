@@ -1,5 +1,5 @@
 ---
-platform: Linux
+platform: Linux (Pre-Release)
 download_type: Standalone
 ---
 
