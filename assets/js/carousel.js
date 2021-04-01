@@ -1,3 +1,6 @@
+/**
+ * @author Hanzalah Ravat
+ */
 $(document).ready(function() {
     $('.carousel-main').slick({
         slidesToShow: 1,
