@@ -7,7 +7,7 @@
 
   "launcher": {
     "windows": "DerangedSenatorsLauncherWin.exe",
-    "mac": "DerangedSenatorsLauncher.jar",
+    "mac-os": "DerangedSenatorsLauncher.jar",
     "linux": "DerangedSenatorsLauncherLinux"
   },
   "launcher_api": "https://api.github.com/repos/DerangedSenators/launcher/releases/latest",
