@@ -17,5 +17,5 @@
     "mac-os": "CopsAndRobbersMac.tar.xz",
     "android": "copsandrobbers.apk"
   },
-  "standalone_api": "https://api.github.com/repos/DerangedSenators/copsandrobbersreleases/releases/latest"
+  "standalone_api": "https://api.github.com/repos/DerangedSenators/copsandrobbers/releases/latest"
 }
