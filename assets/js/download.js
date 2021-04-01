@@ -91,7 +91,7 @@ function downloadLauncher(os){
 function downloadStandalone(os){
 
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", "https://api.github.com/repos/DerangedSenators/copsandrobbersreleases/releases/latest", true);
+    xmlhttp.open("GET", "https://api.github.com/repos/DerangedSenators/copsandrobbers/releases/latest", true);
     xmlhttp.send();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
