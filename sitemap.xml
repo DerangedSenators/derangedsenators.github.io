@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://copsandrobbers.co.uk/Go-Time/</loc>
-<lastmod>2021-04-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/Open-Source/</loc>
-<lastmod>2021-03-28T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/Lighting-and-Mobile/</loc>
-<lastmod>2021-03-24T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/Mirror-For-Game/</loc>
-<lastmod>2020-12-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/Introducing-PlayerLink/</loc>
-<lastmod>2020-11-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/Game-Engine/</loc>
-<lastmod>2020-10-17T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/Getting-Started/</loc>
-<lastmod>2020-10-15T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/404.html</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/blog/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/credits/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/download/download-for-linux/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/download/download-options/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/howto/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/security/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/download/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/download/others/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/security/pgp</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/security/policy</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/security/report</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/team/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/download/thankyou-for-downloading/</loc>
-</url>
-<url>
-<loc>https://copsandrobbers.co.uk/download/unsupported/</loc>
-</url>
+    <url>
+        <loc>https://derangedsenators.github.io/Go-Time/</loc>
+        <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/Open-Source/</loc>
+        <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/Lighting-and-Mobile/</loc>
+        <lastmod>2021-03-24T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/Mirror-For-Game/</loc>
+        <lastmod>2020-12-10T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/Introducing-PlayerLink/</loc>
+        <lastmod>2020-11-01T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/Game-Engine/</loc>
+        <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/Getting-Started/</loc>
+        <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/404.html</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/blog/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/credits/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/download/download-for-linux/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/download/download-options/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/howto/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/security/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/download/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/download/others/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/security/pgp</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/security/policy</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/security/report</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/team/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/download/thankyou-for-downloading/</loc>
+    </url>
+    <url>
+        <loc>https://derangedsenators.github.io/download/unsupported/</loc>
+    </url>
 </urlset>
